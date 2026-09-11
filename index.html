@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Soft Archive — A collection of gentle things</title>
+
+  <meta name="description" content="Soft Archive is a quiet collection of thoughtful objects, gentle design, everyday rituals, and things worth remembering.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f7f4ee;
+      color: #34312d;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAVIGATION */
+
+    header {
+      width: 100%;
+      padding: 28px 6vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd7ce;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 22px;
+      letter-spacing: 0.08em;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: #68635c;
+    }
+
+    nav a:hover {
+      color: #34312d;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 78vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 6vw;
+      border-bottom: 1px solid #ddd7ce;
+    }
+
+    .hero-inner {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #817a70;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(52px, 9vw, 108px);
+      font-weight: normal;
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+      margin-bottom: 36px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      line-height: 1.7;
+      color: #625d56;
+    }
+
+    .hero-note {
+      margin-top: 55px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      color: #8a847b;
+    }
+
+    /* INTRO */
+
+    .intro {
+      padding: 110px 6vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      border-bottom: 1px solid #ddd7ce;
+    }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #817a70;
+      margin-bottom: 25px;
+    }
+
+    .intro h2 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: clamp(32px, 4vw, 52px);
+      line-height: 1.15;
+    }
+
+    .intro-text {
+      max-width: 520px;
+      color: #625d56;
+      font-size: 16px;
+    }
+
+    .intro-text p + p {
+      margin-top: 20px;
+    }
+
+    /* COLLECTION */
+
+    .collection {
+      padding: 110px 6vw;
+    }
+
+    .collection-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 60px;
+    }
+
+    .collection-heading h2 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: clamp(36px, 5vw, 62px);
+    }
+
+    .collection-count {
+      font-size: 12px;
+      color: #817a70;
+      letter-spacing: 0.1em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 55px 35px;
+    }
+
+    .card {
+      display: block;
+    }
+
+    .image-placeholder {
+      aspect-ratio: 4 / 3;
+      background: #e9e4dc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999188;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .card-number {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: #8a847b;
+      margin-bottom: 9px;
+    }
+
+    .card h3 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #716b63;
+      font-size: 14px;
+      max-width: 480px;
+    }
+
+    .card:hover h3 {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 5px;
+    }
+
+    /* NOTE */
+
+    .note {
+      padding: 120px 6vw;
+      background: #ebe6de;
+      text-align: center;
+    }
+
+    .note p {
+      max-width: 720px;
+      margin: auto;
+      font-family: Georgia, serif;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.35;
+    }
+
+    .note-small {
+      margin-top: 35px !important;
+      font-family: Arial, Helvetica, sans-serif !important;
+      font-size: 11px !important;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #817a70;
+    }
+
+    /* ABOUT */
+
+    .about {
+      padding: 110px 6vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      border-bottom: 1px solid #ddd7ce;
+    }
+
+    .about h2 {
+      font-family: Georgia, serif;
+      font-size: 48px;
+      font-weight: normal;
+      line-height: 1.1;
+    }
+
+    .about p {
+      max-width: 520px;
+      color: #625d56;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 35px 6vw;
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: #817a70;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 22px 5vw;
+      }
+
+      nav {
+        gap: 14px;
+        font-size: 10px;
+      }
+
+      .hero {
+        min-height: 75vh;
+        padding: 80px 5vw;
+      }
+
+      .hero h1 {
+        font-size: 58px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .intro,
+      .about {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 80px 5vw;
+      }
+
+      .collection {
+        padding: 80px 5vw;
+      }
+
+      .collection-heading {
+        align-items: start;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+      }
+
+      .note {
+        padding: 90px 5vw;
+      }
+
+      footer {
+        padding: 30px 5vw;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <header>
+    <a href="#" class="logo">Soft Archive</a>
+
+    <nav>
+      <a href="#collection">Collection</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-inner">
+
+      <div class="eyebrow">
+        A quiet collection of everyday things
+      </div>
+
+      <h1>
+        Soft<br>
+        Archive
+      </h1>
+
+      <p>
+        A collection of gentle objects, thoughtful design,
+        everyday rituals, and small things worth remembering.
+      </p>
+
+      <div class="hero-note">
+        EST. 2026 · MALAYSIA
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+
+  <section class="intro">
+
+    <div>
+      <div class="section-label">
+        Soft Archive Note
+      </div>
+
+      <h2>
+        Not everything worth keeping<br>
+        has to be extraordinary.
+      </h2>
+    </div>
+
+    <div class="intro-text">
+
+      <p>
+        Soft Archive is a growing collection of things that make
+        ordinary days feel a little warmer.
+      </p>
+
+      <p>
+        We look at stationery, objects, spaces, rituals and
+        everyday design — not simply for how they look,
+        but for the small feelings they leave behind.
+      </p>
+
+      <p>
+        Some things are useful.
+        Some are beautiful.
+        Some simply remind us to slow down.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- COLLECTION -->
+
+  <section class="collection" id="collection">
+
+    <div class="collection-heading">
+
+      <div>
+        <div class="section-label">
+          The Archive
+        </div>
+
+        <h2>
+          Collection
+        </h2>
+      </div>
+
+      <div class="collection-count">
+        NO.001 — NO.010
+      </div>
+
+    </div>
+
+
+    <div class="grid">
+
+
+      <!-- NO.010 -->
+
+      <a class="card" href="#">
+
+        <div class="image-placeholder">
+          Image · No.010
+        </div>
+
+        <div class="card-number">
+          COLLECTION NO.010
+        </div>
+
+        <h3>
+          SYURO：为什么真正好的设计，不需要一直被看见？
+        </h3>
+
+        <p>
+          A quiet look at objects, materials,
+          and the beauty of things that do not ask for attention.
+        </p>
+
+      </a>
+
+
+      <!-- NO.009 -->
+
+      <a class="card" href="#">
+
+        <div class="image-placeholder">
+          Image · No.009
+        </div>
+
+        <div class="card-number">
+          COLLECTION NO.009
+        </div>
+
+        <h3>
+          Collection No.009
+        </h3>
+
+        <p>
+          A small archive of thoughtful everyday design.
+        </p>
+
+      </a>
+
+
+      <!-- NO.008 -->
+
+      <a class="card" href="#">
+
+        <div class="image-placeholder">
+          Image · No.008
+        </div>
+
+        <div class="card-number">
+          COLLECTION NO.008
+        </div>
+
+        <h3>
+          Collection No.008
+        </h3>
+
+        <p>
+          Things worth noticing in ordinary days.
+        </p>
+
+      </a>
+
+
+      <!-- NO.007 -->
+
+      <a class="card" href="#">
+
+        <div class="image-placeholder">
+          Image · No.007
+        </div>
+
+        <div class="card-number">
+          COLLECTION NO.007
+        </div>
+
+        <h3>
+          Collection No.007
+        </h3>
+
+        <p>
+          A quiet collection of objects and ideas.
+        </p>
+
+      </a>
+
+
+      <!-- NO.006 -->
+
+      <a class="card" href="#">
+
+        <div class="image-placeholder">
+          Image · No.006
+        </div>
+
+        <div class="card-number">
+          COLLECTION NO.006
+        </div>
+
+        <h3>
+          Collection No.006
+        </h3>
+
+        <p>
+          Small details that make everyday life softer.
+        </p>
+
+      </a>
+
+
+      <!-- NO.005 -->
+
+      <a class="card" href="#">
+
+        <div class="image-placeholder">
+          Image · No.005
+        </div>
+
+        <div class="card-number">
+          COLLECTION NO.005
+        </div>
+
+        <h3>
+          MIDORI：为什么写字，仍然值得保留？
+        </h3>
+
+        <p>
+          On handwriting, reflection,
+          and the quiet pleasure of putting words on paper.
+        </p>
+
+      </a>
+
+
+      <!-- NO.004 -->
+
+      <a class="card" href="#">
+
+        <div class="image-placeholder">
+          Image · No.004
+        </div>
+
+        <div class="card-number">
+          COLLECTION NO.004
+        </div>
+
+        <h3>
+          OBJECT：一家店，为什么会改变人们喜欢设计这件事？
+        </h3>
+
+        <p>
+          How curation can help us discover
+          designers and objects we might otherwise miss.
+        </p>
+
+      </a>
+
+
+      <!-- NO.003 -->
+
+      <a class="card" href="#">
+
+        <div class="image-placeholder">
+          Image · No.003
+        </div>
+
+        <div class="card-number">
+          COLLECTION NO.003
+        </div>
+
+        <h3>
+          KINTO：为什么一个杯子，会改变喝一杯咖啡的感觉？
+        </h3>
+
+        <p>
+          When an everyday object changes
+          the feeling of an ordinary ritual.
+        </p>
+
+      </a>
+
+
+      <!-- NO.002 -->
+
+      <a class="card" href="#">
+
+        <div class="image-placeholder">
+          Image · No.002
+        </div>
+
+        <div class="card-number">
+          COLLECTION NO.002
+        </div>
+
+        <h3>
+          LIVEWORK：温柔的设计，如何改变每天的生活
+        </h3>
+
+        <p>
+          A look at how gentle design
+          can quietly enter everyday routines.
+        </p>
+
+      </a>
+
+
+      <!-- NO.001 -->
+
+      <a class="card" href="#">
+
+        <div class="image-placeholder">
+          Image · No.001
+        </div>
+
+        <div class="card-number">
+          COLLECTION NO.001
+        </div>
+
+        <h3>
+          O-CHECK：Designed for everyday memories.
+        </h3>
+
+        <p>
+          Stationery, memory keeping,
+          and the small rituals of recording a life.
+        </p>
+
+      </a>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- NOTE -->
+
+  <section class="note">
+
+    <p>
+      “值得收藏的，不一定是最特别的东西，
+      而是那些让普通日子变得更有温度的东西。”
+    </p>
+
+    <p class="note-small">
+      Soft Archive Note
+    </p>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div>
+
+      <div class="section-label">
+        About
+      </div>
+
+      <h2>
+        A softer way<br>
+        of looking.
+      </h2>
+
+    </div>
+
+    <div>
+
+      <p>
+        Soft Archive is an independent archive exploring
+        everyday design, quiet rituals, thoughtful objects,
+        and the memories attached to ordinary life.
+      </p>
+
+      <br>
+
+      <p>
+        It is a place for things that might otherwise
+        be overlooked — a notebook, a cup, a shop,
+        a piece of paper, a small ritual.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div>
+      SOFT ARCHIVE
+    </div>
+
+    <div>
+      A QUIET COLLECTION OF EVERYDAY THINGS
+    </div>
+
+  </footer>
+
+</body>
+</html>
