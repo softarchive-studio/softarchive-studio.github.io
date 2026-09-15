@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>SyuRo：为什么真正好的设计，不需要一直被看见？ — Soft Archive</title>
+  <title>SyuRo：为什么好的设计，不需要一直被看见？ — Soft Archive</title>
 
   <meta
     name="description"
-    content="Soft Archive Collection No.010 — SyuRo：为什么真正好的设计，不需要一直被看见？"
+    content="Soft Archive Collection No.010 — SyuRo. 关于日常用品、材料、人与物之间关系，以及那些不需要一直被看见的设计。"
   >
 
   <style>
 
+    /* =========================
+       BASIC
+    ========================= */
+
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     html {
@@ -26,10 +26,15 @@
     }
 
     body {
+      margin: 0;
       background: #f7f4ee;
       color: #35322e;
       font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.8;
+      line-height: 1.9;
+    }
+
+    img {
+      max-width: 100%;
     }
 
     a {
@@ -38,196 +43,194 @@
     }
 
 
-    /* NAV */
+    /* =========================
+       HEADER
+    ========================= */
 
     header {
-      padding: 28px 6vw;
+      width: 88%;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 34px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #ddd7ce;
     }
 
     .logo {
-      font-family: Georgia, serif;
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 21px;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.04em;
     }
 
     nav {
       display: flex;
       gap: 28px;
       font-size: 12px;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: #777168;
+    }
+
+    nav a {
+      color: #777169;
+      transition: opacity 0.2s ease;
+    }
+
+    nav a:hover {
+      opacity: 0.55;
     }
 
 
-    /* ARTICLE HERO */
+    /* =========================
+       ARTICLE HERO
+    ========================= */
 
     .article-hero {
-      padding: 105px 6vw 90px;
-      max-width: 1200px;
-      margin: auto;
+      width: 88%;
+      max-width: 1000px;
+      margin: 95px auto 70px;
     }
 
     .archive-number {
+      margin-bottom: 18px;
+      color: #918a81;
       font-size: 11px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #898278;
-      margin-bottom: 28px;
     }
 
     .article-hero h1 {
       max-width: 850px;
+      margin: 0;
       font-family: Georgia, "Times New Roman", serif;
       font-size: clamp(38px, 5vw, 64px);
-      font-weight: normal;
-      line-height: 1.05;
-      letter-spacing: -0.035em;
-      margin-bottom: 35px;
+      font-weight: 400;
+      line-height: 1.18;
+      letter-spacing: -0.02em;
     }
 
-    .read-time {
-      font-size: 11px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: #898278;
-    }
-
-
-    /* COVER */
-
-    .cover {
-  width: 88%;
-  max-width: 1300px;
-  margin: 0 auto 110px;
-}
-
-.cover img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-    /* INTRO */
-
-    .intro {
-      max-width: 720px;
-      margin: 0 auto 120px;
-      padding: 0 25px;
-    }
-
-    .intro p {
-      font-family: Georgia, serif;
-      font-size: 21px;
-      line-height: 1.95;
-      margin-bottom: 25px;
-    }
-
-    .intro strong {
-      font-weight: normal;
-      font-size: 1.05em;
-    }
-
-
-    /* ARTICLE BODY */
-
-    .article {
-      max-width: 760px;
-      margin: auto;
-      padding: 0 25px;
-    }
-
-    .article-section {
-      margin-bottom: 115px;
-    }
-
-    .section-number {
-      font-size: 11px;
-      letter-spacing: 0.18em;
-      color: #898278;
-      margin-bottom: 18px;
-    }
-
-    .article h2 {
-      font-family: Georgia, serif;
-      font-size: clamp(30px, 4vw, 48px);
-      font-weight: normal;
-      line-height: 1.2;
-      margin-bottom: 35px;
-    }
-
-    .article p {
-      font-size: 16px;
-      color: #5f5a53;
-      margin-bottom: 25px;
-    }
-
-    .article strong {
-      color: #35322e;
-      font-weight: 600;
-    }
-
-
-    /* LARGE QUOTE */
-
-    .quote {
-      margin: 70px 0;
-      padding: 45px 0;
-      border-top: 1px solid #d8d1c7;
-      border-bottom: 1px solid #d8d1c7;
-      font-family: Georgia, serif;
-      font-size: clamp(25px, 3.5vw, 40px);
-      line-height: 1.45;
-    }
-
-
-    /* PHOTO PLACEHOLDER */
-
-    .photo {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      background: #e8e2d9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 50px 0;
+    .meta {
+      margin-top: 28px;
       color: #918a81;
       font-size: 11px;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
+    }
+
+
+    /* =========================
+       COVER IMAGE
+    ========================= */
+
+    .cover {
+      width: 88%;
+      max-width: 1300px;
+      margin: 0 auto 110px;
+    }
+
+    .cover img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+    /* =========================
+       ARTICLE
+    ========================= */
+
+    .article {
+      width: 88%;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .intro {
+      margin-bottom: 100px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.85;
+    }
+
+    .section {
+      margin-bottom: 105px;
+    }
+
+    .section-label {
+      margin-bottom: 13px;
+      color: #918a81;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0 0 35px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      font-weight: 400;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 25px;
+      font-size: 15px;
+      line-height: 2;
+    }
+
+
+    /* =========================
+       ARTICLE IMAGES
+    ========================= */
+
+    .article-image-wrap {
+      margin: 50px 0 65px;
     }
 
     .article-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 55px 0;
-}
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .image-caption {
+      margin-top: 12px;
+      color: #918a81;
+      font-size: 10px;
+      line-height: 1.7;
+      letter-spacing: 0.08em;
+    }
+
+    .image-caption span {
+      display: block;
+      margin-top: 2px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 11px;
+      letter-spacing: 0.03em;
+    }
 
 
-    /* FEATURE */
+    /* =========================
+       FEATURE / QUOTE
+    ========================= */
 
     .feature {
-      margin: 120px auto;
-      max-width: 1000px;
-      padding: 75px 8%;
-      background: #ebe6de;
+      margin: 120px 0;
+      padding: 65px 0;
+      border-top: 1px solid #dcd6cd;
+      border-bottom: 1px solid #dcd6cd;
     }
 
     .feature-label {
-      font-size: 11px;
+      margin-bottom: 25px;
+      color: #918a81;
+      font-size: 10px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #817a70;
-      margin-bottom: 30px;
     }
 
     .feature h2 {
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
 
     .feature p {
@@ -235,1251 +238,1521 @@
     }
 
 
-    /* LIST */
+    /* =========================
+       SMALL DETAIL
+    ========================= */
+
+    .small-detail {
+      margin: 115px 0;
+    }
+
+    .small-detail-label {
+      margin-bottom: 14px;
+      color: #918a81;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .small-detail h2 {
+      margin-bottom: 32px;
+    }
+
+
+    /* =========================
+       A FEW THINGS I NOTICED
+    ========================= */
+
+    .attention {
+      margin: 115px 0;
+    }
+
+    .attention-label {
+      margin-bottom: 14px;
+      color: #918a81;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .attention h2 {
+      margin-bottom: 35px;
+    }
 
     .attention-list {
-      margin: 40px 0;
-      padding-left: 0;
+      margin: 0;
+      padding: 0;
       list-style: none;
     }
 
     .attention-list li {
       padding: 17px 0;
-      border-bottom: 1px solid #ddd7ce;
-      color: #625d56;
+      border-bottom: 1px solid #ded9d1;
+      font-size: 14px;
+      line-height: 1.8;
     }
 
-    .attention-list li::before {
-      content: "—";
-      margin-right: 15px;
-      color: #999188;
-    }
-
-
-    /* SIGNATURE */
-
-    .signature {
-      margin-top: 80px;
-      padding: 55px;
-      background: #e9e4dc;
-    }
-
-    .signature-title {
-      font-family: Georgia, serif;
-      font-size: 30px;
-      margin-bottom: 30px;
+    .attention-list li:first-child {
+      border-top: 1px solid #ded9d1;
     }
 
 
-    /* INFO */
+    /* =========================
+       SIGNATURE PIECE
+    ========================= */
+
+    .signature-piece {
+      margin: 120px 0;
+    }
+
+    .signature-label {
+      margin-bottom: 14px;
+      color: #918a81;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .signature-piece h2 {
+      margin-bottom: 35px;
+    }
+
+    .signature-intro {
+      margin-top: 30px;
+      margin-bottom: 45px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+
+    /* =========================
+       ARCHIVE INFORMATION
+    ========================= */
 
     .archive-info {
-      margin: 110px auto;
-      max-width: 900px;
-      padding: 0 25px;
+      margin: 120px 0;
+      padding-top: 55px;
+      border-top: 1px solid #dcd6cd;
+    }
+
+    .archive-info-label {
+      margin-bottom: 20px;
+      color: #918a81;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
     }
 
     .archive-info h2 {
-      font-family: Georgia, serif;
-      font-weight: normal;
-      font-size: 42px;
-      margin-bottom: 45px;
-    }
-
-    .info-grid {
-      border-top: 1px solid #d8d1c7;
+      margin-bottom: 40px;
     }
 
     .info-row {
       display: grid;
-      grid-template-columns: 160px 1fr;
-      padding: 18px 0;
-      border-bottom: 1px solid #d8d1c7;
-      font-size: 14px;
+      grid-template-columns: 150px 1fr;
+      padding: 13px 0;
+      border-bottom: 1px solid #e1dcd4;
+      font-size: 13px;
     }
 
-    .info-label {
-      color: #817a70;
+    .info-row span:first-child {
+      color: #918a81;
     }
 
 
-    /* WHO */
+    /* =========================
+       WHO IT'S FOR
+    ========================= */
 
     .who {
-      max-width: 900px;
-      margin: 100px auto;
-      padding: 0 25px;
+      margin: 120px 0;
+    }
+
+    .who-label {
+      margin-bottom: 14px;
+      color: #918a81;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
     }
 
     .who h2 {
-      font-family: Georgia, serif;
-      font-size: 42px;
-      font-weight: normal;
-      margin-bottom: 40px;
+      margin-bottom: 38px;
     }
 
     .who-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
 
-    .who-item {
-      padding: 22px;
-      background: #ebe6de;
+    .who-list li {
+      padding: 16px 0;
+      border-bottom: 1px solid #ded9d1;
       font-size: 14px;
-      color: #5f5a53;
+      line-height: 1.8;
+    }
+
+    .who-list li:first-child {
+      border-top: 1px solid #ded9d1;
     }
 
 
-    /* FINAL NOTE */
+    /* =========================
+       SOFT ARCHIVE NOTE
+    ========================= */
 
     .final-note {
-      margin-top: 130px;
-      padding: 120px 8%;
-      background: #e9e4dc;
+      margin: 130px 0 120px;
+      padding: 75px 0;
+      border-top: 1px solid #dcd6cd;
+      border-bottom: 1px solid #dcd6cd;
       text-align: center;
     }
 
     .final-note-label {
-      font-size: 11px;
+      margin-bottom: 25px;
+      color: #918a81;
+      font-size: 10px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #817a70;
-      margin-bottom: 35px;
     }
 
     .final-note p {
-      max-width: 720px;
-      margin: auto;
-      font-family: Georgia, serif;
-      font-size: clamp(26px, 4vw, 45px);
-      line-height: 1.5;
+      max-width: 600px;
+      margin: 0 auto;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 23px;
+      line-height: 1.75;
     }
 
 
-    /* NEXT */
+    /* =========================
+       SOURCES
+    ========================= */
 
-    .next {
-      padding: 90px 6vw;
-      display: flex;
-      justify-content: space-between;
-      border-top: 1px solid #d8d1c7;
-      gap: 30px;
+    .sources {
+      margin: 100px 0 120px;
+      padding-top: 40px;
+      border-top: 1px solid #dcd6cd;
     }
 
-    .next-label {
+    .sources-label {
+      margin-bottom: 22px;
+      color: #918a81;
       font-size: 10px;
-      letter-spacing: 0.15em;
-      color: #898278;
-      margin-bottom: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
     }
 
-    .next-title {
-      font-family: Georgia, serif;
-      font-size: 24px;
+    .sources h2 {
+      margin-bottom: 35px;
+      font-size: 27px;
+    }
+
+    .source-group {
+      margin-bottom: 30px;
+    }
+
+    .source-group-title {
+      margin-bottom: 10px;
+      color: #777169;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .source-link {
+      display: block;
+      width: fit-content;
+      margin: 7px 0;
+      color: #4d4944;
+      font-size: 13px;
+      line-height: 1.7;
+      border-bottom: 1px solid #cfc8be;
+      transition: opacity 0.2s ease;
+    }
+
+    .source-link:hover {
+      opacity: 0.55;
+    }
+
+    .source-note {
+      margin-top: 35px;
+      color: #918a81;
+      font-size: 11px;
+      line-height: 1.8;
     }
 
 
-    /* FOOTER */
+    /* =========================
+       CONTINUE EXPLORING
+    ========================= */
+
+    .continue {
+      margin: 100px 0 120px;
+      padding-top: 45px;
+      border-top: 1px solid #dcd6cd;
+    }
+
+    .continue-label {
+      margin-bottom: 13px;
+      color: #918a81;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .continue h2 {
+      margin-bottom: 15px;
+      font-size: 29px;
+    }
+
+    .continue-text {
+      margin-bottom: 30px;
+      color: #777169;
+      font-size: 14px;
+    }
+
+    .archive-link {
+      display: inline-block;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #777169;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
-      padding: 35px 6vw;
+      width: 88%;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 45px 0 55px;
+      border-top: 1px solid #ded9d1;
       display: flex;
       justify-content: space-between;
-      font-size: 10px;
-      letter-spacing: 0.1em;
-      color: #817a70;
+      gap: 30px;
+      color: #918a81;
+      font-size: 11px;
+      line-height: 1.7;
     }
 
 
-    /* MOBILE */
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 700px) {
 
       header {
-        padding: 22px 5vw;
+        width: 90%;
+        padding: 25px 0;
       }
 
       nav {
         gap: 15px;
-        font-size: 9px;
+        font-size: 10px;
       }
 
       .article-hero {
-        padding: 75px 5vw 60px;
+        width: 90%;
+        margin-top: 70px;
+        margin-bottom: 55px;
       }
 
       .article-hero h1 {
-        font-size: 48px;
+        font-size: clamp(35px, 10vw, 48px);
       }
 
       .cover {
         width: 90%;
-        margin-bottom: 80px;
-      }
-
-      .intro {
-        margin-bottom: 80px;
-      }
-
-      .intro p {
-        font-size: 18px;
+        margin-bottom: 75px;
       }
 
       .article {
-        padding: 0 22px;
+        width: 90%;
       }
 
-      .article-section {
+      .intro {
+        font-size: 19px;
+        margin-bottom: 75px;
+      }
+
+      .section {
         margin-bottom: 80px;
       }
 
-      .feature {
-        margin: 80px 5vw;
-        padding: 50px 25px;
+      h2 {
+        font-size: 27px;
       }
 
-      .signature {
-        padding: 35px 25px;
+      p {
+        font-size: 14px;
+        line-height: 1.95;
       }
 
-      .archive-info {
-        margin: 80px auto;
+      .feature,
+      .small-detail,
+      .attention,
+      .signature-piece,
+      .archive-info,
+      .who,
+      .final-note,
+      .sources,
+      .continue {
+        margin-top: 85px;
+        margin-bottom: 85px;
+      }
+
+      .final-note p {
+        font-size: 20px;
       }
 
       .info-row {
-        grid-template-columns: 110px 1fr;
-      }
-
-      .who {
-        margin: 80px auto;
-      }
-
-      .who-list {
-        grid-template-columns: 1fr;
-      }
-
-      .final-note {
-        margin-top: 80px;
-        padding: 90px 25px;
-      }
-
-      .next {
-        padding: 60px 5vw;
-        flex-direction: column;
+        grid-template-columns: 105px 1fr;
+        font-size: 12px;
       }
 
       footer {
+        width: 90%;
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
       }
-
     }
 
   </style>
-
 </head>
 
 
 <body>
 
+  <!-- =========================
+       HEADER
+  ========================= -->
 
-<!-- NAVIGATION -->
+  <header>
 
-<header>
+    <a href="index.html" class="logo">
+      Soft Archive
+    </a>
 
-  <a href="index.html" class="logo">
-    Soft Archive
-  </a>
+    <nav>
+      <a href="index.html">Archive</a>
+      <a href="index.html#about">About</a>
+    </nav>
 
-  <nav>
-    <a href="index.html">Archive</a>
-    <a href="index.html#about">About</a>
-  </nav>
+  </header>
 
-</header>
 
+  <!-- =========================
+       HERO
+  ========================= -->
 
+  <main>
 
-<!-- ARTICLE HERO -->
+    <section class="article-hero">
 
-<section class="article-hero">
-
-  <div class="archive-number">
-    Collection No.010
-  </div>
-
-  <h1>
-    SyuRo：为什么真正好的设计，
-    不需要一直被看见？
-  </h1>
-
-  <div class="read-time">
-    5 min read · Everyday Design
-  </div>
-
-</section>
-
-
-
-<!-- COVER -->
-
-<section class="cover">
-
-  <img
-    src="images/no010-cover.jpg"
-    alt="Soft Archive Collection No.010 — SyuRo"
-  >
-
-</section>
-
-
-
-<!-- INTRO -->
-
-<section class="intro">
-
-  <p>
-    我们每天都在使用很多东西。
-  </p>
-
-  <p>
-    杯子。毛巾。收纳盒。托盘。一张纸。
-  </p>
-
-  <p>
-    它们太普通了。
-  </p>
-
-  <p>
-    普通到我们很少停下来想：
-    <strong>“为什么这个东西用起来这么舒服？”</strong>
-  </p>
-
-  <p>
-    可能是因为它刚好放在那里。
-    刚好够大。
-    刚好够轻。
-    刚好拿起来很顺手。
-  </p>
-
-  <p>
-    也可能只是因为，
-    用了很久以后，
-    你已经习惯了它存在于生活里的某个位置。
-  </p>
-
-  <p>
-    好的设计有时候就是这样。
-  </p>
-
-  <p>
-    它不一定需要第一眼就吸引你。
-    甚至不需要你注意到它。
-  </p>
-
-  <p>
-    <strong>
-      它只是安静地，让每天的生活变得舒服一点。
-    </strong>
-  </p>
-
-</section>
-
-
-
-<!-- ARTICLE -->
-
-<main class="article">
-
-
-  <!-- SECTION 01 -->
-
-  <section class="article-section">
-
-    <div class="section-number">
-      01 · THE BRAND
-    </div>
-
-    <h2>
-      SyuRo：Designed for Everyday Life
-    </h2>
-
-    <img
-    class="article-image"
-    src="images/no010-01.jpg"
-    alt="SyuRo design and everyday objects"
-  >
-    
-    <p>
-      SyuRo 是一家来自东京的设计品牌。
-    </p>
-
-    <p>
-      1999 年，宇南山加子以设计公司为起点创立 SyuRo。
-      后来，它逐渐发展出自己的生活用品，也与日本各地的工匠、
-      制造者以及不同领域的人合作。
-    </p>
-
-    <p>
-      它做的东西并不复杂。
-    </p>
-
-    <p>
-      金属盒。纸品。毛巾。布料。陶器。木制品。
-    </p>
-
-    <p>
-      但这些东西背后，有一个很简单的想法：
-    </p>
-
-    <p>
-      它没有急着让普通的东西变得特别。
-      而是重新看看，那些我们每天都在使用，
-      却已经习以为常的东西。
-    </p>
-
-    <div class="quote">
-      也许真正值得设计的，
-      一直就在我们身边。
-    </div>
-
-    <p>
-      SyuRo 做的东西，很少让人觉得“只能放在那里欣赏”。
-    </p>
-
-    <p>
-      它们本来就是生活用品。
-      可以放在桌上，可以放进抽屉，可以拿在手里，
-      可以洗，可以每天使用。
-    </p>
-
-    <p>
-      它没有把设计和生活分开。
-    </p>
-
-    <p>
-      一只盒子，可以让桌面变得整齐。
-      一条毛巾，可以让洗完手的那几秒舒服一点。
-      一个杯子，可以让普通的喝水时间，多一点感觉。
-    </p>
-
-    <p>
-      这些事情都很小。
-      但生活本来就是由很多这样的小事情组成的。
-    </p>
-
-    <p>
-      SyuRo 让我觉得，设计并不一定要制造一个“特别的东西”。
-      有时候，只是把一件每天都会用到的东西，认真地做好。
-    </p>
-
-    <img
-      class="article-image"
-      src="images/no010-02.jpg"
-      alt="SyuRo everyday storage and lifestyle objects"
-      >
-
-  </section>
-
-
-
-  <!-- SECTION 02 -->
-
-  <section class="article-section">
-
-    <div class="section-number">
-      02 · ORDINARY THINGS
-    </div>
-
-    <h2>
-      Finding Value in Ordinary Things
-    </h2>
-
-    <p>
-      我很喜欢 SyuRo 对“普通”的看法。
-    </p>
-
-    <p>
-      它不会因为一个东西太普通，
-      就认为它没有设计的价值。
-    </p>
-
-    <p>
-      相反，它会从那些已经存在的东西里，
-      重新寻找值得留下来的部分。
-    </p>
-
-    <p>
-      比如一个收纳盒。
-    </p>
-
-    <p>
-      我们真正需要的，可能只是一个大小合适、
-      拿起来方便、放在哪里都不会觉得突兀的盒子。
-    </p>
-
-    <p>
-      又或者是一条毛巾。
-      真正让人在意的，可能不是它有多特别，
-      而是接触皮肤的时候，有没有舒服一点。
-    </p>
-
-    <div class="quote">
-      不是把东西装饰得更漂亮，
-      而是让我们重新发现它原本就有的价值。
-    </div>
-
-    <p>
-      所以很多时候，好的设计并不会站出来告诉你：
-      “看，我设计得很好。”
-    </p>
-
-    <p>
-      它只是让你在使用的时候，
-      觉得一切都很自然。
-    </p>
-    
-    <img
-  class="article-image"
-  src="images/no010-03.jpg"
-  alt="SyuRo glass"
->
-
-  </section>
-
-
-
-  <!-- SECTION 03 -->
-
-  <section class="article-section">
-
-    <div class="section-number">
-      03 · MATERIAL
-    </div>
-
-    <h2>
-      Materials You Can Feel
-    </h2>
-
-    <p>
-      有些东西，光看照片其实很难理解。
-    </p>
-
-    <p>
-      你必须真的拿起来。
-      摸一摸。
-      打开。
-      用一次。
-    </p>
-
-    <p>
-      才会知道它为什么舒服。
-    </p>
-
-    <p>
-      SyuRo 很少试图把材料本身藏起来。
-    </p>
-
-    <p>
-      金属就是金属。
-      纸就是纸。
-      木头还是木头。
-      布料也保留着自己的触感。
-    </p>
-
-    <p>
-      它们没有被过度修饰，
-      反而让材料本来的样子成为设计的一部分。
-    </p>
-
-    <p>
-      我尤其喜欢这种感觉。
-      因为有时候，材料本身就已经很好看了。
-    </p>
-
-    <p>
-      金属的冷。木头的温度。纸张的轻。布料贴近皮肤时的柔软。
-    </p>
-    
-    <p>
-      这些东西不需要被解释太多。
-    </p>
-
-    <div class="quote">
-      好的设计，有时候不是改变材料，
-      而是知道什么时候应该让材料自己说话。
-    </div>
-    
-    <img
-      class="article-image"
-      src="images/no010-04.jpg"
-      alt="SyuRo scarf"
-      >
-  </section>
-
-
-
-  <!-- SECTION 04 -->
-
-  <section class="article-section">
-
-    <div class="section-number">
-      04 · MADE BY PEOPLE
-    </div>
-
-    <h2>
-      Made by People
-    </h2>
-
-    <p>
-      SyuRo 有趣的地方，
-      不只是“设计了什么”，
-      还有它选择和谁一起完成这些东西。
-    </p>
-
-    <p>
-      日本传统工艺。
-      熟练的工匠。
-      不同地区的制造者。
-      甚至福祉设施所制作的物品。
-    </p>
-
-    <p>
-      SyuRo 会把这些不同的技术、材料和想法，
-      放进自己的设计里。
-    </p>
-
-    <p>
-      有时候，它甚至会去尝试原本被认为“不太可能”的做法。
-    </p>
-
-    <p>
-      不是简单地把传统工艺复制一次，
-      而是想办法让它进入今天的生活。
-    </p>
-
-    <p>
-      这也是为什么，
-      有些 SyuRo 的东西看起来很简单，
-      却会让人觉得有一点特别。
-    </p>
-
-    <p>
-      因为它背后不是只有一个设计概念。
-    </p>
-    
-    <p>
-      还有材料。
-      技术。
-      人的经验。
-    </p>
-    
-     <p>
-       以及一次次沟通以后，
-       才形成的结果。
-      </p>
-    
-    <p>
-       我喜欢这种“有人参与其中”的设计。
-    </p>
-
-    <div class="quote">
-      你看到的虽然只是一个物品，
-      但它并不是凭空出现的。
-    </div>
-    
-    <img
-      class="article-image"
-      src="images/no010-05.jpg"
-      alt="Craftsmanship and making process behind SyuRo products"
-      >
-  </section>
-
-
-
-  <!-- SECTION 05 -->
-
-  <section class="article-section">
-
-    <div class="section-number">
-      05 · LESS
-    </div>
-
-    <h2>
-      The Beauty of Less
-    </h2>
-
-    <p>
-      我们现在看到的东西越来越多。
-    </p>
-
-    <p>
-      更多颜色。
-      更多功能。
-      更多选择。
-      更多新的设计。
-    </p>
-
-    <p>
-      可是 SyuRo 给我的感觉，
-      恰恰相反。
-    </p>
-
-    <p>
-      它没有急着增加什么。
-    </p>
-
-    <p>
-      有时候，只是把一个盒子做好。
-      把一块布做好。
-      把一张纸做好。
-    </p>
-
-    <p>
-      把一个每天都会使用的东西，做得刚刚好。
-    </p>
-    
-    <p>
-      少一点装饰。
-      少一点多余。
-      让真正需要的部分留下来。
-    </p>
-
-    <p>
-      这种“少”，
-      并不是为了让东西看起来极简。
-    </p>
-    
-    <p>
-      而是因为它知道，生活本身已经有很多东西了。
-    </p>
-    
-    <p>
-      一个物品如果能够安静地待在其中，
-      不抢走注意力，
-      却又确实让事情变得方便，
-      其实已经足够了。
-    </p>
-
-    <div class="quote">
-      不是让东西变得更显眼，
-      而是让生活本身变得更舒服。
-    </div>
-    
-    <img
-      class="article-image"
-      src="images/no010-06.jpg"
-      alt="SyuRo a glass of water"
-      >
-
-  </section>
-
-
-
-  <!-- SECTION 06 -->
-
-  <section class="article-section">
-
-    <div class="section-number">
-      06 · RELATIONSHIP
-    </div>
-
-    <h2>
-      A Little More Than Just Design
-    </h2>
-
-    <p>
-      我后来发现，
-      SyuRo 真正在意的，
-      好像不只是“东西长什么样”。
-    </p>
-
-    <p>
-      它也在意人与东西之间的关系。
-    </p>
-
-    <p>
-      一件东西被制造出来以后，
-      会被谁使用？
-      会放在哪里？
-      会不会被一直留下来？
-    </p>
-
-    <p>
-      会不会因为人的参与，
-      产生原本没有的意义？
-    </p>
-
-    <p>
-      SyuRo 把这种人与物之间的关系，
-      也看作设计的一部分。
-    </p>
-
-    <p>
-      这让我想到，
-      我们真正喜欢的一些东西，
-      可能并不是因为它们特别漂亮。
-    </p>
-
-    <p>
-      而是因为它们已经进入了我们的生活。
-      每天伸手就能拿到。
-      知道它应该放在哪里。
-      知道它用起来是什么感觉。
-      甚至不需要特别想起它。
-    </p>
-
-    <div class="quote">
-      它已经成为生活的一部分，
-      而这本身，也许就是一种设计成功的方式。
-    </div>
-    
-    <img
-      class="article-image"
-      src="images/no010-07.jpg"
-      alt="SyuRo shop"
-      >
-    
-  </section>
-
-
-
-</main>
-
-
-
-<!-- WHY SOFT ARCHIVE -->
-
-<section class="feature">
-
-  <div class="feature-label">
-    Why Soft Archive Collects It
-  </div>
-
-  <h2>
-    为什么 Soft Archive 想留下 SyuRo？
-  </h2>
-
-  <p>
-    我喜欢 SyuRo，
-    是因为它让我重新注意到那些很容易被忽略的东西。
-  </p>
-
-  <p>
-    一个盒子。
-    一条毛巾。
-    一只杯子。
-  </p>
-
-  <p>
-    它们没有什么惊天动地的故事。
-    却每天都在我们的生活里。
-  </p>
-
-  <p>
-    我们很少认真想过，
-    为什么它应该是这个大小，
-    为什么摸起来是这样的感觉，
-    为什么放在那里刚刚好。
-  </p>
-
-  <div class="quote">
-    那些看不见的部分，
-    其实也可以成为设计。
-  </div>
-
-  <p>
-    也许生活里的好设计，
-    本来就不需要一直提醒我们它的存在。
-  </p>
-
-  <p>
-    它只需要在那里，
-    然后让我们觉得：
-  </p>
-
-  <div class="quote">
-    “这样很好。”
-  </div>
-
-</section>
-
-
-
-<!-- SMALL DETAIL -->
-
-<main class="article">
-
-  <section class="article-section">
-
-    <div class="section-number">
-      A SMALL DETAIL I LOVE
-    </div>
-
-    <h2>
-      藏在使用里的细节
-    </h2>
-
-    <p>
-      我喜欢 SyuRo 很少把“设计感”放得太大。
-    </p>
-
-    <p>
-      你不会第一眼就觉得：
-      “这是一个很有设计的东西。”
-    </p>
-
-    <p>
-      可是拿起来以后，
-      你会慢慢发现一些小地方。
-    </p>
-
-    <p>
-      一个边缘。
-      一个开合的方式。
-      一种触感。
-      一个刚刚好的尺寸。
-    </p>
-
-    <p>
-      它们没有特别抢眼。
-      甚至很容易被忽略。
-    </p>
-
-    <p>
-      可是用了几次以后，你会发现：
-      原来这里是这样设计的。
-    </p>
-
-    <p>
-      我喜欢这种藏在使用里的细节。
-    </p>
-    
-    <div class="quote">
-      不需要被看见，
-      却确实在那里。
-    </div>
-
-  </section>
-
-
-
-  <!-- WHAT CAUGHT MY ATTENTION -->
-
-  <section class="article-section">
-
-    <div class="section-number">
-      WHAT CAUGHT MY ATTENTION
-    </div>
-
-    <h2>
-      让我记住 SyuRo 的几个细节
-    </h2>
-
-    <ul class="attention-list">
-
-      <li>1999 年开始，SyuRo 最初是一家设计公司。</li>
-
-      <li>从产品设计延伸到空间、品牌、室内与造型等不同领域。</li>
-
-      <li>产品横跨金属、纸、布、陶器、木材等多种材料。</li>
-
-      <li>与日本传统工艺、工匠技术以及不同制造者合作。</li>
-
-      <li>不只是重新设计物品，也尝试让传统技术进入现代生活。</li>
-
-      <li>很重视材料本身的质感，以及人与物之间的关系。</li>
-
-      <li>位于东京鸟越的 SyuRo 店铺，同时也是工作室与展示空间。</li>
-
-      <li>将“发现看不见的价值”作为自己对设计的理解。</li>
-
-      <li>而我最喜欢的一点是：它没有把“生活用品”当成低于“设计品”的东西。</li>
-
-    </ul>
-
-  </section>
-
-
-
-  <!-- SIGNATURE PIECE -->
-
-  <section class="article-section">
-
-    <div class="section-number">
-      SIGNATURE PIECE
-    </div>
-
-    <h2>
-      Tin Box
-    </h2>
-    
-    <img
-      class="article-image"
-      src="images/no010-08.jpg"
-      alt="SyuRo Tin Box"
-      >
-
-    <div class="signature">
-
-      <div class="signature-title">
-        A box that quietly belongs to everyday life.
+      <div class="archive-number">
+        Collection No.010
       </div>
 
-      <p>
-        一个盒子而已。
-      </p>
+      <h1>
+        SyuRo：为什么好的设计，<br>
+        不需要一直被看见？
+      </h1>
 
-      <p>
-        可是我很喜欢它的简单。
-      </p>
-
-      <p>
-        它没有试图把“收纳”变成一件复杂的事情。
-        只是让桌面上的一些小东西，
-        有了一个可以回去的地方。
-      </p>
-
-      <p>
-        钉子。纽扣。胶带。纸片。小工具。
-      </p>
-
-      <p>
-        甚至咖啡豆、茶叶或调味料。
-      </p>
-
-      <p>
-        什么都可以。
-      </p>
-
-      <p>
-        SyuRo 找到的是东京下町传统的制罐工艺，
-        再把它变成了一件可以进入日常的东西。
-      </p>
-
-      <p>
-        黄铜、铜和马口铁，
-        刚开始都有各自鲜明的颜色。
-        随着时间过去，它们会慢慢发生变化。
-      </p>
-
-      <p>
-        盒子的形状却一直保持简单。
-      </p>
-
-      <p>
-        没有多余的装饰，也没有规定它应该放什么。
-      </p>
-
-      <div class="quote">
-        最后，你甚至不会特别注意这个盒子。
-        因为你已经习惯了，
-        它一直在那里。
+      <div class="meta">
+        5 min read · Everyday Design
       </div>
 
+    </section>
+
+
+    <!-- =========================
+         COVER
+    ========================= -->
+
+    <section class="cover">
+
+      <img
+        src="images/no010-cover.jpg"
+        alt="Soft Archive Collection No.010 — SyuRo"
+      >
+
+    </section>
+
+
+    <!-- =========================
+         ARTICLE
+    ========================= -->
+
+    <article class="article">
+
+
+      <!-- INTRO -->
+
+      <div class="intro">
+
+        我们每天都在使用很多东西。
+
+        <br><br>
+
+        杯子。毛巾。收纳盒。托盘。一张纸。
+
+        <br><br>
+
+        它们太普通了。
+
+        <br><br>
+
+        普通到我们很少停下来想：
+
+        “为什么这个东西用起来这么舒服？”
+
+        <br><br>
+
+        可能是因为它刚好放在那里。
+        刚好够大。
+        刚好够轻。
+        刚好拿起来很顺手。
+
+        <br><br>
+
+        也可能只是因为，
+        用了很久以后，
+        你已经习惯了它存在于生活里的某个位置。
+
+        <br><br>
+
+        好的设计有时候就是这样。
+
+        <br><br>
+
+        它不一定需要第一眼就吸引你。
+        甚至不需要你注意到它。
+
+        <br><br>
+
+        它只是安静地，
+        让每天的生活变得舒服一点。
+
+      </div>
+
+
+      <!-- =========================
+           01
+      ========================= -->
+
+      <section class="section">
+
+        <div class="section-label">
+          01 · The Brand
+        </div>
+
+        <h2>
+          SyuRo：Designed for Everyday Life
+        </h2>
+
+
+        <div class="article-image-wrap">
+
+          <img
+            class="article-image"
+            src="images/no010-01.jpg"
+            alt="SyuRo design and everyday objects"
+          >
+
+          <div class="image-caption">
+            SyuRo everyday objects
+            <span>Things designed to quietly belong to everyday life.</span>
+          </div>
+
+        </div>
+
+
+        <p>
+          SyuRo 是一家来自东京的设计品牌。
+        </p>
+
+        <p>
+          1999 年，宇南山加子以设计公司为起点创立 SyuRo。
+          后来，它逐渐发展出自己的生活用品，也与日本各地的工匠、
+          制造者以及不同领域的人合作。
+        </p>
+
+        <p>
+          它做的东西并不复杂。
+        </p>
+
+        <p>
+          金属盒。纸品。毛巾。布料。陶器。木制品。
+        </p>
+
+        <p>
+          但这些东西背后，有一个很简单的想法：
+        </p>
+
+        <p>
+          它没有急着让普通的东西变得特别。
+          而是重新看看，那些我们每天都在使用，
+          却已经习以为常的东西。
+        </p>
+
+        <p>
+          也许真正值得设计的，
+          一直就在我们身边。
+        </p>
+
+        <p>
+          SyuRo 做的东西，很少让人觉得“只能放在那里欣赏”。
+        </p>
+
+        <p>
+          它们本来就是生活用品。
+          可以放在桌上，可以放进抽屉，可以拿在手里，
+          可以洗，可以每天使用。
+        </p>
+
+        <p>
+          它没有把设计和生活分开。
+        </p>
+
+        <p>
+          一只盒子，可以让桌面变得整齐。
+          一条毛巾，可以让洗完手的那几秒舒服一点。
+          一个杯子，可以让普通的喝水时间，多一点感觉。
+        </p>
+
+        <p>
+          这些事情都很小。
+          但生活本来就是由很多这样的小事情组成的。
+        </p>
+
+        <p>
+          SyuRo 让我觉得，
+          设计并不一定要制造一个“特别的东西”。
+          有时候，只是把一件每天都会用到的东西，认真地做好。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           02
+      ========================= -->
+
+      <section class="section">
+
+        <div class="section-label">
+          02 · Ordinary Things
+        </div>
+
+        <h2>
+          Finding Value in Ordinary Things
+        </h2>
+
+
+        <div class="article-image-wrap">
+
+          <img
+            class="article-image"
+            src="images/no010-02.jpg"
+            alt="SyuRo everyday storage and lifestyle objects"
+          >
+
+          <div class="image-caption">
+            Everyday objects
+            <span>Finding value in things we already live with.</span>
+          </div>
+
+        </div>
+
+
+        <p>
+          我很喜欢 SyuRo 对“普通”的看法。
+        </p>
+
+        <p>
+          它不会因为一个东西太普通，
+          就认为它没有设计的价值。
+        </p>
+
+        <p>
+          相反，它会从那些已经存在的东西里，
+          重新寻找值得留下来的部分。
+        </p>
+
+        <p>
+          比如一个收纳盒。
+        </p>
+
+        <p>
+          我们真正需要的，可能只是一个大小合适、
+          拿起来方便、放在哪里都不会觉得突兀的盒子。
+        </p>
+
+        <p>
+          又或者是一条毛巾。
+          真正让人在意的，可能不是它有多特别，
+          而是接触皮肤的时候，有没有舒服一点。
+        </p>
+
+        <p>
+          不是把东西装饰得更漂亮，
+          而是让我们重新发现它原本就有的价值。
+        </p>
+
+        <p>
+          所以很多时候，好的设计并不会站出来告诉你：
+          “看，我设计得很好。”
+        </p>
+
+        <p>
+          它只是让你在使用的时候，
+          觉得一切都很自然。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           03
+      ========================= -->
+
+      <section class="section">
+
+        <div class="section-label">
+          03 · Material
+        </div>
+
+        <h2>
+          Materials You Can Feel
+        </h2>
+
+
+        <div class="article-image-wrap">
+
+          <img
+            class="article-image"
+            src="images/no010-03.jpg"
+            alt="SyuRo glass and material"
+          >
+
+          <div class="image-caption">
+            Material
+            <span>Sometimes the material itself is already beautiful.</span>
+          </div>
+
+        </div>
+
+
+        <p>
+          有些东西，光看照片其实很难理解。
+        </p>
+
+        <p>
+          你必须真的拿起来。
+          摸一摸。
+          打开。
+          用一次。
+        </p>
+
+        <p>
+          才会知道它为什么舒服。
+        </p>
+
+        <p>
+          SyuRo 很少试图把材料本身藏起来。
+        </p>
+
+        <p>
+          金属就是金属。
+          纸就是纸。
+          木头还是木头。
+          布料也保留着自己的触感。
+        </p>
+
+        <p>
+          它们没有被过度修饰，
+          反而让材料本来的样子成为设计的一部分。
+        </p>
+
+        <p>
+          我尤其喜欢这种感觉。
+          因为有时候，材料本身就已经很好看了。
+        </p>
+
+        <p>
+          金属的冷。
+          木头的温度。
+          纸张的轻。
+          布料贴近皮肤时的柔软。
+        </p>
+
+        <p>
+          这些东西不需要被解释太多。
+        </p>
+
+        <p>
+          好的设计，有时候不是改变材料，
+          而是知道什么时候应该让材料自己说话。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           04
+      ========================= -->
+
+      <section class="section">
+
+        <div class="section-label">
+          04 · Made by People
+        </div>
+
+        <h2>
+          Made by People
+        </h2>
+
+
+        <div class="article-image-wrap">
+
+          <img
+            class="article-image"
+            src="images/no010-04.jpg"
+            alt="Craftsmanship and making process behind SyuRo products"
+          >
+
+          <div class="image-caption">
+            Made by people
+            <span>Materials, techniques, and human experience.</span>
+          </div>
+
+        </div>
+
+
+        <p>
+          SyuRo 有趣的地方，
+          不只是“设计了什么”，
+          还有它选择和谁一起完成这些东西。
+        </p>
+
+        <p>
+          日本传统工艺。
+          熟练的工匠。
+          不同地区的制造者。
+          甚至福祉设施所制作的物品。
+        </p>
+
+        <p>
+          SyuRo 会把这些不同的技术、材料和想法，
+          放进自己的设计里。
+        </p>
+
+        <p>
+          有时候，它甚至会去尝试原本被认为“不太可能”的做法。
+        </p>
+
+        <p>
+          不是简单地把传统工艺复制一次，
+          而是想办法让它进入今天的生活。
+        </p>
+
+        <p>
+          这也是为什么，
+          有些 SyuRo 的东西看起来很简单，
+          却会让人觉得有一点特别。
+        </p>
+
+        <p>
+          因为它背后不是只有一个设计概念。
+        </p>
+
+        <p>
+          还有材料。
+          技术。
+          人的经验。
+        </p>
+
+        <p>
+          以及一次次沟通以后，
+          才形成的结果。
+        </p>
+
+        <p>
+          我喜欢这种“有人参与其中”的设计。
+        </p>
+
+        <p>
+          你看到的虽然只是一个物品，
+          但它并不是凭空出现的。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           05
+           INTENTIONAL WHITESPACE
+      ========================= -->
+
+      <section class="section">
+
+        <div class="section-label">
+          05 · Less
+        </div>
+
+        <h2>
+          The Beauty of Less
+        </h2>
+
+        <p>
+          我们现在看到的东西越来越多。
+        </p>
+
+        <p>
+          更多颜色。
+          更多功能。
+          更多选择。
+          更多新的设计。
+        </p>
+
+        <p>
+          可是 SyuRo 给我的感觉，
+          恰恰相反。
+        </p>
+
+        <p>
+          它没有急着增加什么。
+        </p>
+
+        <p>
+          有时候，只是把一个盒子做好。
+          把一块布做好。
+          把一张纸做好。
+        </p>
+
+        <p>
+          把一个每天都会使用的东西，
+          做得刚刚好。
+        </p>
+
+        <p>
+          少一点装饰。
+          少一点多余。
+          让真正需要的部分留下来。
+        </p>
+
+        <p>
+          这种“少”，
+          并不是为了让东西看起来极简。
+        </p>
+
+        <p>
+          而是因为，
+          生活本身已经有很多东西了。
+        </p>
+
+        <p>
+          一个物品如果能够安静地待在其中，
+          不抢走注意力，
+          却又确实让事情变得方便，
+          其实已经足够了。
+        </p>
+
+        <p>
+          不是让东西变得更显眼，
+          而是让生活本身变得更舒服。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           06
+      ========================= -->
+
+      <section class="section">
+
+        <div class="section-label">
+          06 · Relationship
+        </div>
+
+        <h2>
+          A Little More Than Just Design
+        </h2>
+
+
+        <div class="article-image-wrap">
+
+          <img
+            class="article-image"
+            src="images/no010-06.jpg"
+            alt="SyuRo a glass of water"
+          >
+
+          <div class="image-caption">
+            Everyday relationship
+            <span>When an object slowly becomes part of life.</span>
+          </div>
+
+        </div>
+
+
+        <p>
+          我后来发现，
+          SyuRo 真正在意的，
+          好像不只是“东西长什么样”。
+        </p>
+
+        <p>
+          它也在意人与东西之间的关系。
+        </p>
+
+        <p>
+          一件东西被制造出来以后，
+          会被谁使用？
+          会放在哪里？
+          会不会被一直留下来？
+        </p>
+
+        <p>
+          会不会因为人的参与，
+          产生原本没有的意义？
+        </p>
+
+        <p>
+          SyuRo 把这种人与物之间的关系，
+          也看作设计的一部分。
+        </p>
+
+        <p>
+          这让我想到，
+          我们真正喜欢的一些东西，
+          可能并不是因为它们特别漂亮。
+        </p>
+
+        <p>
+          而是因为它们已经进入了我们的生活。
+          每天伸手就能拿到。
+          知道它应该放在哪里。
+          知道它用起来是什么感觉。
+          甚至不需要特别想起它。
+        </p>
+
+        <p>
+          它已经成为生活的一部分，
+          而这本身，也许就是一种设计成功的方式。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           WHY SOFT ARCHIVE COLLECTS IT
+      ========================= -->
+
+      <section class="feature">
+
+        <div class="feature-label">
+          Why Soft Archive Collects It
+        </div>
+
+        <h2>
+          为什么 Soft Archive 想留下 SyuRo？
+        </h2>
+
+        <p>
+          我喜欢 SyuRo，
+          是因为它让我重新注意到那些很容易被忽略的东西。
+        </p>
+
+        <p>
+          一个盒子。
+          一条毛巾。
+          一只杯子。
+        </p>
+
+        <p>
+          它们没有什么惊天动地的故事。
+          却每天都在我们的生活里。
+        </p>
+
+        <p>
+          我们很少认真想过，
+          为什么它应该是这个大小，
+          为什么摸起来是这样的感觉，
+          为什么放在那里刚刚好。
+        </p>
+
+        <p>
+          那些看不见的部分，
+          其实也可以成为设计。
+        </p>
+
+        <p>
+          也许生活里的好设计，
+          本来就不需要一直提醒我们它的存在。
+        </p>
+
+        <p>
+          它只需要在那里，
+          然后让我们觉得：
+        </p>
+
+        <p>
+          “这样很好。”
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           SMALL DETAIL
+      ========================= -->
+
+      <section class="small-detail">
+
+        <div class="small-detail-label">
+          A Small Detail I Love
+        </div>
+
+        <h2>
+          藏在使用里的细节
+        </h2>
+
+        <p>
+          我喜欢 SyuRo 很少把“设计感”放得太大。
+        </p>
+
+        <p>
+          你不会第一眼就觉得：
+          “这是一个很有设计的东西。”
+        </p>
+
+        <p>
+          可是拿起来以后，
+          你会慢慢发现一些小地方。
+        </p>
+
+        <p>
+          一个边缘。
+          一个开合的方式。
+          一种触感。
+          一个刚刚好的尺寸。
+        </p>
+
+        <p>
+          它们没有特别抢眼。
+          甚至很容易被忽略。
+        </p>
+
+        <p>
+          可是用了几次以后，
+          你会发现：
+          原来这里是这样设计的。
+        </p>
+
+        <p>
+          我喜欢这种藏在使用里的细节。
+        </p>
+
+        <p>
+          不需要被看见，
+          却确实在那里。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           A FEW THINGS I NOTICED
+      ========================= -->
+
+      <section class="attention">
+
+        <div class="attention-label">
+          A Few Things I Noticed
+        </div>
+
+        <h2>
+          让我记住 SyuRo 的几个细节
+        </h2>
+
+        <ul class="attention-list">
+
+          <li>
+            1999 年开始，SyuRo 最初是一家设计公司。
+          </li>
+
+          <li>
+            从产品设计延伸到空间、品牌、室内与造型等不同领域。
+          </li>
+
+          <li>
+            产品横跨金属、纸、布、陶器、木材等多种材料。
+          </li>
+
+          <li>
+            与日本传统工艺、工匠技术以及不同制造者合作。
+          </li>
+
+          <li>
+            不只是重新设计物品，也尝试让传统技术进入现代生活。
+          </li>
+
+          <li>
+            很重视材料本身的质感，以及人与物之间的关系。
+          </li>
+
+          <li>
+            位于东京鸟越的 SyuRo 店铺，同时也是工作室与展示空间。
+          </li>
+
+          <li>
+            将“发现看不见的价值”作为自己对设计的理解。
+          </li>
+
+          <li>
+            而我最喜欢的一点是：
+            它没有把“生活用品”当成低于“设计品”的东西。
+          </li>
+
+        </ul>
+
+      </section>
+
+
+      <!-- =========================
+           SIGNATURE PIECE
+      ========================= -->
+
+      <section class="signature-piece">
+
+        <div class="signature-label">
+          Signature Piece
+        </div>
+
+        <h2>
+          Tin Box
+        </h2>
+
+
+        <div class="article-image-wrap">
+
+          <img
+            class="article-image"
+            src="images/no010-07.jpg"
+            alt="SyuRo Tin Box"
+          >
+
+          <div class="image-caption">
+            SyuRo Tin Box
+            <span>A box that quietly belongs to everyday life.</span>
+          </div>
+
+        </div>
+
+
+        <p class="signature-intro">
+          A box that quietly belongs to everyday life.
+        </p>
+
+        <p>
+          一个盒子而已。
+        </p>
+
+        <p>
+          可是我很喜欢它的简单。
+        </p>
+
+        <p>
+          它没有试图把“收纳”变成一件复杂的事情。
+          只是让桌面上的一些小东西，
+          有了一个可以回去的地方。
+        </p>
+
+        <p>
+          钉子。纽扣。胶带。纸片。小工具。
+        </p>
+
+        <p>
+          甚至咖啡豆、茶叶或调味料。
+        </p>
+
+        <p>
+          什么都可以。
+        </p>
+
+        <p>
+          SyuRo 找到的是东京下町传统的制罐工艺，
+          再把它变成了一件可以进入日常的东西。
+        </p>
+
+        <p>
+          黄铜、铜和马口铁，
+          刚开始都有各自鲜明的颜色。
+          随着时间过去，它们会慢慢发生变化。
+        </p>
+
+        <p>
+          盒子的形状却一直保持简单。
+        </p>
+
+        <p>
+          没有多余的装饰，
+          也没有规定它应该放什么。
+        </p>
+
+        <p>
+          最后，你甚至不会特别注意这个盒子。
+          因为你已经习惯了，
+          它一直在那里。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           ARCHIVE INFORMATION
+      ========================= -->
+
+      <section class="archive-info">
+
+        <div class="archive-info-label">
+          Archive Information
+        </div>
+
+        <h2>
+          SyuRo
+        </h2>
+
+
+        <div class="info-row">
+          <span>Country</span>
+          <span>Japan</span>
+        </div>
+
+        <div class="info-row">
+          <span>Location</span>
+          <span>Torigoe, Taito, Tokyo</span>
+        </div>
+
+        <div class="info-row">
+          <span>Established</span>
+          <span>1999</span>
+        </div>
+
+        <div class="info-row">
+          <span>Category</span>
+          <span>Lifestyle &amp; Design</span>
+        </div>
+
+        <div class="info-row">
+          <span>Materials</span>
+          <span>Metal · Paper · Fabric · Ceramic · Wood</span>
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           WHO IT'S FOR
+      ========================= -->
+
+      <section class="who">
+
+        <div class="who-label">
+          Who It's For
+        </div>
+
+        <h2>
+          This archive might be for you if…
+        </h2>
+
+        <ul class="who-list">
+
+          <li>
+            如果你喜欢那些不会急着吸引你的东西。
+          </li>
+
+          <li>
+            如果你喜欢木头、纸、金属这些自然的触感。
+          </li>
+
+          <li>
+            如果你觉得一个好用的盒子，本身就值得被认真设计。
+          </li>
+
+          <li>
+            如果你喜欢那些用了很久以后，
+            才发现自己已经离不开的东西。
+          </li>
+
+          <li>
+            如果你喜欢安静、不张扬，
+            却会慢慢融入生活的设计。
+          </li>
+
+        </ul>
+
+      </section>
+
+
+      <!-- =========================
+           SOFT ARCHIVE NOTE
+      ========================= -->
+
+      <section class="final-note">
+
+        <div class="final-note-label">
+          Soft Archive Note
+        </div>
+
+        <p>
+          值得收藏的，
+          不一定是最特别的东西。
+
+          <br><br>
+
+          有时候，
+          只是那些让普通日子变得更有温度的东西。
+
+          <br><br>
+
+          然后继续过完，
+          很普通的一天。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           SOURCES
+      ========================= -->
+
+      <section class="sources">
+
+        <div class="sources-label">
+          Sources
+        </div>
+
+        <h2>
+          Where this archive comes from
+        </h2>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            Official Website
+          </div>
+
+          <a
+            class="source-link"
+            href="https://syuro.co.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            syuro.co.jp →
+          </a>
+
+          <a
+            class="source-link"
+            href="https://syuro.shop/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            syuro.shop →
+          </a>
+
+        </div>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            Instagram
+          </div>
+
+          <a
+            class="source-link"
+            href="https://www.instagram.com/syuro_tokyo/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @syuro_tokyo →
+          </a>
+
+        </div>
+
+
+        <div class="source-note">
+          Information in this collection is based primarily on SyuRo's
+          official website, official online store, and official social media.
+          Soft Archive's reflections and interpretations are written separately
+          as editorial observations.
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           CONTINUE EXPLORING
+      ========================= -->
+
+      <section class="continue">
+
+        <div class="continue-label">
+          Continue Exploring
+        </div>
+
+        <h2>
+          More quiet things worth keeping.
+        </h2>
+
+        <p class="continue-text">
+          Return to the archive and discover another ordinary thing,
+          another small detail, another story.
+        </p>
+
+        <a
+          class="archive-link"
+          href="index.html"
+        >
+          Explore the Archive →
+        </a>
+
+      </section>
+
+
+    </article>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <div>
+      © Soft Archive
     </div>
 
-  </section>
-
-</main>
-
-
-
-<!-- ARCHIVE INFORMATION -->
-
-<section class="archive-info">
-
-  <div class="section-number">
-    ARCHIVE INFORMATION
-  </div>
-
-  <h2>
-    SyuRo
-  </h2>
-
-  <div class="info-grid">
-
-    <div class="info-row">
-      <div class="info-label">Country</div>
-      <div>Japan</div>
+    <div>
+      A collection of quiet things worth keeping.
     </div>
 
-    <div class="info-row">
-      <div class="info-label">Location</div>
-      <div>Torigoe, Taito, Tokyo</div>
-    </div>
-
-    <div class="info-row">
-      <div class="info-label">Established</div>
-      <div>1999</div>
-    </div>
-
-    <div class="info-row">
-      <div class="info-label">Category</div>
-      <div>Lifestyle & Design</div>
-    </div>
-
-    <div class="info-row">
-      <div class="info-label">Materials</div>
-      <div>Metal · Paper · Fabric · Ceramic · Wood</div>
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- WHO IT'S FOR -->
-
-<section class="who">
-
-  <div class="section-number">
-    WHO IT'S FOR
-  </div>
-
-  <h2>
-    This archive might be for you if…
-  </h2>
-
-  <div class="who-list">
-
-    <div class="who-item">
-  喜欢生活杂货的人
-</div>
-
-<div class="who-item">
-  喜欢自然材质和触感的人
-</div>
-
-<div class="who-item">
-  喜欢简单、实用设计的人
-</div>
-
-<div class="who-item">
-  对手工与制造过程感兴趣的人
-</div>
-
-<div class="who-item">
-  喜欢安静、不张扬设计的人
-</div>
-
-<div class="who-item">
-  喜欢那些用了以后才慢慢发现细节的人
-</div>
-
-  </div>
-
-</section>
-
-
-
-<!-- FINAL NOTE -->
-
-<section class="final-note">
-
-  <div class="final-note-label">
-    Soft Archive Note
-  </div>
-
-  <p>
-    我们每天都会使用很多东西。
-    有些东西很漂亮。
-    有些东西很好用。
-    还有一些东西，
-    你甚至不会特别注意。
-  </p>
-
-  <br><br>
-
-  <p>
-    可是某一天，
-    当它不在的时候，
-    你才发现：
-  </p>
-
-  <br>
-
-  <p>
-    <strong>
-      原来自己已经习惯了它。
-    </strong>
-  </p>
-
-  <br><br>
-
-  <p>
-    也许真正好的设计，
-    从来不是让我们一直注意它。
-  </p>
-
-  <br>
-
-  <p>
-    而是让我们在不知不觉之间，
-    少一点麻烦，
-    多一点舒服。
-  </p>
-
-  <br>
-
-  <p>
-    然后继续过完，
-    很普通的一天。
-  </p>
-
-</section>
-
-
-
-<!-- NEXT ARCHIVE -->
-
-<section class="next">
-
-  <a href="index.html">
-
-    <div class="next-label">
-      ← BACK TO ARCHIVE
-    </div>
-
-    <div class="next-title">
-      All Collections
-    </div>
-
-  </a>
-
-
-  <a href="index.html">
-
-    <div class="next-label">
-      NEXT
-    </div>
-
-    <div class="next-title">
-      Collection No.009 →
-    </div>
-
-  </a>
-
-</section>
-
-
-
-<!-- FOOTER -->
-
-<footer>
-
-  <div>
-    SOFT ARCHIVE
-  </div>
-
-  <div>
-    A QUIET COLLECTION OF EVERYDAY THINGS
-  </div>
-
-</footer>
+  </footer>
 
 
 </body>
