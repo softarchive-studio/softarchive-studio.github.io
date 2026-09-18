@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CLASSIKY：为什么有些东西，用起来以后才真正变得好看？ — Soft Archive</title>
+
+  <meta
+    name="description"
+    content="Soft Archive Collection No.009 — Classiky：关于日常用品、传统工艺，以及那些使用以后才真正属于我们的东西。"
+  >
+
+  <style>
+
+    /* =========================
+       Base
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f4ee;
+      color: #35322e;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+
+    /* =========================
+       Header
+    ========================= */
+
+    header {
+      width: 100%;
+      padding: 28px 6vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dedad2;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      letter-spacing: 0.04em;
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+      font-size: 13px;
+      color: #777169;
+    }
+
+    nav a:hover {
+      color: #35322e;
+    }
+
+
+    /* =========================
+       Article Hero
+    ========================= */
+
+    .article-hero {
+      padding: 105px 6vw 70px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .collection-number {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8a847c;
+      margin-bottom: 28px;
+    }
+
+    .article-hero h1 {
+      max-width: 900px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 5vw, 64px);
+      font-weight: normal;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .article-meta {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #777169;
+      letter-spacing: 0.04em;
+    }
+
+
+    /* =========================
+       Cover
+    ========================= */
+
+    .cover {
+      width: 88%;
+      max-width: 1300px;
+      margin: 0 auto 110px;
+    }
+
+    .cover img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+    /* =========================
+       Article
+    ========================= */
+
+    .article {
+      width: min(760px, 88%);
+      margin: 0 auto;
+    }
+
+    .intro {
+      font-size: 18px;
+      line-height: 2;
+      margin-bottom: 100px;
+    }
+
+    .article-section {
+      margin-bottom: 105px;
+    }
+
+    .section-number {
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #8a847c;
+      margin-bottom: 14px;
+    }
+
+    .article h2 {
+      margin: 0 0 34px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      font-weight: normal;
+      line-height: 1.35;
+    }
+
+    .article p {
+      margin: 0 0 24px;
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    .article strong {
+      font-weight: 600;
+    }
+
+
+    /* =========================
+       Article Images
+    ========================= */
+
+    .article-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 50px 0 24px;
+    }
+
+    .image-caption {
+      margin: -8px 0 40px;
+      font-size: 12px;
+      line-height: 1.7;
+      color: #8a847c;
+    }
+
+
+    /* =========================
+       Pull Quote
+    ========================= */
+
+    .pull-quote {
+      margin: 65px 0;
+      padding: 10px 0 10px 28px;
+      border-left: 1px solid #bdb7ae;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 23px;
+      line-height: 1.7;
+      color: #46413b;
+    }
+
+
+    /* =========================
+       Editorial Blocks
+    ========================= */
+
+    .editorial-block {
+      margin: 120px 0;
+    }
+
+    .editorial-label {
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #8a847c;
+      margin-bottom: 18px;
+    }
+
+    .editorial-block h2 {
+      margin-bottom: 32px;
+    }
+
+    .editorial-block p {
+      font-size: 16px;
+      line-height: 2;
+    }
+
+
+    /* =========================
+       Soft Archive Note
+    ========================= */
+
+    .note {
+      margin: 120px 0;
+      padding: 55px 0;
+      border-top: 1px solid #dedad2;
+      border-bottom: 1px solid #dedad2;
+    }
+
+    .note-label {
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #8a847c;
+      margin-bottom: 25px;
+    }
+
+    .note-text {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      line-height: 1.8;
+    }
+
+
+    /* =========================
+       Things I Noticed
+    ========================= */
+
+    .things {
+      margin: 120px 0;
+    }
+
+    .things ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .things li {
+      padding: 16px 0;
+      border-bottom: 1px solid #dedad2;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .things li:first-child {
+      border-top: 1px solid #dedad2;
+    }
+
+
+    /* =========================
+       Signature Piece
+    ========================= */
+
+    .signature {
+      margin: 120px 0;
+    }
+
+    .signature-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      line-height: 1.35;
+      margin-bottom: 30px;
+    }
+
+    .signature-subtitle {
+      font-size: 13px;
+      color: #777169;
+      margin-bottom: 35px;
+    }
+
+
+    /* =========================
+       Archive Information
+    ========================= */
+
+    .archive-info {
+      margin: 120px 0;
+      padding-top: 40px;
+      border-top: 1px solid #dedad2;
+    }
+
+    .archive-info-label {
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #8a847c;
+      margin-bottom: 18px;
+    }
+
+    .archive-info h2 {
+      margin-bottom: 35px;
+    }
+
+    .info-row {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 20px;
+      padding: 15px 0;
+      border-bottom: 1px solid #dedad2;
+      font-size: 14px;
+    }
+
+    .info-row span:first-child {
+      color: #8a847c;
+    }
+
+
+    /* =========================
+       Who It's For
+    ========================= */
+
+    .who {
+      margin: 120px 0;
+    }
+
+    .who-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .who-list li {
+      padding: 17px 0;
+      border-bottom: 1px solid #dedad2;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .who-list li:first-child {
+      border-top: 1px solid #dedad2;
+    }
+
+
+    /* =========================
+       Sources
+    ========================= */
+
+    .sources {
+      margin: 120px 0;
+      padding-top: 40px;
+      border-top: 1px solid #dedad2;
+    }
+
+    .sources-label {
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #8a847c;
+      margin-bottom: 18px;
+    }
+
+    .sources h2 {
+      margin-bottom: 45px;
+    }
+
+    .source-group {
+      margin-bottom: 35px;
+    }
+
+    .source-group-title {
+      font-size: 13px;
+      color: #777169;
+      margin-bottom: 12px;
+    }
+
+    .source-link {
+      display: block;
+      width: fit-content;
+      margin-bottom: 8px;
+      font-size: 14px;
+      border-bottom: 1px solid #bdb7ae;
+      transition: opacity 0.2s ease;
+    }
+
+    .source-link:hover {
+      opacity: 0.6;
+    }
+
+    .source-note {
+      margin-top: 40px;
+      font-size: 12px;
+      line-height: 1.8;
+      color: #8a847c;
+    }
+
+
+    /* =========================
+       Continue Exploring
+    ========================= */
+
+    .continue {
+      margin: 130px 0 100px;
+      padding: 55px 0;
+      border-top: 1px solid #dedad2;
+      border-bottom: 1px solid #dedad2;
+    }
+
+    .continue-label {
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #8a847c;
+      margin-bottom: 18px;
+    }
+
+    .continue h2 {
+      margin-bottom: 25px;
+    }
+
+    .continue p {
+      font-size: 15px;
+      color: #777169;
+      margin-bottom: 30px;
+    }
+
+    .continue-link {
+      display: inline-block;
+      font-size: 14px;
+      border-bottom: 1px solid #35322e;
+      padding-bottom: 4px;
+    }
+
+
+    /* =========================
+       Footer
+    ========================= */
+
+    footer {
+      padding: 50px 6vw 60px;
+      border-top: 1px solid #dedad2;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      color: #8a847c;
+      font-size: 12px;
+    }
+
+    footer .footer-title {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #35322e;
+      font-size: 15px;
+    }
+
+
+    /* =========================
+       Mobile
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 22px 6vw;
+      }
+
+      nav {
+        gap: 15px;
+        font-size: 12px;
+      }
+
+      .article-hero {
+        padding: 75px 6vw 55px;
+      }
+
+      .article-hero h1 {
+        font-size: clamp(36px, 11vw, 52px);
+        line-height: 1.22;
+      }
+
+      .article-meta {
+        margin-top: 22px;
+        line-height: 1.7;
+      }
+
+      .cover {
+        width: 88%;
+        margin-bottom: 75px;
+      }
+
+      .article {
+        width: 88%;
+      }
+
+      .intro {
+        font-size: 16px;
+        margin-bottom: 75px;
+      }
+
+      .article-section {
+        margin-bottom: 80px;
+      }
+
+      .article h2,
+      .signature-title {
+        font-size: 29px;
+      }
+
+      .article p {
+        font-size: 15px;
+        line-height: 1.95;
+      }
+
+      .pull-quote {
+        margin: 45px 0;
+        padding-left: 20px;
+        font-size: 20px;
+      }
+
+      .editorial-block,
+      .things,
+      .signature,
+      .archive-info,
+      .who,
+      .sources {
+        margin-top: 90px;
+        margin-bottom: 90px;
+      }
+
+      .note {
+        margin: 90px 0;
+        padding: 40px 0;
+      }
+
+      .note-text {
+        font-size: 19px;
+      }
+
+      .info-row {
+        grid-template-columns: 110px 1fr;
+        gap: 12px;
+        font-size: 13px;
+      }
+
+      .continue {
+        margin: 100px 0 75px;
+      }
+
+      footer {
+        flex-direction: column;
+        padding-top: 40px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       Header
+  ========================= -->
+
+  <header>
+
+    <a href="index.html" class="logo">
+      Soft Archive
+    </a>
+
+    <nav>
+      <a href="index.html">Archive</a>
+      <a href="index.html#about">About</a>
+    </nav>
+
+  </header>
+
+
+
+  <!-- =========================
+       Hero
+  ========================= -->
+
+  <main>
+
+    <section class="article-hero">
+
+      <div class="collection-number">
+        Collection No.009
+      </div>
+
+      <h1>
+        CLASSIKY：为什么有些东西，<br>
+        用起来以后才真正变得好看？
+      </h1>
+
+      <div class="article-meta">
+        5 min read · Everyday Craft
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         Cover Image
+    ========================= -->
+
+    <section class="cover">
+
+      <img
+        src="images/no009-cover.jpg"
+        alt="Soft Archive Collection No.009 — Classiky"
+      >
+
+    </section>
+
+
+
+    <!-- =========================
+         Article
+    ========================= -->
+
+    <article class="article">
+
+
+      <!-- Intro -->
+
+      <div class="intro">
+
+        <p>
+          我们总是会喜欢新的东西。
+        </p>
+
+        <p>
+          新的杯子。
+          <br>
+          新的餐具。
+          <br>
+          新的笔记本。
+          <br>
+          新的布袋。
+        </p>
+
+        <p>
+          刚买回来的时候，
+          <br>
+          它们干净、完整，
+          <br>
+          没有任何痕迹。
+        </p>
+
+        <p>
+          可是有些东西很奇怪。
+          <br>
+          用久以后，反而越来越喜欢。
+        </p>
+
+        <p>
+          布料变柔软了。
+          <br>
+          木头的颜色变深了一点。
+          <br>
+          杯子留下了细小的使用痕迹。
+          <br>
+          纸张也因为被翻过很多次，而有了自己的样子。
+        </p>
+
+        <p>
+          它们不再像刚买回来时那么“完美”，
+          <br>
+          却开始慢慢变成
+          <strong>生活里真正属于自己的东西。</strong>
+        </p>
+
+        <p>
+          Classiky 是来自日本冈山县仓敷的生活杂货品牌，
+          长期与日本各地的作家、设计师、工匠和制造者合作，
+          制作纸品、陶瓷、木制品、布艺以及各种日常用品。
+        </p>
+
+        <p>
+          我喜欢它的原因，
+          <br>
+          是它从来没有把“日用品”做成只能远远欣赏的东西。
+        </p>
+
+        <p>
+          它们本来就应该被拿起来。
+          <br>
+          被使用。
+          <br>
+          被留下痕迹。
+        </p>
+
+        <p>
+          然后慢慢变成
+          <strong>属于你的东西。</strong>
+        </p>
+
+      </div>
+
+
+
+      <!-- =========================
+           Section 01
+      ========================= -->
+
+      <section class="article-section">
+
+        <div class="section-number">
+          01 · The Brand
+        </div>
+
+        <h2>
+          The Beauty of Everyday Things
+        </h2>
+
+        <img
+          class="article-image"
+          src="images/no009-01.jpg"
+          alt="Classiky everyday life and lifestyle objects"
+        >
+
+        <div class="image-caption">
+          Classiky — everyday objects made to be used and lived with.
+        </div>
+
+        <p>
+          Classiky 最吸引我的，
+          <br>
+          并不是某一个特别漂亮的产品。
+        </p>
+
+        <p>
+          而是它对“普通东西”的看法。
+        </p>
+
+        <p>
+          一个盘子，可以只是盘子。
+          <br>
+          一块布，可以只是布。
+          <br>
+          一张办公用纸，也可以只是办公用纸。
+        </p>
+
+        <p>
+          但如果有人愿意重新想一遍：
+        </p>
+
+        <div class="pull-quote">
+          “如果它每天都会被使用，
+          <br>
+          我希望它是什么样子？”
+        </div>
+
+        <p>
+          事情就开始变得有趣。
+        </p>
+
+        <p>
+          Classiky 曾经重新设计过一些原本非常普通的办公用品，
+          例如发票纸、收据纸之类的东西。
+        </p>
+
+        <p>
+          它们原本只是工作中随手使用的消耗品，
+          <br>
+          却被加入了简单、复古的设计。
+        </p>
+
+        <p>
+          不是为了让它们变得奢华。
+          <br>
+          只是因为
+          <strong>普通的东西，也可以是自己真正喜欢的东西。</strong>
+        </p>
+
+        <p>
+          这其实很符合 Classiky 的气质。
+        </p>
+
+        <p>
+          它没有刻意把日常生活变得精致。
+          <br>
+          只是让那些我们每天都会碰到的小东西，
+          <br>
+          多了一点值得喜欢的理由。
+        </p>
+
+      </section>
+
+
+
+      <!-- =========================
+           Section 02
+      ========================= -->
+
+      <section class="article-section">
+
+        <div class="section-number">
+          02 · Made for Everyday Life
+        </div>
+
+        <h2>
+          Things Made for Everyday Life
+        </h2>
+
+        <img
+          class="article-image"
+          src="images/no009-02.jpg"
+          alt="Classiky everyday stationery and household objects"
+        >
+
+        <div class="image-caption">
+          Things made to be used, not simply kept on a shelf.
+        </div>
+
+        <p>
+          漂亮的东西，
+          <br>
+          有时候反而最容易让人舍不得用。
+        </p>
+
+        <p>
+          一只喜欢的杯子，放在柜子里。
+          <br>
+          一本漂亮的笔记本，一直舍不得写。
+          <br>
+          一块好看的布，怕弄脏，所以很少拿出来。
+        </p>
+
+        <p>
+          最后，它们一直保持着刚买回来的样子。
+        </p>
+
+        <p>
+          但 Classiky 给我的感觉不太一样。
+        </p>
+
+        <p>
+          它做的东西，很自然地属于日常。
+        </p>
+
+        <p>
+          吃饭的时候使用一个盘子。
+          <br>
+          在桌上打开一个收纳盒。
+          <br>
+          拿一张纸写下东西。
+          <br>
+          带着布袋出门。
+        </p>
+
+        <p>
+          每天重复这些很普通的动作。
+          <br>
+          东西也就在这些使用里，
+          <br>
+          慢慢留下属于自己的痕迹。
+        </p>
+
+        <div class="pull-quote">
+          它的价值，
+          <br>
+          不需要停留在“刚买回来”的那一天。
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           Section 03
+      ========================= -->
+
+      <section class="article-section">
+
+        <div class="section-number">
+          03 · Everyday Things
+        </div>
+
+        <h2>
+          The Beauty of Ordinary Things
+        </h2>
+
+        <img
+          class="article-image"
+          src="images/no009-03.jpg"
+          alt="Classiky designed everyday office stationery"
+        >
+
+        <div class="image-caption">
+          Ordinary stationery can also become something worth using every day.
+        </div>
+
+        <p>
+          Classiky 对“普通”的理解，
+          <br>
+          让我觉得很有意思。
+        </p>
+
+        <p>
+          它并不因为一个东西太普通，
+          <br>
+          就认为它没有设计的价值。
+        </p>
+
+        <p>
+          相反，
+          <br>
+          它会从那些已经存在的东西里，
+          <br>
+          重新寻找值得留下来的部分。
+        </p>
+
+        <p>
+          例如一些办公用品。
+          <br>
+          发票纸。
+          <br>
+          收据纸。
+          <br>
+          这些本来只是工作中每天都会出现的东西。
+        </p>
+
+        <p>
+          Classiky 的创始人田边先生在采访中提到，
+          <br>
+          他当时觉得普通的办公用品太无聊，
+          <br>
+          所以重新设计了这些每天都会使用的纸品，
+          <br>
+          加入简单、复古、带有温度的设计。
+        </p>
+
+        <p>
+          我很喜欢这个想法。
+        </p>
+
+        <p>
+          因为它不是在寻找一个“特别的东西”。
+          <br>
+          而是在问：
+          <br>
+          <strong>
+            如果这个东西每天都会出现在生活里，
+            它有没有可能成为自己真正喜欢的东西？
+          </strong>
+        </p>
+
+      </section>
+
+
+
+      <!-- =========================
+           Section 04
+      ========================= -->
+
+      <section class="article-section">
+
+        <div class="section-number">
+          04 · Made by Hand
+        </div>
+
+        <h2>
+          Made by Hand, Not Made Perfect
+        </h2>
+
+        <img
+          class="article-image"
+          src="images/no009-04.jpg"
+          alt="Classiky Kata Kata animal ceramic plate"
+        >
+
+        <div class="image-caption">
+          Kata Kata animal plate — traditional printing techniques leave subtle differences on each piece.
+        </div>
+
+        <p>
+          Classiky 有些产品最有意思的地方，
+          <br>
+          反而是它们并不完全一样。
+        </p>
+
+        <p>
+          颜色可能有一点不同。
+          <br>
+          印刷的位置可能有一点变化。
+          <br>
+          表面可能留下制作过程中的痕迹。
+        </p>
+
+        <p>
+          如果用工业生产的标准来看，
+          <br>
+          这些都可能被认为是不够“完美”。
+        </p>
+
+        <p>
+          但 Classiky 并不急着消除这些差异。
+          <br>
+          它们本身就是制作的一部分。
+        </p>
+
+        <p>
+          我特别喜欢一个例子：
+        </p>
+
+        <div class="pull-quote">
+          Kata Kata 的动物图案陶瓷盘。
+        </div>
+
+        <p>
+          盘子上的图案并不是直接用现代机器整齐地印上去。
+        </p>
+
+        <p>
+          它采用了一种历史可以追溯到江户时代的传统印刷方式。
+        </p>
+
+        <p>
+          图案先被刻在印版上，
+          <br>
+          再转印到薄薄的和纸，
+          <br>
+          之后才被转移到陶瓷盘上。
+        </p>
+
+        <p>
+          因为陶瓷表面并不是完全平整的，
+          <br>
+          和纸无法百分之百贴合。
+        </p>
+
+        <p>
+          所以最后留下的颜色深浅、
+          <br>
+          细小皱褶和不规则，
+          <br>
+          每一只盘子都会有一点不同。
+        </p>
+
+        <p>
+          这种差异并不是后来才出现的瑕疵。
+        </p>
+
+        <p>
+          <strong>
+            它从制作的那一刻，就已经存在。
+          </strong>
+        </p>
+
+      </section>
+
+
+
+      <!-- =========================
+           Section 05
+      ========================= -->
+
+      <section class="article-section">
+
+        <div class="section-number">
+          05 · Keeping Old Techniques Alive
+        </div>
+
+        <h2>
+          Keeping Old Techniques Alive
+        </h2>
+
+        <img
+          class="article-image"
+          src="images/no009-05.jpg"
+          alt="Traditional craft and making process behind Classiky products"
+        >
+
+        <div class="image-caption">
+          Traditional techniques continue through objects made for everyday life.
+        </div>
+
+        <p>
+          更让我喜欢的是，
+          <br>
+          Classiky 并不是为了“看起来很传统”，
+          <br>
+          才使用这些方法。
+        </p>
+
+        <p>
+          创始人田边先生在采访中提到，
+          <br>
+          有些传统手工技艺正在逐渐消失。
+        </p>
+
+        <p>
+          机器生产更快。
+          <br>
+          成本也可能更低。
+        </p>
+
+        <p>
+          如果只追求效率，
+          <br>
+          很多传统制作方式自然很难继续存在。
+        </p>
+
+        <p>
+          所以有时候，
+          <br>
+          他会刻意选择这些已经逐渐消失的传统工艺来制作产品。
+        </p>
+
+        <p>
+          这让我觉得很有意思。
+        </p>
+
+        <p>
+          因为一个看起来很简单的盘子，
+          <br>
+          其实可能不只是一个盘子。
+        </p>
+
+        <p>
+          它背后还有一种正在慢慢消失的制作方式。
+        </p>
+
+        <p>
+          一块纸。
+          <br>
+          一层颜料。
+          <br>
+          一次转印。
+          <br>
+          一个人的手。
+        </p>
+
+        <p>
+          最后才成为我们手里看到的东西。
+        </p>
+
+        <div class="pull-quote">
+          Classiky 保存的，
+          <br>
+          不只是一个物件。
+          <br><br>
+          有时候，也是制作这个物件的方法。
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           Section 06
+      ========================= -->
+
+      <section class="article-section">
+
+        <div class="section-number">
+          06 · Better With Time
+        </div>
+
+        <h2>
+          Better With Time
+        </h2>
+
+        <img
+          class="article-image"
+          src="images/no009-06.jpg"
+          alt="Classiky objects becoming part of everyday life"
+        >
+
+        <div class="image-caption">
+          Objects can slowly change as they become part of everyday life.
+        </div>
+
+        <p>
+          当然，并不是所有 Classiky 的东西，
+          <br>
+          都会因为时间而发生明显变化。
+        </p>
+
+        <p>
+          但我喜欢它所传达出的那种感觉：
+        </p>
+
+        <div class="pull-quote">
+          东西不需要永远保持全新。
+        </div>
+
+        <p>
+          一块布，用久以后会变得柔软。
+          <br>
+          木头被反复触摸，会慢慢产生自己的光泽。
+          <br>
+          一个每天使用的杯子，也会和某些早晨联系在一起。
+        </p>
+
+        <p>
+          东西本身没有记忆。
+        </p>
+
+        <p>
+          <strong>
+            是我们不断使用它，
+            <br>
+            才让它拥有了记忆。
+          </strong>
+        </p>
+
+        <p>
+          所以“旧”并不一定意味着需要被替换。
+        </p>
+
+        <p>
+          有时候，
+          <br>
+          旧只是意味着：
+        </p>
+
+        <div class="pull-quote">
+          它已经陪你生活了一段时间。
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           Relationship
+      ========================= -->
+
+      <section class="article-section">
+
+        <div class="section-number">
+          07 · Relationship
+        </div>
+
+        <h2>
+          When an Object Becomes Part of Life
+        </h2>
+
+        <p>
+          一个东西的故事，
+          <br>
+          也许不是从买下它的那一天开始。
+        </p>
+
+        <p>
+          而是从你真正开始使用它以后。
+        </p>
+
+        <p>
+          第一次用那个杯子喝咖啡。
+          <br>
+          第一次把钥匙放进那个收纳盒。
+          <br>
+          第一次带着那只布袋出门。
+          <br>
+          第一次在那张纸上写下一句话。
+        </p>
+
+        <p>
+          这些事情都很普通。
+          <br>
+          甚至普通到我们不会特别记住。
+        </p>
+
+        <p>
+          可是过了一段时间以后，
+          <br>
+          我们可能会突然发现：
+        </p>
+
+        <div class="pull-quote">
+          “原来这个东西已经陪我这么久了。”
+        </div>
+
+        <p>
+          这时候，它的意义已经和刚买回来时不一样了。
+        </p>
+
+        <p>
+          它不再只是 Classiky 的一个产品。
+          <br>
+          而是
+          <strong>你生活里的某个东西。</strong>
+        </p>
+
+      </section>
+
+
+
+      <!-- =========================
+           Why Soft Archive Collects It
+      ========================= -->
+
+      <section class="editorial-block">
+
+        <div class="editorial-label">
+          Why Soft Archive Collects It
+        </div>
+
+        <h2>
+          为什么 Soft Archive 想留下 Classiky？
+        </h2>
+
+        <div class="pull-quote">
+
+          有些东西刚买回来的时候，
+          <br>
+          只是一个漂亮的物品。
+          <br><br>
+
+          真正让它变得特别的，
+          <br>
+          反而是之后那些很普通的日子。
+          <br><br>
+
+          被拿起来。
+          <br>
+          被使用。
+          <br>
+          被触碰。
+          <br>
+          留下一点痕迹。
+          <br><br>
+
+          然后继续陪着你。
+          <br><br>
+
+          <strong>
+            也许一件东西真正属于自己的时候，
+            <br>
+            不是它还保持全新的时候，
+            <br>
+            而是它已经慢慢融进生活以后。
+          </strong>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           Small Detail
+      ========================= -->
+
+      <section class="editorial-block">
+
+        <div class="editorial-label">
+          A Small Detail I Love
+        </div>
+
+        <h2>
+          我喜欢的一个小细节
+        </h2>
+
+        <div class="pull-quote">
+
+          我很喜欢 Classiky 对“不规则”的态度。
+          <br><br>
+
+          有些手工制品的颜色不会完全一样，
+          <br>
+          印刷也可能留下细小的变化。
+          <br><br>
+
+          它没有急着把这些差异隐藏起来，
+          <br>
+          反而让它们成为作品的一部分。
+          <br><br>
+
+          我觉得这很特别。
+          <br><br>
+
+          因为我们平常总是在追求整齐、准确和完美。
+          <br>
+          但有时候，
+          <br>
+          <strong>
+            一点点不一样，
+            <br>
+            反而让东西有了自己的性格。
+          </strong>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           Things I Noticed
+      ========================= -->
+
+      <section class="things">
+
+        <div class="editorial-label">
+          A Few Things I Noticed
+        </div>
+
+        <h2>
+          让我记住 Classiky 的几个细节
+        </h2>
+
+        <ul>
+
+          <li>
+            Classiky 不只做 stationery，也制作陶瓷、布艺、木制品和各种生活杂货。
+          </li>
+
+          <li>
+            它会与不同的作家、设计师、工匠及制造者合作。
+          </li>
+
+          <li>
+            一些产品会保留传统制作方式产生的细小差异。
+          </li>
+
+          <li>
+            Kata Kata 系列陶瓷盘使用具有历史的传统转印工艺，因此每件作品都会有些微不同。
+          </li>
+
+          <li>
+            品牌并不总是选择最快的生产方式，也会让一些传统制作方法继续出现在日常用品里。
+          </li>
+
+          <li>
+            我也很喜欢它重新设计普通办公用品的做法——不是因为它们特别，而是因为它们每天都会被使用。
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+      <!-- =========================
+           Signature Piece
+      ========================= -->
+
+      <section class="signature">
+
+        <div class="editorial-label">
+          Signature Piece
+        </div>
+
+        <div class="signature-title">
+          Kata Kata Plate
+        </div>
+
+        <div class="signature-subtitle">
+          A handmade object where traditional technique becomes part of everyday life.
+        </div>
+
+        <img
+          class="article-image"
+          src="images/no009-07.jpg"
+          alt="Classiky Kata Kata Plate"
+        >
+
+        <div class="image-caption">
+          Kata Kata Plate — subtle irregularities created by the traditional printing process.
+        </div>
+
+        <p>
+          它看起来很简单。
+        </p>
+
+        <p>
+          盘子上是动物图案。
+        </p>
+
+        <p>
+          可是靠近一点看，
+          <br>
+          你会发现颜色并不是完全均匀的。
+        </p>
+
+        <p>
+          有些地方深一点。
+          <br>
+          有些地方浅一点。
+          <br>
+          边缘也可能留下细微的变化。
+        </p>
+
+        <p>
+          这些并不是生产失误，
+          <br>
+          而是传统转印工艺留下的痕迹。
+        </p>
+
+        <p>
+          所以每一只盘子都会有一点点不同。
+        </p>
+
+        <p>
+          我喜欢这种感觉。
+        </p>
+
+        <p>
+          因为它没有把“手工”变成一种很遥远的东西。
+        </p>
+
+        <p>
+          你最后还是会拿它来吃饭。
+          <br>
+          会把它放在桌上。
+          <br>
+          会洗它。
+          <br>
+          会继续使用它。
+        </p>
+
+        <div class="pull-quote">
+
+          <strong>
+            传统工艺最后没有被放进博物馆，
+            <br>
+            而是继续出现在每天的生活里。
+          </strong>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           Archive Information
+      ========================= -->
+
+      <section class="archive-info">
+
+        <div class="archive-info-label">
+          Archive Information
+        </div>
+
+        <h2>
+          Classiky
+        </h2>
+
+        <div class="info-row">
+          <span>Country</span>
+          <span>Japan</span>
+        </div>
+
+        <div class="info-row">
+          <span>Location</span>
+          <span>Kurashiki, Okayama</span>
+        </div>
+
+        <div class="info-row">
+          <span>Established</span>
+          <span>—</span>
+        </div>
+
+        <div class="info-row">
+          <span>Category</span>
+          <span>Lifestyle &amp; Craft</span>
+        </div>
+
+        <div class="info-row">
+          <span>Theme</span>
+          <span>Everyday Craft | 日常手作</span>
+        </div>
+
+        <div class="info-row">
+          <span>Theme Color</span>
+          <span>Warm Ivory</span>
+        </div>
+
+        <div class="info-row">
+          <span>Materials</span>
+          <span>Paper · Ceramic · Wood · Fabric</span>
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           Who It's For
+      ========================= -->
+
+      <section class="who">
+
+        <div class="editorial-label">
+          Who It's For
+        </div>
+
+        <h2>
+          This archive might be for you if…
+        </h2>
+
+        <ul class="who-list">
+
+          <li>
+            如果你喜欢会随着使用慢慢改变的东西。
+          </li>
+
+          <li>
+            如果你喜欢木头、陶器、布料和纸张这些自然材质。
+          </li>
+
+          <li>
+            如果你喜欢手工留下的细小痕迹。
+          </li>
+
+          <li>
+            如果你觉得“不完全一样”也可以是一种美。
+          </li>
+
+          <li>
+            如果你喜欢那些可以陪自己使用很久的东西。
+          </li>
+
+        </ul>
+
+      </section>
+
+
+
+      <!-- =========================
+           Soft Archive Note
+      ========================= -->
+
+      <section class="note">
+
+        <div class="note-label">
+          Soft Archive Note
+        </div>
+
+        <div class="note-text">
+
+          我们总是在寻找新的东西。
+          <br>
+          新的颜色。
+          <br>
+          新的设计。
+          <br>
+          新的物品。
+          <br><br>
+
+          可是有时候，
+          <br>
+          真正值得留下来的，
+          <br>
+          反而是那些愿意陪我们一起变旧的东西。
+          <br><br>
+
+          一个杯子。
+          <br>
+          一块布。
+          <br>
+          一个盘子。
+          <br>
+          一个用了很多年的收纳盒。
+          <br><br>
+
+          它们没有记录什么特别的事情。
+          <br>
+          只是一直在那里。
+          <br><br>
+
+          被我们拿起，
+          <br>
+          被我们使用，
+          <br>
+          陪着我们度过一个又一个普通的日子。
+          <br><br>
+
+          <strong>
+            也许收藏的意义，
+            <br>
+            从来不只是把东西保存下来。
+            <br><br>
+
+            而是让它有机会陪我们生活很久。
+          </strong>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           Sources
+      ========================= -->
+
+      <section class="sources">
+
+        <div class="sources-label">
+          Sources
+        </div>
+
+        <h2>
+          Where this archive comes from
+        </h2>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            Official Website
+          </div>
+
+          <a
+            class="source-link"
+            href="https://products.classiky.co.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            products.classiky.co.jp →
+          </a>
+
+        </div>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            Instagram
+          </div>
+
+          <a
+            class="source-link"
+            href="https://www.instagram.com/classiky/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @classiky →
+          </a>
+
+        </div>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            Interview
+          </div>
+
+          <a
+            class="source-link"
+            href="https://cutethingsfromjapan.com/en-jp/blogs/news/beautiful-story-behind-classiky"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Beautiful Story Behind Classiky →
+          </a>
+
+        </div>
+
+
+        <div class="source-note">
+
+          Information in this collection is based primarily on Classiky's
+          official website and the interview with Classiky founder Shinsuke Tanabe.
+          Soft Archive's reflections and interpretations are written separately
+          as editorial observations.
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =========================
+           Continue Exploring
+      ========================= -->
+
+      <section class="continue">
+
+        <div class="continue-label">
+          Continue Exploring
+        </div>
+
+        <h2>
+          More quiet things worth keeping.
+        </h2>
+
+        <p>
+          Return to the archive and discover another ordinary thing,
+          another small detail, another story.
+        </p>
+
+        <a
+          href="index.html"
+          class="continue-link"
+        >
+          Explore the Archive →
+        </a>
+
+      </section>
+
+
+    </article>
+
+  </main>
+
+
+
+  <!-- =========================
+       Footer
+  ========================= -->
+
+  <footer>
+
+    <div>
+      <div class="footer-title">
+        Soft Archive
+      </div>
+
+      <div>
+        A collection of quiet things worth keeping.
+      </div>
+    </div>
+
+    <div>
+      © Soft Archive
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
