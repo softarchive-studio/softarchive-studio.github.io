@@ -15,282 +15,416 @@
       margin: 0;
       background: #f7f4ee;
       color: #35322e;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.9;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans SC",
+        "PingFang SC",
+        "Microsoft YaHei",
+        sans-serif;
+      line-height: 1.95;
     }
 
-    .page {
+    /* =========================
+       Site Navigation
+    ========================= */
+
+    .site-nav {
       width: 100%;
       max-width: 1100px;
       margin: 0 auto;
-      padding: 60px 28px 100px;
+      padding: 28px 28px 20px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    /* ---------- Cover ---------- */
+    .site-nav a {
+      color: #35322e;
+      text-decoration: none;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      font-size: 13px;
+    }
+
+    .nav-links a {
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.55;
+    }
+
+
+    /* =========================
+       Main
+    ========================= */
+
+    main {
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 55px 28px 100px;
+    }
+
+
+    /* =========================
+       Cover
+    ========================= */
 
     .cover {
       text-align: center;
-      margin-bottom: 90px;
+      margin-bottom: 70px;
     }
 
     .cover img {
-  width: 100%;
-  max-width: 1100px;
-  height: auto;
-  display: block;
-  margin: 0 auto 45px;
-}
+      width: 100%;
+      max-width: 1100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 45px;
+    }
 
     .collection-number {
-      font-size: 13px;
+      margin-bottom: 12px;
+
+      font-size: 12px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: #77716a;
-      margin-bottom: 20px;
     }
 
-    .cover h1 {
+    h1 {
+      margin: 0 auto 14px;
+
+      max-width: 680px;
+
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(32px, 5vw, 58px);
+      font-size: 34px;
+      line-height: 1.45;
       font-weight: 400;
-      line-height: 1.35;
-      margin: 0 auto;
-      max-width: 900px;
+      letter-spacing: 0.01em;
     }
 
     .read-time {
-      margin-top: 22px;
-      font-size: 13px;
+      font-size: 12px;
+      color: #888078;
       letter-spacing: 0.08em;
-      color: #77716a;
     }
 
-    /* ---------- Main Content ---------- */
 
-    .article {
-      max-width: 760px;
-      margin: 0 auto;
+    /* =========================
+       Article
+    ========================= */
+
+    article {
+      font-size: 15px;
     }
 
-    .article p {
-      font-size: 16px;
+    article p {
       margin: 0 0 28px;
     }
 
-    .article strong {
-      font-weight: 600;
+    article strong {
+      font-weight: 500;
     }
 
-    .intro {
-      font-size: 17px;
-      margin-bottom: 75px;
+    section {
+      margin-bottom: 70px;
     }
 
-    .section {
-      margin-top: 90px;
-    }
+    h2 {
+      margin: 0 0 28px;
 
-    .section h2 {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(27px, 4vw, 38px);
+      font-size: 25px;
+      line-height: 1.5;
       font-weight: 400;
-      line-height: 1.35;
-      margin: 0 0 38px;
+    }
+
+    h2::before {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: #b9b1a7;
+      margin-bottom: 18px;
     }
 
     .section-number {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-      letter-spacing: 0.12em;
-      color: #77716a;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
+
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      color: #8b847c;
+      text-transform: uppercase;
     }
 
-    .highlight {
-      font-size: 18px;
-      line-height: 1.9;
-      margin: 35px 0;
-    }
 
-    .quote {
-      margin: 45px 0;
-      padding-left: 28px;
-      border-left: 1px solid #c8c1b7;
-    }
+    /* =========================
+       Images
+    ========================= */
 
-    .quote p {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 18px;
-      line-height: 1.9;
-    }
-
-    /* ---------- Image ---------- */
-
-    .archive-image {
-      margin: 55px 0 70px;
-    }
-
-    .archive-image img {
+    .article-image {
       width: 100%;
+      height: auto;
       display: block;
-      object-fit: cover;
+      margin: 45px 0 12px;
     }
 
     .image-caption {
-      margin-top: 12px;
-      font-size: 12px;
-      color: #77716a;
-      letter-spacing: 0.03em;
+      margin-bottom: 45px;
+
+      font-size: 11px;
+      color: #8b847c;
+      letter-spacing: 0.05em;
     }
 
-    /* ---------- Small Lists ---------- */
 
-    .simple-list {
-      margin: 30px 0 0;
-      padding: 0;
-      list-style: none;
+    /* =========================
+       Lists
+    ========================= */
+
+    ul {
+      margin: 0 0 30px;
+      padding-left: 22px;
     }
 
-    .simple-list li {
-      margin-bottom: 14px;
-      padding-left: 20px;
-      position: relative;
+    li {
+      margin-bottom: 10px;
     }
 
-    .simple-list li::before {
-      content: "—";
-      position: absolute;
-      left: 0;
-      color: #77716a;
-    }
 
-    /* ---------- Archive Information ---------- */
+    /* =========================
+       Archive Information
+    ========================= */
 
     .archive-info {
-      margin-top: 35px;
-      border-top: 1px solid #d8d2c8;
+      border-top: 1px solid #d8d1c8;
+      border-bottom: 1px solid #d8d1c8;
+      padding: 35px 0;
+      margin-top: 80px;
+    }
+
+    .archive-info h2 {
+      margin-bottom: 30px;
     }
 
     .info-row {
       display: grid;
-      grid-template-columns: 170px 1fr;
-      border-bottom: 1px solid #d8d2c8;
-      padding: 15px 0;
+      grid-template-columns: 150px 1fr;
+      gap: 20px;
+
+      padding: 11px 0;
+
       font-size: 14px;
     }
 
     .info-label {
-      color: #77716a;
+      color: #89827a;
     }
 
-    /* ---------- Who It's For ---------- */
+    .info-value {
+      color: #35322e;
+    }
+
+
+    /* =========================
+       Who It's For
+    ========================= */
+
+    .who {
+      padding: 50px 0 20px;
+    }
+
+    .who h2 {
+      margin-bottom: 25px;
+    }
 
     .who-list {
-      margin-top: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
-    .who-item {
-      margin-bottom: 15px;
+    .who-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #e0d9d0;
+    }
+
+
+    /* =========================
+       Soft Archive Note
+    ========================= */
+
+    .archive-note {
+      margin: 70px 0;
+
+      padding: 50px 35px;
+
+      background: #eee9e1;
+
+      text-align: center;
+    }
+
+    .archive-note h2 {
+      margin-bottom: 28px;
+    }
+
+    .archive-note h2::before {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .archive-note p {
+      max-width: 560px;
+      margin: 0 auto;
+
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 16px;
+      line-height: 2;
     }
 
-    /* ---------- Sources ---------- */
+
+    /* =========================
+       Sources
+    ========================= */
 
     .sources {
-      margin-top: 90px;
-      padding-top: 35px;
-      border-top: 1px solid #d8d2c8;
+      margin-top: 80px;
+      padding-top: 40px;
+
+      border-top: 1px solid #d8d1c8;
     }
 
     .sources h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 28px;
-      font-weight: 400;
+      margin-bottom: 28px;
+    }
+
+    .source-note {
       margin-bottom: 30px;
+
+      font-size: 12px;
+      line-height: 1.8;
+      color: #817a72;
     }
 
     .source-item {
-      margin-bottom: 20px;
-      font-size: 14px;
+      display: flex;
+      align-items: baseline;
+      gap: 25px;
+
+      margin-bottom: 12px;
+
+      font-size: 13px;
     }
 
     .source-label {
-      display: block;
-      color: #77716a;
-      margin-bottom: 5px;
+      min-width: 100px;
+      color: #8b847c;
     }
 
     .source-item a {
       color: #35322e;
       text-decoration: none;
-      border-bottom: 1px solid #bdb6ac;
+      border-bottom: 1px solid #c9c1b8;
     }
 
     .source-item a:hover {
-      opacity: 0.65;
+      opacity: 0.55;
     }
 
-    /* ---------- Footer ---------- */
+
+    /* =========================
+       Footer
+    ========================= */
 
     .footer {
+      width: 100%;
+      max-width: 760px;
+
+      margin: 0 auto;
+      padding: 0 28px 50px;
+
       text-align: center;
-      margin-top: 100px;
-      padding-top: 35px;
-      border-top: 1px solid #d8d2c8;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 15px;
-      color: #77716a;
+
+      font-size: 11px;
+      line-height: 1.8;
+      color: #8b847c;
     }
 
-    /* ---------- Mobile ---------- */
+    .footer p {
+      margin: 5px 0;
+    }
+
+
+    /* =========================
+       Mobile
+    ========================= */
 
     @media (max-width: 700px) {
 
-      .page {
+      .site-nav {
+        padding: 22px 20px 15px;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .nav-links {
+        gap: 18px;
+        font-size: 12px;
+      }
+
+      main {
         padding: 35px 20px 70px;
       }
 
-      .cover {
-        margin-bottom: 65px;
+      h1 {
+        font-size: 27px;
       }
 
-      .cover img {
-        margin-bottom: 30px;
+      article {
+        font-size: 14px;
       }
 
-      .article p {
-        font-size: 15px;
-        line-height: 1.85;
-      }
-
-      .intro {
-        font-size: 16px;
-      }
-
-      .section {
-        margin-top: 70px;
-      }
-
-      .section h2 {
-        margin-bottom: 28px;
-      }
-
-      .quote {
-        padding-left: 20px;
-        margin: 35px 0;
-      }
-
-      .quote p {
-        font-size: 16px;
+      h2 {
+        font-size: 22px;
       }
 
       .info-row {
-        grid-template-columns: 115px 1fr;
-        font-size: 13px;
+        grid-template-columns: 110px 1fr;
+        gap: 12px;
       }
 
-      .who-item {
-        font-size: 15px;
+      .archive-note {
+        padding: 40px 22px;
+      }
+
+      .source-item {
+        display: block;
+      }
+
+      .source-label {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .footer {
+        padding-left: 20px;
+        padding-right: 20px;
       }
     }
   </style>
@@ -299,13 +433,33 @@
 
 <body>
 
-  <main class="page">
+  <!-- =========================
+       Site Navigation
+  ========================= -->
 
-    <!-- =========================
-         COVER
-    ========================== -->
+  <nav class="site-nav">
 
-    <header class="cover">
+    <a href="index.html" class="logo">
+      Soft Archive
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Archive</a>
+      <a href="about.html">About</a>
+    </div>
+
+  </nav>
+
+
+  <!-- =========================
+       Main Article
+  ========================= -->
+
+  <main>
+
+    <!-- Cover -->
+
+    <div class="cover">
 
       <img
         src="images/no008-cover.jpg"
@@ -324,29 +478,25 @@
         5 min read
       </div>
 
-    </header>
+    </div>
 
 
-    <!-- =========================
-         ARTICLE
-    ========================== -->
+    <article>
 
-    <article class="article">
+      <!-- =========================
+           Introduction
+      ========================= -->
 
-
-      <!-- INTRO -->
-
-      <section class="intro">
+      <section>
 
         <p>
           我们总是需要写字。
-          <br><br>
-          写名字。
-          <br>
-          写地址。
-          <br>
-          写待办事项。
-          <br>
+        </p>
+
+        <p>
+          写名字。<br>
+          写地址。<br>
+          写待办事项。<br>
           写下一句话。
         </p>
 
@@ -362,20 +512,18 @@
           很少有人会停下来想：
         </p>
 
-        <p class="highlight">
-          <strong>
-            如果写字本身就是一件值得享受的事情呢？
-          </strong>
+        <p>
+          如果写字本身就是一件值得享受的事情呢？
         </p>
 
       </section>
 
 
       <!-- =========================
-           THE BRAND
-      ========================== -->
+           01 The Brand
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <div class="section-number">
           01
@@ -390,43 +538,34 @@
         </p>
 
         <p>
-          它从 2010 年开始，以
-          <strong>“We write with joy”</strong>
-          为理念，希望重新让人感受到书写本身的快乐。
+          它从 2010 年开始，以 “We write with joy” 为理念，
+          希望重新让人感受到书写本身的快乐。
         </p>
 
         <p>
-          这里不仅可以买到笔、墨水、纸张和笔记本，也可以亲自试用书写工具，甚至根据自己的喜好制作属于自己的笔记本。
+          这里不仅可以买到笔、墨水、纸张和笔记本，
+          也可以亲自试用书写工具，
+          甚至根据自己的喜好制作属于自己的笔记本。
         </p>
 
         <p>
           它关注的似乎并不是：
         </p>
 
-        <p class="highlight">
-          <strong>
-            “怎样才能写得更快？”
-          </strong>
+        <p>
+          “怎样才能写得更快？”
         </p>
 
         <p>
           而是：
         </p>
 
-        <p class="highlight">
-          <strong>
-            “怎样才能让我们更喜欢写字？”
-          </strong>
+        <p>
+          “怎样才能让我们更喜欢写字？”
         </p>
 
-      </section>
-
-
-      <!-- IMAGE 01 -->
-
-      <div class="archive-image">
-
         <img
+          class="article-image"
           src="images/no008-01.jpg"
           alt="KAKIMORI writing tools"
         >
@@ -435,14 +574,14 @@
           KAKIMORI — Writing tools
         </div>
 
-      </div>
+      </section>
 
 
       <!-- =========================
-           A DIFFERENT WAY TO WRITE
-      ========================== -->
+           A Different Way to Write
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <h2>
           A Different Way to Write
@@ -453,10 +592,8 @@
         </p>
 
         <p>
-          笔是用来写字的。
-          <br>
-          纸是用来记录的。
-          <br>
+          笔是用来写字的。<br>
+          纸是用来记录的。<br>
           笔记本是用来整理事情的。
         </p>
 
@@ -468,44 +605,38 @@
           它不只是思考：
         </p>
 
-        <p class="highlight">
-          <strong>
-            这个东西应该怎样使用？
-          </strong>
+        <p>
+          这个东西应该怎样使用？
         </p>
 
         <p>
           而是：
         </p>
 
-        <p class="highlight">
-          <strong>
-            使用它的时候，我们会有什么感觉？
-          </strong>
+        <p>
+          使用它的时候，我们会有什么感觉？
         </p>
 
         <p>
-          笔尖碰到纸面的声音。
-          <br>
-          墨水慢慢流出来的颜色。
-          <br>
-          纸张被手指翻动时的触感。
-          <br>
+          笔尖碰到纸面的声音。<br>
+          墨水慢慢流出来的颜色。<br>
+          纸张被手指翻动时的触感。<br>
           写下一句话以后，看见墨水最后停留在纸上的样子。
         </p>
 
         <p>
-          这些原本很小的事情，开始慢慢地值得被注意。
+          这些原本很小的事情，
+          开始慢慢地值得被注意。
         </p>
 
       </section>
 
 
       <!-- =========================
-           02 WRITING WITH JOY
-      ========================== -->
+           02 Writing With Joy
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <div class="section-number">
           02
@@ -516,16 +647,16 @@
         </h2>
 
         <p>
-          <strong>
-            真正让我喜欢 KAKIMORI 的，是它很在意“使用的过程”。
-          </strong>
+          真正让我喜欢 KAKIMORI 的，
+          是它很在意“使用的过程”。
         </p>
 
         <p>
           不是写完以后得到什么，
-          <br>
+        </p>
+
+        <p>
           而是拿起笔的那几分钟，
-          <br>
           本身就值得被享受。
         </p>
 
@@ -534,12 +665,9 @@
         </p>
 
         <p>
-          一支笔。
-          <br>
-          一张纸。
-          <br>
-          一瓶墨水。
-          <br>
+          一支笔。<br>
+          一张纸。<br>
+          一瓶墨水。<br>
           一个笔记本。
         </p>
 
@@ -548,28 +676,26 @@
         </p>
 
         <p>
-          KAKIMORI 的许多书写工具都可以在购买之前亲自试用，让人先感受纸张、笔尖和墨水之间的关系，再决定什么真正适合自己。
+          KAKIMORI 的许多书写工具都可以在购买之前亲自试用，
+          让人先感受纸张、笔尖和墨水之间的关系，
+          再决定什么真正适合自己。
         </p>
 
         <p>
           这种体验让我想到：
         </p>
 
-        <p class="highlight">
+        <p>
           我们有时候并不是缺少一本新的笔记本。
-          <br>
+        </p>
+
+        <p>
           而是已经太久没有<br>
           <strong>静下来慢慢感受写字本身这件事。</strong>
         </p>
 
-      </section>
-
-
-      <!-- IMAGE 02 -->
-
-      <div class="archive-image">
-
         <img
+          class="article-image"
           src="images/no008-02.jpg"
           alt="KAKIMORI stationery and paper"
         >
@@ -578,14 +704,14 @@
           Paper, ink and writing
         </div>
 
-      </div>
+      </section>
 
 
       <!-- =========================
-           03 CHOOSE WHAT FEELS LIKE YOU
-      ========================== -->
+           03 Choose What Feels Like You
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <div class="section-number">
           03
@@ -599,10 +725,8 @@
           KAKIMORI 有一个很特别的地方：
         </p>
 
-        <p class="highlight">
-          <strong>
-            它不会替你决定一切。
-          </strong>
+        <p>
+          它不会替你决定一切。
         </p>
 
         <p>
@@ -614,12 +738,9 @@
         </p>
 
         <p>
-          封面。
-          <br>
-          纸张。
-          <br>
-          装订方式。
-          <br>
+          封面。<br>
+          纸张。<br>
+          装订方式。<br>
           烫印英文字母。
         </p>
 
@@ -628,26 +749,23 @@
         </p>
 
         <p>
-          这让我觉得，它真正出售的并不只是一本 notebook。
+          这让我觉得，
+          它真正出售的并不只是一本 notebook。
         </p>
 
-        <p class="highlight">
+        <p>
           而是一种：
-          <br><br>
-          <strong>
-            “我可以自己决定。”
-          </strong>
+        </p>
+
+        <p>
+          “我可以自己决定。”
         </p>
 
         <p>
           同样的一本笔记本，
-          <br>
-          因为不同的纸张、
-          <br>
-          不同的颜色、
-          <br>
+          因为不同的纸张、<br>
+          不同的颜色、<br>
           不同的装订，
-          <br>
           最后可以变成完全不同的东西。
         </p>
 
@@ -655,7 +773,7 @@
           它不需要成为「最好看」的那一本。
         </p>
 
-        <p class="highlight">
+        <p>
           只需要<br>
           <strong>成为最适合你的那一本。</strong>
         </p>
@@ -664,10 +782,10 @@
 
 
       <!-- =========================
-           04 A WORLD OF INK
-      ========================== -->
+           04 A World of Ink
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <div class="section-number">
           04
@@ -694,25 +812,19 @@
         </p>
 
         <p>
-          有些颜色安静。
-          <br>
-          有些颜色轻快。
-          <br>
+          有些颜色安静。<br>
+          有些颜色轻快。<br>
           有些颜色很难用一句简单的颜色名称解释。
         </p>
 
         <p>
           而当墨水真正落到纸上，
-          <br>
           颜色又会因为纸张、笔尖和书写方式，
-          <br>
           产生一点细微的变化。
         </p>
 
-        <p class="highlight">
-          <strong>
-            于是，墨水不再只是“写字用的东西”。
-          </strong>
+        <p>
+          于是，墨水不再只是“写字用的东西”。
         </p>
 
         <p>
@@ -721,44 +833,35 @@
 
         <p>
           同一句话，
-          <br>
           换一种颜色，
-          <br>
           感觉也可能完全不同。
         </p>
 
         <p>
-          KAKIMORI 的墨水还可以通过不同颜色之间的组合产生新的色彩，而 Dip Pen 则让换颜色变得非常直接——蘸取、书写、用水清洗，再换下一种颜色。
+          KAKIMORI 的墨水还可以通过不同颜色之间的组合产生新的色彩，
+          而 Dip Pen 则让换颜色变得非常直接——
+          蘸取、书写、用水清洗，再换下一种颜色。
         </p>
 
         <p>
           这让我想到：
         </p>
 
-        <p class="highlight">
+        <p>
           我们有时候选择一种颜色，
-          <br>
           其实也是在选择一种今天想留下来的感觉。
         </p>
 
         <p>
-          <strong>
-            字迹不是只有内容。
-          </strong>
+          字迹不是只有内容。
         </p>
 
         <p>
           颜色也是内容的一部分。
         </p>
 
-      </section>
-
-
-      <!-- IMAGE 03 -->
-
-      <div class="archive-image">
-
         <img
+          class="article-image"
           src="images/no008-03.jpg"
           alt="KAKIMORI ink colors"
         >
@@ -767,14 +870,14 @@
           KAKIMORI inks
         </div>
 
-      </div>
+      </section>
 
 
       <!-- =========================
-           THE BEAUTY OF CHOOSING SLOWLY
-      ========================== -->
+           The Beauty of Choosing Slowly
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <h2>
           The Beauty of Choosing Slowly
@@ -785,12 +888,9 @@
         </p>
 
         <p>
-          买东西很快。
-          <br>
-          发消息很快。
-          <br>
-          记录事情很快。
-          <br>
+          买东西很快。<br>
+          发消息很快。<br>
+          记录事情很快。<br>
           甚至连阅读，都越来越习惯快速滑过。
         </p>
 
@@ -798,21 +898,18 @@
           但 KAKIMORI 让我想到：
         </p>
 
-        <p class="highlight">
-          <strong>
-            有些事情，也许不需要那么快。
-          </strong>
+        <p>
+          有些事情，也许不需要那么快。
         </p>
 
         <p>
-          挑一张纸。
-          <br>
-          选一支笔。
-          <br>
-          试一个颜色。
-          <br>
+          挑一张纸。<br>
+          选一支笔。<br>
+          试一个颜色。<br>
           写下一句话。
-          <br>
+        </p>
+
+        <p>
           然后停下来看看。
         </p>
 
@@ -822,7 +919,6 @@
 
         <p>
           却可能让一个普通的下午，
-          <br>
           变得稍微特别一点。
         </p>
 
@@ -830,10 +926,10 @@
 
 
       <!-- =========================
-           A PLACE FOR MAKERS
-      ========================== -->
+           A Place for Makers
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <h2>
           A Place for Makers
@@ -848,33 +944,30 @@
         </p>
 
         <p>
-          所以当你走进 KAKIMORI，会觉得这里卖的好像不只是文具。
+          所以当你走进 KAKIMORI，
+          会觉得这里卖的好像不只是文具。
         </p>
 
         <p>
           你会看到纸张、墨水、笔和各种书写工具，
-          <br>
           也会想到它们背后的材料、制作和人。
         </p>
 
-        <p class="highlight">
-          <strong>
-            一件看起来很小的东西，
-            <br>
-            其实也有自己的制作过程。
-          </strong>
+        <p>
+          一件看起来很小的东西，
+          其实也有自己的制作过程。
         </p>
 
         <p>
           KAKIMORI 也把自己看作这个街区里的 storyteller——
           不是单纯销售文具，
-          而是通过设计、制造、服务，以及和供应商、工匠与制造者的合作，
+          而是通过设计、制造、服务，
+          以及和供应商、工匠与制造者的合作，
           把人与物之间的关系重新带回日常。
         </p>
 
         <p>
           所以它吸引我的地方，
-          <br>
           不只是“东西很好看”。
         </p>
 
@@ -882,50 +975,37 @@
           而是你能感觉到：
         </p>
 
-        <p class="highlight">
-          <strong>
-            这些东西是有人认真做出来的。
-          </strong>
+        <p>
+          这些东西是有人认真做出来的。
         </p>
 
         <p>
-          一张纸。
-          <br>
-          一个笔尖。
-          <br>
-          一个墨水瓶。
-          <br>
+          一张纸。<br>
+          一个笔尖。<br>
+          一个墨水瓶。<br>
           一本 notebook。
         </p>
 
         <p>
           每一个看起来很小的东西，
-          <br>
           背后都有材料、工艺和人的参与。
         </p>
 
         <p>
           这也让 KAKIMORI 的文具，
-          <br>
           不像是一个已经完成的答案。
         </p>
 
-        <p class="highlight">
+        <p>
           更像是：
-          <br><br>
-          <strong>
-            等待使用者参与进去的一部分。
-          </strong>
         </p>
 
-      </section>
-
-
-      <!-- IMAGE 04 -->
-
-      <div class="archive-image">
+        <p>
+          等待使用者参与进去的一部分。
+        </p>
 
         <img
+          class="article-image"
           src="images/no008-04.jpg"
           alt="KAKIMORI store in Kuramae"
         >
@@ -934,14 +1014,14 @@
           KAKIMORI — Kuramae, Tokyo
         </div>
 
-      </div>
+      </section>
 
 
       <!-- =========================
-           05 MADE TO BE USED
-      ========================== -->
+           05 Made to Be Used
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <div class="section-number">
           05
@@ -952,193 +1032,156 @@
         </h2>
 
         <p>
-          KAKIMORI 的美，不是那种需要小心保护的美。
+          KAKIMORI 的美，
+          不是那种需要小心保护的美。
         </p>
 
         <p>
           它更像是：
         </p>
 
-        <p class="highlight">
-          <strong>
-            拿起来使用。
-          </strong>
-        </p>
-
         <p>
-          写一点。
-          <br>
-          画一点。
-          <br>
+          拿起来使用。<br>
+          写一点。<br>
+          画一点。<br>
           用久一点。
         </p>
 
         <p>
           让墨水沾到纸上，
-          <br>
           让笔留下使用过的痕迹。
         </p>
 
         <p>
           因为真正被使用过的东西，
-          <br>
           才会慢慢拥有属于自己的样子。
         </p>
 
         <p>
-          官方也特别强调，希望这些笔、墨水、纸张和笔记本成为能够被珍惜和长期使用的日常工具。
+          官方也特别强调，
+          希望这些笔、墨水、纸张和笔记本成为能够被珍惜和长期使用的日常工具。
         </p>
 
         <p>
           它甚至允许使用者在购买之前试用书写工具和纸张。
         </p>
 
-        <p class="highlight">
-          <strong>
-            先写，再决定。
-          </strong>
+        <p>
+          先写，再决定。
         </p>
 
         <p>
           这件事情其实很简单，
-          <br>
           但我很喜欢。
         </p>
 
         <p>
           因为在很多时候，
-          <br>
           我们太习惯先问：
         </p>
 
-        <p class="highlight">
-          <strong>
-            “它好不好？”
-          </strong>
+        <p>
+          “它好不好？”
         </p>
 
         <p>
           KAKIMORI 更像是在问：
         </p>
 
-        <p class="highlight">
-          <strong>
-            “它适不适合你？”
-          </strong>
+        <p>
+          “它适不适合你？”
         </p>
 
       </section>
 
 
       <!-- =========================
-           WHY SOFT ARCHIVE COLLECTS IT
-      ========================== -->
+           Why Soft Archive Collects It
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <h2>
           Why Soft Archive Collects It
         </h2>
 
-        <div class="quote">
+        <p>
+          有些东西的意义，
+          不在于它有多漂亮，
+          而在于它有没有让我们愿意真正使用它。
+        </p>
 
-          <p>
-            <strong>
-              有些东西的意义，不在于它有多漂亮，而在于它有没有让我们愿意真正使用它。
-            </strong>
-          </p>
+        <p>
+          KAKIMORI 让我想到，
+          一支笔、一张纸，
+          其实也可以改变我们对时间的感受。
+        </p>
 
-          <p>
-            KAKIMORI 让我想到，
-            <br>
-            一支笔、一张纸，
-            <br>
-            其实也可以改变我们对时间的感受。
-          </p>
+        <p>
+          当我们愿意慢下来写下一句话，
+          那个瞬间就不再只是「记录」。
+        </p>
 
-          <p>
-            当我们愿意慢下来写下一句话，
-            <br>
-            那个瞬间就不再只是「记录」。
-          </p>
-
-          <p>
-            而成为了<br>
-            <strong>属于自己的时间。</strong>
-          </p>
-
-        </div>
+        <p>
+          而成为了<br>
+          <strong>属于自己的时间。</strong>
+        </p>
 
       </section>
 
 
       <!-- =========================
-           A SMALL DETAIL I LOVE
-      ========================== -->
+           A Small Detail I Love
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <h2>
           A Small Detail I Love
         </h2>
 
-        <div class="quote">
+        <p>
+          我很喜欢 KAKIMORI 允许使用者先尝试，再决定。
+        </p>
 
-          <p>
-            <strong>
-              我很喜欢 KAKIMORI 允许使用者先尝试，再决定。
-            </strong>
-          </p>
+        <p>
+          在这个什么都可以快速购买的时代，
+          它却愿意让你坐下来，
+          慢慢试一支笔，
+          感受纸张，
+          看看墨水真正写出来是什么样子。
+        </p>
 
-          <p>
-            在这个什么都可以快速购买的时代，
-            <br>
-            它却愿意让你坐下来，
-            <br>
-            慢慢试一支笔，
-            <br>
-            感受纸张，
-            <br>
-            看看墨水真正写出来是什么样子。
-          </p>
+        <p>
+          它没有急着告诉你：
+        </p>
 
-          <p>
-            它没有急着告诉你：
-          </p>
+        <p>
+          “这个就是最好的。”
+        </p>
 
-          <p>
-            <strong>
-              “这个就是最好的。”
-            </strong>
-          </p>
+        <p>
+          而是让你自己找到：
+        </p>
 
-          <p>
-            而是让你自己找到：
-          </p>
-
-          <p>
-            <strong>
-              “这个最适合我。”
-            </strong>
-          </p>
-
-        </div>
+        <p>
+          “这个最适合我。”
+        </p>
 
       </section>
 
 
       <!-- =========================
-           WHAT CAUGHT MY ATTENTION
-      ========================== -->
+           What Caught My Attention
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <h2>
           What Caught My Attention
         </h2>
 
-        <ul class="simple-list">
-
+        <ul>
           <li>
             KAKIMORI 把「书写的快乐」放在品牌核心。
           </li>
@@ -1160,80 +1203,67 @@
           </li>
 
           <li>
-            我很喜欢它没有告诉我们「应该怎样写」，而是给我们足够的空间去找到自己的方式。
+            我很喜欢它没有告诉我们「应该怎样写」，
+            而是给我们足够的空间去找到自己的方式。
           </li>
-
         </ul>
 
       </section>
 
 
       <!-- =========================
-           SIGNATURE PIECE
-      ========================== -->
+           Signature Piece
+      ========================= -->
 
-      <section class="section">
+      <section>
 
         <h2>
           Signature Piece
         </h2>
 
-        <div class="quote">
+        <p>
+          <strong>KAKIMORI Dip Pen</strong>
+        </p>
 
-          <p>
-            <strong>
-              KAKIMORI Dip Pen
-            </strong>
-          </p>
+        <p>
+          一支需要亲自蘸上墨水的笔。
+        </p>
 
-          <p>
-            一支需要亲自蘸上墨水的笔。
-          </p>
+        <p>
+          它没有把书写变得更快。
+        </p>
 
-          <p>
-            它没有把书写变得更快。
-          </p>
+        <p>
+          反而让我们多做了一两个动作：
+        </p>
 
-          <p>
-            反而让我们多做了一两个动作：
-          </p>
+        <p>
+          蘸墨。<br>
+          落笔。<br>
+          看着墨水慢慢流下来。
+        </p>
 
-          <p>
-            蘸墨。
-            <br>
-            落笔。
-            <br>
-            看着墨水慢慢流下来。
-            <br>
-            写完以后，再把笔尖洗干净。
-          </p>
+        <p>
+          写完以后，再把笔尖洗干净。
+        </p>
 
-          <p>
-            不同的握笔角度，也会让笔尖呈现出不同的线条。
-          </p>
+        <p>
+          不同的握笔角度，
+          也会让笔尖呈现出不同的线条。
+        </p>
 
-          <p>
-            这些动作看起来有些多余，
-            <br>
-            却恰恰让“写字”重新变成了一件需要亲自参与的事情。
-          </p>
+        <p>
+          这些动作看起来有些多余，
+          却恰恰让“写字”重新变成了一件需要亲自参与的事情。
+        </p>
 
-          <p>
-            <strong>
-              也许这就是 KAKIMORI 所说的 “We write with joy”。
-            </strong>
-          </p>
-
-        </div>
-
-      </section>
-
-
-      <!-- IMAGE 05 -->
-
-      <div class="archive-image">
+        <p>
+          也许这就是 KAKIMORI 所说的
+          “We write with joy”。
+        </p>
 
         <img
+          class="article-image"
           src="images/no008-05.jpg"
           alt="KAKIMORI Dip Pen"
         >
@@ -1242,188 +1272,175 @@
           KAKIMORI Dip Pen
         </div>
 
-      </div>
-
-
-      <!-- =========================
-           THEME
-      ========================== -->
-
-      <section class="section">
-
-        <h2>
-          Theme
-        </h2>
-
-        <p>
-          Write With Joy | 写得开心
-        </p>
-
       </section>
 
 
       <!-- =========================
-           THEME COLOR
-      ========================== -->
+           Archive Information
+      ========================= -->
 
-      <section class="section">
-
-        <h2>
-          Theme Color
-        </h2>
-
-        <p>
-          Ink Blue
-        </p>
-
-      </section>
-
-
-      <!-- =========================
-           ARCHIVE INFORMATION
-      ========================== -->
-
-      <section class="section">
+      <section class="archive-info">
 
         <h2>
           Archive Information
         </h2>
 
-        <div class="archive-info">
-
-          <div class="info-row">
-            <div class="info-label">Country</div>
-            <div>Japan</div>
+        <div class="info-row">
+          <div class="info-label">
+            Country
           </div>
-
-          <div class="info-row">
-            <div class="info-label">Location</div>
-            <div>Kuramae, Tokyo</div>
+          <div class="info-value">
+            Japan
           </div>
+        </div>
 
-          <div class="info-row">
-            <div class="info-label">Founded / Opened</div>
-            <div>2010</div>
+        <div class="info-row">
+          <div class="info-label">
+            Location
           </div>
-
-          <div class="info-row">
-            <div class="info-label">Category</div>
-            <div>Writing &amp; Stationery</div>
+          <div class="info-value">
+            Kuramae, Tokyo
           </div>
+        </div>
 
-          <div class="info-row">
-            <div class="info-label">Focus</div>
-            <div>Pens · Ink · Paper · Notebooks</div>
+        <div class="info-row">
+          <div class="info-label">
+            Founded / Opened
           </div>
+          <div class="info-value">
+            2010
+          </div>
+        </div>
 
+        <div class="info-row">
+          <div class="info-label">
+            Category
+          </div>
+          <div class="info-value">
+            Writing &amp; Stationery
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label">
+            Focus
+          </div>
+          <div class="info-value">
+            Pens · Ink · Paper · Notebooks
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label">
+            Theme
+          </div>
+          <div class="info-value">
+            Write With Joy | 写得开心
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="info-label">
+            Theme Color
+          </div>
+          <div class="info-value">
+            Ink Blue
+          </div>
         </div>
 
       </section>
 
 
       <!-- =========================
-           WHO IT'S FOR
-      ========================== -->
+           Who It's For
+      ========================= -->
 
-      <section class="section">
+      <section class="who">
 
         <h2>
           Who It's For
         </h2>
 
-        <div class="who-list">
+        <ul class="who-list">
 
-          <div class="who-item">
+          <li>
             ✍️ 喜欢手写的人
-          </div>
+          </li>
 
-          <div class="who-item">
+          <li>
             🎨 喜欢选择颜色的人
-          </div>
+          </li>
 
-          <div class="who-item">
+          <li>
             📖 喜欢纸张与文具的人
-          </div>
+          </li>
 
-          <div class="who-item">
+          <li>
             ☕ 喜欢慢慢做事情的人
-          </div>
+          </li>
 
-          <div class="who-item">
+          <li>
             🌿 喜欢亲自创造，而不是直接购买完成品的人
-          </div>
+          </li>
 
-        </div>
+        </ul>
 
       </section>
 
 
       <!-- =========================
-           SOFT ARCHIVE NOTE
-      ========================== -->
+           Soft Archive Note
+      ========================= -->
 
-      <section class="section">
+      <section class="archive-note">
 
         <h2>
           Soft Archive Note
         </h2>
 
-        <div class="quote">
+        <p>
+          我们已经习惯了让很多事情变得更快。
+          <br><br>
 
-          <p>
-            <strong>
-              我们已经习惯了让很多事情变得更快。
-            </strong>
-          </p>
+          快速输入。<br>
+          快速记录。<br>
+          快速完成。
+          <br><br>
 
-          <p>
-            快速输入。
-            <br>
-            快速记录。
-            <br>
-            快速完成。
-          </p>
+          但写字似乎没有必要一直追求速度。
+          <br><br>
 
-          <p>
-            但写字似乎没有必要一直追求速度。
-          </p>
+          一支笔蘸上墨水，<br>
+          笔尖碰到纸面，<br>
+          一句话慢慢浮现。
+          <br><br>
 
-          <p>
-            一支笔蘸上墨水，
-            <br>
-            笔尖碰到纸面，
-            <br>
-            一句话慢慢浮现。
-          </p>
+          也许我们真正喜欢的，
+          从来不只是写下来的那几个字。
+          <br><br>
 
-          <p>
-            也许我们真正喜欢的，
-            <br>
-            从来不只是写下来的那几个字。
-          </p>
-
-          <p>
-            而是那几分钟里，
-            <br>
-            <strong>
-              我们终于又回到了自己的时间里。
-            </strong>
-          </p>
-
-        </div>
+          而是那几分钟里，<br>
+          我们终于又回到了自己的时间里。
+        </p>
 
       </section>
 
 
       <!-- =========================
-           SOURCES
-      ========================== -->
+           Sources
+      ========================= -->
 
       <section class="sources">
 
         <h2>
           Sources
         </h2>
+
+        <p class="source-note">
+          This archive is an independent editorial project by Soft Archive.
+          Product names, trademarks and images belong to their respective owners.
+          Soft Archive is not affiliated with KAKIMORI.
+        </p>
 
         <div class="source-item">
 
@@ -1436,11 +1453,10 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://kakimori.com/
+            kakimori.com
           </a>
 
         </div>
-
 
         <div class="source-item">
 
@@ -1453,26 +1469,34 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://www.instagram.com/kakimori_japan/
+            @kakimori_japan
           </a>
 
         </div>
 
       </section>
 
-
     </article>
 
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer class="footer">
-      Soft Archive
-    </footer>
-
   </main>
+
+
+  <!-- =========================
+       Footer
+  ========================= -->
+
+  <footer class="footer">
+
+    <p>
+      © 2026 Soft Archive. All rights reserved.
+    </p>
+
+    <p>
+      Soft Archive is an independent archive and is not affiliated with
+      the brands featured on this website.
+    </p>
+
+  </footer>
 
 </body>
 </html>
