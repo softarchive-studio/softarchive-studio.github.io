@@ -347,26 +347,126 @@
 
 
     /* =========================
-       Footer
-    ========================= */
+   Editorial Note
+========================= */
 
-    .footer {
-      width: 100%;
-      max-width: 760px;
+.editorial-note {
+  margin-top: 32px;
+  padding-top: 24px;
 
-      margin: 0 auto;
-      padding: 0 28px 50px;
+  border-top: 1px solid #e0d9d0;
 
-      text-align: center;
+  font-size: 11px;
+  line-height: 1.85;
+  color: #8b847c;
+}
 
-      font-size: 11px;
-      line-height: 1.8;
-      color: #8b847c;
-    }
 
-    .footer p {
-      margin: 5px 0;
-    }
+/* =========================
+   Continue Exploring
+========================= */
+
+.continue-exploring {
+  margin-top: 95px;
+  padding: 55px 0 60px;
+
+  border-top: 1px solid #d8d1c8;
+  border-bottom: 1px solid #d8d1c8;
+
+  text-align: center;
+}
+
+.continue-label {
+  margin-bottom: 18px;
+
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  color: #8b847c;
+}
+
+.continue-exploring h2 {
+  margin-bottom: 18px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.continue-exploring h2::before {
+  display: none;
+}
+
+.continue-exploring p {
+  max-width: 520px;
+  margin: 0 auto 28px;
+
+  font-size: 13px;
+  line-height: 1.9;
+  color: #817a72;
+}
+
+.explore-link {
+  display: inline-block;
+
+  color: #35322e;
+  text-decoration: none;
+
+  font-size: 12px;
+  letter-spacing: 0.08em;
+
+  border-bottom: 1px solid #aaa198;
+
+  padding-bottom: 4px;
+
+  transition: opacity 0.2s ease;
+}
+
+.explore-link:hover {
+  opacity: 0.5;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+.footer {
+  width: 100%;
+  max-width: 760px;
+
+  margin: 0 auto;
+  padding: 45px 28px 55px;
+
+  text-align: center;
+
+  color: #8b847c;
+}
+
+.footer-brand {
+  margin-bottom: 8px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+
+  color: #35322e;
+}
+
+.footer p {
+  margin: 4px 0;
+
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.footer .copyright {
+  margin-top: 18px;
+
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
 
 
     /* =========================
@@ -374,6 +474,24 @@
     ========================= */
 
     @media (max-width: 700px) {
+      
+      .continue-exploring {
+  margin-top: 70px;
+  padding: 45px 0 50px;
+}
+
+.continue-exploring h2 {
+  font-size: 22px;
+}
+
+.continue-exploring p {
+  font-size: 12px;
+}
+
+.footer {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
       .site-nav {
         padding: 22px 20px 15px;
@@ -1487,16 +1605,19 @@
 
   <footer class="footer">
 
-    <p>
-      © 2026 Soft Archive. All rights reserved.
-    </p>
+  <div class="footer-brand">
+    Soft Archive
+  </div>
 
-    <p>
-      Soft Archive is an independent archive and is not affiliated with
-      the brands featured on this website.
-    </p>
+  <p>
+    A collection of quiet things worth keeping.
+  </p>
 
-  </footer>
+  <p class="copyright">
+    © 2026 Soft Archive
+  </p>
+
+</footer>
 
 </body>
 </html>
