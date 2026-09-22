@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KAKIMORI：为什么写字，也可以是一件值得慢慢做的事？ — Soft Archive</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f4ee;
+      color: #35322e;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.9;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 28px 100px;
+    }
+
+    /* ---------- Cover ---------- */
+
+    .cover {
+      text-align: center;
+      margin-bottom: 90px;
+    }
+
+    .cover img {
+      width: 100%;
+      max-width: 1100px;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 45px;
+    }
+
+    .collection-number {
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #77716a;
+      margin-bottom: 20px;
+    }
+
+    .cover h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(32px, 5vw, 58px);
+      font-weight: 400;
+      line-height: 1.35;
+      margin: 0 auto;
+      max-width: 900px;
+    }
+
+    .read-time {
+      margin-top: 22px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      color: #77716a;
+    }
+
+    /* ---------- Main Content ---------- */
+
+    .article {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .article p {
+      font-size: 16px;
+      margin: 0 0 28px;
+    }
+
+    .article strong {
+      font-weight: 600;
+    }
+
+    .intro {
+      font-size: 17px;
+      margin-bottom: 75px;
+    }
+
+    .section {
+      margin-top: 90px;
+    }
+
+    .section h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(27px, 4vw, 38px);
+      font-weight: 400;
+      line-height: 1.35;
+      margin: 0 0 38px;
+    }
+
+    .section-number {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      color: #77716a;
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      font-size: 18px;
+      line-height: 1.9;
+      margin: 35px 0;
+    }
+
+    .quote {
+      margin: 45px 0;
+      padding-left: 28px;
+      border-left: 1px solid #c8c1b7;
+    }
+
+    .quote p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.9;
+    }
+
+    /* ---------- Image ---------- */
+
+    .archive-image {
+      margin: 55px 0 70px;
+    }
+
+    .archive-image img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .image-caption {
+      margin-top: 12px;
+      font-size: 12px;
+      color: #77716a;
+      letter-spacing: 0.03em;
+    }
+
+    /* ---------- Small Lists ---------- */
+
+    .simple-list {
+      margin: 30px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .simple-list li {
+      margin-bottom: 14px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .simple-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #77716a;
+    }
+
+    /* ---------- Archive Information ---------- */
+
+    .archive-info {
+      margin-top: 35px;
+      border-top: 1px solid #d8d2c8;
+    }
+
+    .info-row {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      border-bottom: 1px solid #d8d2c8;
+      padding: 15px 0;
+      font-size: 14px;
+    }
+
+    .info-label {
+      color: #77716a;
+    }
+
+    /* ---------- Who It's For ---------- */
+
+    .who-list {
+      margin-top: 30px;
+    }
+
+    .who-item {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    /* ---------- Sources ---------- */
+
+    .sources {
+      margin-top: 90px;
+      padding-top: 35px;
+      border-top: 1px solid #d8d2c8;
+    }
+
+    .sources h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .source-item {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .source-label {
+      display: block;
+      color: #77716a;
+      margin-bottom: 5px;
+    }
+
+    .source-item a {
+      color: #35322e;
+      text-decoration: none;
+      border-bottom: 1px solid #bdb6ac;
+    }
+
+    .source-item a:hover {
+      opacity: 0.65;
+    }
+
+    /* ---------- Footer ---------- */
+
+    .footer {
+      text-align: center;
+      margin-top: 100px;
+      padding-top: 35px;
+      border-top: 1px solid #d8d2c8;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 15px;
+      color: #77716a;
+    }
+
+    /* ---------- Mobile ---------- */
+
+    @media (max-width: 700px) {
+
+      .page {
+        padding: 35px 20px 70px;
+      }
+
+      .cover {
+        margin-bottom: 65px;
+      }
+
+      .cover img {
+        margin-bottom: 30px;
+      }
+
+      .article p {
+        font-size: 15px;
+        line-height: 1.85;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      .section {
+        margin-top: 70px;
+      }
+
+      .section h2 {
+        margin-bottom: 28px;
+      }
+
+      .quote {
+        padding-left: 20px;
+        margin: 35px 0;
+      }
+
+      .quote p {
+        font-size: 16px;
+      }
+
+      .info-row {
+        grid-template-columns: 115px 1fr;
+        font-size: 13px;
+      }
+
+      .who-item {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <main class="page">
+
+    <!-- =========================
+         COVER
+    ========================== -->
+
+    <header class="cover">
+
+      <img
+        src="images/no008-cover.jpg"
+        alt="Soft Archive Collection No.008 — KAKIMORI"
+      >
+
+      <div class="collection-number">
+        Collection No.008
+      </div>
+
+      <h1>
+        KAKIMORI：为什么写字，也可以是一件值得慢慢做的事？
+      </h1>
+
+      <div class="read-time">
+        5 min read
+      </div>
+
+    </header>
+
+
+    <!-- =========================
+         ARTICLE
+    ========================== -->
+
+    <article class="article">
+
+
+      <!-- INTRO -->
+
+      <section class="intro">
+
+        <p>
+          我们总是需要写字。
+          <br><br>
+          写名字。
+          <br>
+          写地址。
+          <br>
+          写待办事项。
+          <br>
+          写下一句话。
+        </p>
+
+        <p>
+          但很多时候，我们只是为了完成某件事情，才会拿起笔。
+        </p>
+
+        <p>
+          甚至很多时候，我们已经习惯直接用手机打字。
+        </p>
+
+        <p>
+          很少有人会停下来想：
+        </p>
+
+        <p class="highlight">
+          <strong>
+            如果写字本身就是一件值得享受的事情呢？
+          </strong>
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           THE BRAND
+      ========================== -->
+
+      <section class="section">
+
+        <div class="section-number">
+          01
+        </div>
+
+        <h2>
+          The Brand
+        </h2>
+
+        <p>
+          KAKIMORI 是来自日本东京藏前的文具品牌与书店。
+        </p>
+
+        <p>
+          它从 2010 年开始，以
+          <strong>“We write with joy”</strong>
+          为理念，希望重新让人感受到书写本身的快乐。
+        </p>
+
+        <p>
+          这里不仅可以买到笔、墨水、纸张和笔记本，也可以亲自试用书写工具，甚至根据自己的喜好制作属于自己的笔记本。
+        </p>
+
+        <p>
+          它关注的似乎并不是：
+        </p>
+
+        <p class="highlight">
+          <strong>
+            “怎样才能写得更快？”
+          </strong>
+        </p>
+
+        <p>
+          而是：
+        </p>
+
+        <p class="highlight">
+          <strong>
+            “怎样才能让我们更喜欢写字？”
+          </strong>
+        </p>
+
+      </section>
+
+
+      <!-- IMAGE 01 -->
+
+      <div class="archive-image">
+
+        <img
+          src="images/no008-01.jpg"
+          alt="KAKIMORI writing tools"
+        >
+
+        <div class="image-caption">
+          KAKIMORI — Writing tools
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           A DIFFERENT WAY TO WRITE
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          A Different Way to Write
+        </h2>
+
+        <p>
+          我们总是下意识地把文具当成工具。
+        </p>
+
+        <p>
+          笔是用来写字的。
+          <br>
+          纸是用来记录的。
+          <br>
+          笔记本是用来整理事情的。
+        </p>
+
+        <p>
+          但 KAKIMORI 似乎改变了这一点。
+        </p>
+
+        <p>
+          它不只是思考：
+        </p>
+
+        <p class="highlight">
+          <strong>
+            这个东西应该怎样使用？
+          </strong>
+        </p>
+
+        <p>
+          而是：
+        </p>
+
+        <p class="highlight">
+          <strong>
+            使用它的时候，我们会有什么感觉？
+          </strong>
+        </p>
+
+        <p>
+          笔尖碰到纸面的声音。
+          <br>
+          墨水慢慢流出来的颜色。
+          <br>
+          纸张被手指翻动时的触感。
+          <br>
+          写下一句话以后，看见墨水最后停留在纸上的样子。
+        </p>
+
+        <p>
+          这些原本很小的事情，开始慢慢地值得被注意。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           02 WRITING WITH JOY
+      ========================== -->
+
+      <section class="section">
+
+        <div class="section-number">
+          02
+        </div>
+
+        <h2>
+          Writing With Joy
+        </h2>
+
+        <p>
+          <strong>
+            真正让我喜欢 KAKIMORI 的，是它很在意“使用的过程”。
+          </strong>
+        </p>
+
+        <p>
+          不是写完以后得到什么，
+          <br>
+          而是拿起笔的那几分钟，
+          <br>
+          本身就值得被享受。
+        </p>
+
+        <p>
+          所以它的文具并不是越复杂越好。
+        </p>
+
+        <p>
+          一支笔。
+          <br>
+          一张纸。
+          <br>
+          一瓶墨水。
+          <br>
+          一个笔记本。
+        </p>
+
+        <p>
+          每一样东西都被认真对待。
+        </p>
+
+        <p>
+          KAKIMORI 的许多书写工具都可以在购买之前亲自试用，让人先感受纸张、笔尖和墨水之间的关系，再决定什么真正适合自己。
+        </p>
+
+        <p>
+          这种体验让我想到：
+        </p>
+
+        <p class="highlight">
+          我们有时候并不是缺少一本新的笔记本。
+          <br>
+          而是已经太久没有
+          <strong>静下来慢慢感受写字本身这件事。</strong>
+        </p>
+
+      </section>
+
+
+      <!-- IMAGE 02 -->
+
+      <div class="archive-image">
+
+        <img
+          src="images/no008-02.jpg"
+          alt="KAKIMORI stationery and paper"
+        >
+
+        <div class="image-caption">
+          Paper, ink and writing
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           03 CHOOSE WHAT FEELS LIKE YOU
+      ========================== -->
+
+      <section class="section">
+
+        <div class="section-number">
+          03
+        </div>
+
+        <h2>
+          Choose What Feels Like You
+        </h2>
+
+        <p>
+          KAKIMORI 有一个很特别的地方：
+        </p>
+
+        <p class="highlight">
+          <strong>
+            它不会替你决定一切。
+          </strong>
+        </p>
+
+        <p>
+          例如它提供 order-made notebook。
+        </p>
+
+        <p>
+          你可以选择：
+        </p>
+
+        <p>
+          封面。
+          <br>
+          纸张。
+          <br>
+          装订方式。
+          <br>
+          烫印英文字母。
+        </p>
+
+        <p>
+          再把这些不同的部分组合成属于自己的笔记本。
+        </p>
+
+        <p>
+          这让我觉得，它真正出售的并不只是一本 notebook。
+        </p>
+
+        <p class="highlight">
+          而是一种：
+          <br><br>
+          <strong>
+            “我可以自己决定。”
+          </strong>
+        </p>
+
+        <p>
+          同样的一本笔记本，
+          <br>
+          因为不同的纸张、
+          <br>
+          不同的颜色、
+          <br>
+          不同的装订，
+          <br>
+          最后可以变成完全不同的东西。
+        </p>
+
+        <p>
+          它不需要成为「最好看」的那一本。
+        </p>
+
+        <p class="highlight">
+          只需要
+          <strong>成为最适合你的那一本。</strong>
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           04 A WORLD OF INK
+      ========================== -->
+
+      <section class="section">
+
+        <div class="section-number">
+          04
+        </div>
+
+        <h2>
+          A World of Ink
+        </h2>
+
+        <p>
+          KAKIMORI 的墨水，也是我觉得很有趣的一部分。
+        </p>
+
+        <p>
+          它们并不只是简单地把颜色分成：
+        </p>
+
+        <p>
+          蓝色、红色、绿色。
+        </p>
+
+        <p>
+          每一种颜色都有自己的名字和意象。
+        </p>
+
+        <p>
+          有些颜色安静。
+          <br>
+          有些颜色轻快。
+          <br>
+          有些颜色很难用一句简单的颜色名称解释。
+        </p>
+
+        <p>
+          而当墨水真正落到纸上，
+          <br>
+          颜色又会因为纸张、笔尖和书写方式，
+          <br>
+          产生一点细微的变化。
+        </p>
+
+        <p class="highlight">
+          <strong>
+            于是，墨水不再只是“写字用的东西”。
+          </strong>
+        </p>
+
+        <p>
+          它开始变成一种表达。
+        </p>
+
+        <p>
+          同一句话，
+          <br>
+          换一种颜色，
+          <br>
+          感觉也可能完全不同。
+        </p>
+
+        <p>
+          KAKIMORI 的墨水还可以通过不同颜色之间的组合产生新的色彩，而 Dip Pen 则让换颜色变得非常直接——蘸取、书写、用水清洗，再换下一种颜色。
+        </p>
+
+        <p>
+          这让我想到：
+        </p>
+
+        <p class="highlight">
+          我们有时候选择一种颜色，
+          <br>
+          其实也是在选择一种今天想留下来的感觉。
+        </p>
+
+        <p>
+          <strong>
+            字迹不是只有内容。
+          </strong>
+        </p>
+
+        <p>
+          颜色也是内容的一部分。
+        </p>
+
+      </section>
+
+
+      <!-- IMAGE 03 -->
+
+      <div class="archive-image">
+
+        <img
+          src="images/no008-03.jpg"
+          alt="KAKIMORI ink colors"
+        >
+
+        <div class="image-caption">
+          KAKIMORI inks
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           THE BEAUTY OF CHOOSING SLOWLY
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          The Beauty of Choosing Slowly
+        </h2>
+
+        <p>
+          现在的生活，很多事情都可以很快完成。
+        </p>
+
+        <p>
+          买东西很快。
+          <br>
+          发消息很快。
+          <br>
+          记录事情很快。
+          <br>
+          甚至连阅读，都越来越习惯快速滑过。
+        </p>
+
+        <p>
+          但 KAKIMORI 让我想到：
+        </p>
+
+        <p class="highlight">
+          <strong>
+            有些事情，也许不需要那么快。
+          </strong>
+        </p>
+
+        <p>
+          挑一张纸。
+          <br>
+          选一支笔。
+          <br>
+          试一个颜色。
+          <br>
+          写下一句话。
+          <br>
+          然后停下来看看。
+        </p>
+
+        <p>
+          这些动作不是为了提高效率。
+        </p>
+
+        <p>
+          却可能让一个普通的下午，
+          <br>
+          变得稍微特别一点。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           A PLACE FOR MAKERS
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          A Place for Makers
+        </h2>
+
+        <p>
+          KAKIMORI 位于东京藏前。
+        </p>
+
+        <p>
+          这里过去就和制造、工艺以及小型工作室有着很深的联系。
+        </p>
+
+        <p>
+          所以当你走进 KAKIMORI，会觉得这里卖的好像不只是文具。
+        </p>
+
+        <p>
+          你会看到纸张、墨水、笔和各种书写工具，
+          <br>
+          也会想到它们背后的材料、制作和人。
+        </p>
+
+        <p class="highlight">
+          <strong>
+            一件看起来很小的东西，
+            <br>
+            其实也有自己的制作过程。
+          </strong>
+        </p>
+
+        <p>
+          KAKIMORI 也把自己看作这个街区里的 storyteller——
+          不是单纯销售文具，
+          而是通过设计、制造、服务，以及和供应商、工匠与制造者的合作，
+          把人与物之间的关系重新带回日常。
+        </p>
+
+        <p>
+          所以它吸引我的地方，
+          <br>
+          不只是“东西很好看”。
+        </p>
+
+        <p>
+          而是你能感觉到：
+        </p>
+
+        <p class="highlight">
+          <strong>
+            这些东西是有人认真做出来的。
+          </strong>
+        </p>
+
+        <p>
+          一张纸。
+          <br>
+          一个笔尖。
+          <br>
+          一个墨水瓶。
+          <br>
+          一本 notebook。
+        </p>
+
+        <p>
+          每一个看起来很小的东西，
+          <br>
+          背后都有材料、工艺和人的参与。
+        </p>
+
+        <p>
+          这也让 KAKIMORI 的文具，
+          <br>
+          不像是一个已经完成的答案。
+        </p>
+
+        <p class="highlight">
+          更像是：
+          <br><br>
+          <strong>
+            等待使用者参与进去的一部分。
+          </strong>
+        </p>
+
+      </section>
+
+
+      <!-- IMAGE 04 -->
+
+      <div class="archive-image">
+
+        <img
+          src="images/no008-04.jpg"
+          alt="KAKIMORI store in Kuramae"
+        >
+
+        <div class="image-caption">
+          KAKIMORI — Kuramae, Tokyo
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           05 MADE TO BE USED
+      ========================== -->
+
+      <section class="section">
+
+        <div class="section-number">
+          05
+        </div>
+
+        <h2>
+          Made to Be Used
+        </h2>
+
+        <p>
+          KAKIMORI 的美，不是那种需要小心保护的美。
+        </p>
+
+        <p>
+          它更像是：
+        </p>
+
+        <p class="highlight">
+          <strong>
+            拿起来使用。
+          </strong>
+        </p>
+
+        <p>
+          写一点。
+          <br>
+          画一点。
+          <br>
+          用久一点。
+        </p>
+
+        <p>
+          让墨水沾到纸上，
+          <br>
+          让笔留下使用过的痕迹。
+        </p>
+
+        <p>
+          因为真正被使用过的东西，
+          <br>
+          才会慢慢拥有属于自己的样子。
+        </p>
+
+        <p>
+          官方也特别强调，希望这些笔、墨水、纸张和笔记本成为能够被珍惜和长期使用的日常工具。
+        </p>
+
+        <p>
+          它甚至允许使用者在购买之前试用书写工具和纸张。
+        </p>
+
+        <p class="highlight">
+          <strong>
+            先写，再决定。
+          </strong>
+        </p>
+
+        <p>
+          这件事情其实很简单，
+          <br>
+          但我很喜欢。
+        </p>
+
+        <p>
+          因为在很多时候，
+          <br>
+          我们太习惯先问：
+        </p>
+
+        <p class="highlight">
+          <strong>
+            “它好不好？”
+          </strong>
+        </p>
+
+        <p>
+          KAKIMORI 更像是在问：
+        </p>
+
+        <p class="highlight">
+          <strong>
+            “它适不适合你？”
+          </strong>
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           WHY SOFT ARCHIVE COLLECTS IT
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          Why Soft Archive Collects It
+        </h2>
+
+        <div class="quote">
+
+          <p>
+            <strong>
+              有些东西的意义，不在于它有多漂亮，而在于它有没有让我们愿意真正使用它。
+            </strong>
+          </p>
+
+          <p>
+            KAKIMORI 让我想到，
+            <br>
+            一支笔、一张纸，
+            <br>
+            其实也可以改变我们对时间的感受。
+          </p>
+
+          <p>
+            当我们愿意慢下来写下一句话，
+            <br>
+            那个瞬间就不再只是「记录」。
+          </p>
+
+          <p>
+            而成为了
+            <strong>属于自己的时间。</strong>
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           A SMALL DETAIL I LOVE
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          A Small Detail I Love
+        </h2>
+
+        <div class="quote">
+
+          <p>
+            <strong>
+              我很喜欢 KAKIMORI 允许使用者先尝试，再决定。
+            </strong>
+          </p>
+
+          <p>
+            在这个什么都可以快速购买的时代，
+            <br>
+            它却愿意让你坐下来，
+            <br>
+            慢慢试一支笔，
+            <br>
+            感受纸张，
+            <br>
+            看看墨水真正写出来是什么样子。
+          </p>
+
+          <p>
+            它没有急着告诉你：
+          </p>
+
+          <p>
+            <strong>
+              “这个就是最好的。”
+            </strong>
+          </p>
+
+          <p>
+            而是让你自己找到：
+          </p>
+
+          <p>
+            <strong>
+              “这个最适合我。”
+            </strong>
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           WHAT CAUGHT MY ATTENTION
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          What Caught My Attention
+        </h2>
+
+        <ul class="simple-list">
+
+          <li>
+            KAKIMORI 把「书写的快乐」放在品牌核心。
+          </li>
+
+          <li>
+            可以亲自试用书写工具，而不是只能看商品。
+          </li>
+
+          <li>
+            可以根据自己的喜好制作 notebook。
+          </li>
+
+          <li>
+            纸张、笔、墨水都被当作完整体验的一部分。
+          </li>
+
+          <li>
+            产品不会过度装饰，而是把注意力放回书写本身。
+          </li>
+
+          <li>
+            我很喜欢它没有告诉我们「应该怎样写」，而是给我们足够的空间去找到自己的方式。
+          </li>
+
+        </ul>
+
+      </section>
+
+
+      <!-- =========================
+           SIGNATURE PIECE
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          Signature Piece
+        </h2>
+
+        <div class="quote">
+
+          <p>
+            <strong>
+              KAKIMORI Dip Pen
+            </strong>
+          </p>
+
+          <p>
+            一支需要亲自蘸上墨水的笔。
+          </p>
+
+          <p>
+            它没有把书写变得更快。
+          </p>
+
+          <p>
+            反而让我们多做了一两个动作：
+          </p>
+
+          <p>
+            蘸墨。
+            <br>
+            落笔。
+            <br>
+            看着墨水慢慢流下来。
+            <br>
+            写完以后，再把笔尖洗干净。
+          </p>
+
+          <p>
+            不同的握笔角度，也会让笔尖呈现出不同的线条。
+          </p>
+
+          <p>
+            这些动作看起来有些多余，
+            <br>
+            却恰恰让“写字”重新变成了一件需要亲自参与的事情。
+          </p>
+
+          <p>
+            <strong>
+              也许这就是 KAKIMORI 所说的 “We write with joy”。
+            </strong>
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- IMAGE 05 -->
+
+      <div class="archive-image">
+
+        <img
+          src="images/no008-05.jpg"
+          alt="KAKIMORI Dip Pen"
+        >
+
+        <div class="image-caption">
+          KAKIMORI Dip Pen
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           THEME
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          Theme
+        </h2>
+
+        <p>
+          Write With Joy | 写得开心
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           THEME COLOR
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          Theme Color
+        </h2>
+
+        <p>
+          Ink Blue
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           ARCHIVE INFORMATION
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          Archive Information
+        </h2>
+
+        <div class="archive-info">
+
+          <div class="info-row">
+            <div class="info-label">Country</div>
+            <div>Japan</div>
+          </div>
+
+          <div class="info-row">
+            <div class="info-label">Location</div>
+            <div>Kuramae, Tokyo</div>
+          </div>
+
+          <div class="info-row">
+            <div class="info-label">Founded / Opened</div>
+            <div>2010</div>
+          </div>
+
+          <div class="info-row">
+            <div class="info-label">Category</div>
+            <div>Writing &amp; Stationery</div>
+          </div>
+
+          <div class="info-row">
+            <div class="info-label">Focus</div>
+            <div>Pens · Ink · Paper · Notebooks</div>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           WHO IT'S FOR
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          Who It's For
+        </h2>
+
+        <div class="who-list">
+
+          <div class="who-item">
+            ✍️ 喜欢手写的人
+          </div>
+
+          <div class="who-item">
+            🎨 喜欢选择颜色的人
+          </div>
+
+          <div class="who-item">
+            📖 喜欢纸张与文具的人
+          </div>
+
+          <div class="who-item">
+            ☕ 喜欢慢慢做事情的人
+          </div>
+
+          <div class="who-item">
+            🌿 喜欢亲自创造，而不是直接购买完成品的人
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           SOFT ARCHIVE NOTE
+      ========================== -->
+
+      <section class="section">
+
+        <h2>
+          Soft Archive Note
+        </h2>
+
+        <div class="quote">
+
+          <p>
+            <strong>
+              我们已经习惯了让很多事情变得更快。
+            </strong>
+          </p>
+
+          <p>
+            快速输入。
+            <br>
+            快速记录。
+            <br>
+            快速完成。
+          </p>
+
+          <p>
+            但写字似乎没有必要一直追求速度。
+          </p>
+
+          <p>
+            一支笔蘸上墨水，
+            <br>
+            笔尖碰到纸面，
+            <br>
+            一句话慢慢浮现。
+          </p>
+
+          <p>
+            也许我们真正喜欢的，
+            <br>
+            从来不只是写下来的那几个字。
+          </p>
+
+          <p>
+            而是那几分钟里，
+            <br>
+            <strong>
+              我们终于又回到了自己的时间里。
+            </strong>
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           SOURCES
+      ========================== -->
+
+      <section class="sources">
+
+        <h2>
+          Sources
+        </h2>
+
+        <div class="source-item">
+
+          <span class="source-label">
+            Official Website
+          </span>
+
+          <a
+            href="https://kakimori.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://kakimori.com/
+          </a>
+
+        </div>
+
+
+        <div class="source-item">
+
+          <span class="source-label">
+            Instagram
+          </span>
+
+          <a
+            href="https://www.instagram.com/kakimori_japan/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://www.instagram.com/kakimori_japan/
+          </a>
+
+        </div>
+
+      </section>
+
+
+    </article>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+      Soft Archive
+    </footer>
+
+  </main>
+
+</body>
+</html>
