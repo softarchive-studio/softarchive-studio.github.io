@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Collection No.006 — TRAVELER'S COMPANY | Soft Archive</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f4ee;
+      color: #35322e;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.9;
+    }
+
+    /* =========================
+       Navigation
+    ========================= */
+
+    .site-nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      color: #35322e;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: #35322e;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.6;
+    }
+
+    /* =========================
+       Main
+    ========================= */
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 30px 100px;
+    }
+
+    /* =========================
+       Cover
+    ========================= */
+
+    .cover {
+      text-align: center;
+      padding: 50px 0 90px;
+    }
+
+    .collection-number {
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      color: #8a8177;
+      margin-bottom: 28px;
+    }
+
+    .cover h1 {
+      max-width: 760px;
+      margin: 0 auto;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 48px;
+      line-height: 1.25;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+    }
+
+    .cover-subtitle {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #8a8177;
+      letter-spacing: 0.08em;
+    }
+
+    .cover-image {
+      width: 100%;
+      margin-top: 55px;
+      display: block;
+    }
+
+    /* =========================
+       Article
+    ========================= */
+
+    .article {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .article p {
+      font-size: 16px;
+      line-height: 2.05;
+      margin: 0 0 28px;
+    }
+
+    .intro {
+      margin-bottom: 90px;
+    }
+
+    .article-section {
+      margin-bottom: 105px;
+    }
+
+    .article-section h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: normal;
+      line-height: 1.4;
+      margin: 0 0 38px;
+      letter-spacing: -0.01em;
+    }
+
+    .article-section h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 23px;
+      font-weight: normal;
+      line-height: 1.45;
+      margin: 0 0 32px;
+    }
+
+    .article-image {
+      width: 100%;
+      display: block;
+      margin: 45px 0 55px;
+    }
+
+    .quote {
+      border-left: 1px solid #b8afa4;
+      padding-left: 25px;
+      margin: 45px 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      line-height: 1.9;
+      color: #4a453f;
+    }
+
+    .quote strong {
+      font-weight: normal;
+    }
+
+    .small-label {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #8a8177;
+      margin-bottom: 15px;
+    }
+
+    .attention-list {
+      margin: 30px 0 55px;
+      padding-left: 22px;
+    }
+
+    .attention-list li {
+      margin-bottom: 18px;
+      padding-left: 5px;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    /* =========================
+       Archive Information
+    ========================= */
+
+    .archive-info {
+      margin-top: 100px;
+      padding-top: 65px;
+      border-top: 1px solid #d8d1c8;
+    }
+
+    .archive-info h2,
+    .who-for h2,
+    .soft-note h2,
+    .sources h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 27px;
+      font-weight: normal;
+      margin: 0 0 30px;
+    }
+
+    .archive-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    .archive-table td {
+      border-bottom: 1px solid #ded8cf;
+      padding: 13px 0;
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    .archive-table td:first-child {
+      width: 34%;
+      color: #8a8177;
+      letter-spacing: 0.04em;
+    }
+
+    .archive-note {
+      font-size: 13px !important;
+      color: #7d756c;
+      line-height: 1.8 !important;
+    }
+
+    /* =========================
+       Who It's For
+    ========================= */
+
+    .who-for {
+      margin-top: 80px;
+    }
+
+    .who-for ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .who-for li {
+      padding: 13px 0;
+      border-bottom: 1px solid #ded8cf;
+      font-size: 15px;
+    }
+
+    /* =========================
+       Soft Archive Note
+    ========================= */
+
+    .soft-note {
+      margin-top: 90px;
+      padding: 55px 0;
+      border-top: 1px solid #d8d1c8;
+      border-bottom: 1px solid #d8d1c8;
+    }
+
+    .soft-note blockquote {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.95;
+      color: #4a453f;
+    }
+
+    /* =========================
+       Sources
+    ========================= */
+
+    .sources {
+      margin-top: 80px;
+    }
+
+    .source-group {
+      margin-bottom: 32px;
+    }
+
+    .source-group-title {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8a8177;
+      margin-bottom: 10px;
+    }
+
+    .source-group a {
+      display: block;
+      color: #5d574f;
+      font-size: 13px;
+      line-height: 1.8;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .source-group a:hover {
+      text-decoration: underline;
+    }
+
+    .source-note {
+      margin-top: 45px;
+      font-size: 12px;
+      color: #918980;
+      line-height: 1.8;
+    }
+
+    /* =========================
+       Continue Exploring
+    ========================= */
+
+    .continue-exploring {
+      margin-top: 110px;
+      padding: 80px 0 90px;
+      text-align: center;
+      border-top: 1px solid #d8d1c8;
+    }
+
+    .continue-label {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #8a8177;
+      margin-bottom: 22px;
+    }
+
+    .continue-exploring h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      font-weight: normal;
+      margin: 0 0 20px;
+    }
+
+    .continue-exploring p {
+      max-width: 560px;
+      margin: 0 auto 28px;
+      font-size: 14px;
+      line-height: 1.9;
+      color: #756e66;
+    }
+
+    .explore-link {
+      display: inline-block;
+      color: #35322e;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      border-bottom: 1px solid #35322e;
+      padding-bottom: 3px;
+    }
+
+    .explore-link:hover {
+      opacity: 0.6;
+    }
+
+    /* =========================
+       Footer
+    ========================= */
+
+    .footer {
+      border-top: 1px solid #d8d1c8;
+      text-align: center;
+      padding: 55px 20px 65px;
+      color: #8a8177;
+    }
+
+    .footer-brand {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      color: #35322e;
+      margin-bottom: 10px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      font-size: 12px;
+    }
+
+    .footer .copyright {
+      margin-top: 18px;
+      font-size: 11px;
+      color: #a09991;
+    }
+
+    /* =========================
+       Mobile
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      .site-nav {
+        padding: 23px 20px;
+      }
+
+      .nav-links {
+        gap: 18px;
+      }
+
+      main {
+        padding: 25px 20px 70px;
+      }
+
+      .cover {
+        padding: 40px 0 65px;
+      }
+
+      .cover h1 {
+        font-size: 34px;
+        line-height: 1.35;
+      }
+
+      .cover-subtitle {
+        font-size: 12px;
+      }
+
+      .article p {
+        font-size: 15px;
+        line-height: 2;
+      }
+
+      .article-section {
+        margin-bottom: 80px;
+      }
+
+      .article-section h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+      }
+
+      .article-section h3 {
+        font-size: 21px;
+      }
+
+      .quote {
+        font-size: 18px;
+        padding-left: 18px;
+      }
+
+      .archive-info h2,
+      .who-for h2,
+      .soft-note h2,
+      .sources h2 {
+        font-size: 24px;
+      }
+
+      .archive-table td {
+        font-size: 13px;
+      }
+
+      .archive-table td:first-child {
+        width: 38%;
+      }
+
+      .soft-note blockquote {
+        font-size: 18px;
+      }
+
+      .continue-exploring {
+        margin-top: 80px;
+        padding: 65px 0 70px;
+      }
+
+      .continue-exploring h2 {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       Header
+  ========================= -->
+
+  <nav class="site-nav">
+    <a href="index.html" class="logo">Soft Archive</a>
+
+    <div class="nav-links">
+      <a href="index.html">Archive</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- =========================
+         Cover
+    ========================= -->
+
+    <section class="cover">
+
+      <div class="collection-number">
+        COLLECTION NO.006
+      </div>
+
+      <h1>
+        TRAVELER'S COMPANY：为什么一本笔记本，会让人想去更远的地方？
+      </h1>
+
+      <div class="cover-subtitle">
+        5 min read
+      </div>
+
+      <img
+        src="images/no006-cover.jpg"
+        alt="TRAVELER'S notebook"
+        class="cover-image"
+      >
+
+    </section>
+
+
+    <article class="article">
+
+      <!-- =========================
+           Introduction
+      ========================= -->
+
+      <section class="intro">
+
+        <p>
+          有些东西，是为了让我们把生活安排得更好。
+        </p>
+
+        <p>
+          有些东西，却会让我们想离开熟悉的地方。
+        </p>
+
+        <p>
+          一本地图。<br>
+          一张车票。<br>
+          一台相机。<br>
+          还有一本可以随身携带的笔记本。
+        </p>
+
+        <p>
+          旅行的时候，我们总会带走一些东西。
+        </p>
+
+        <p>
+          但真正留下来的，
+          <br>
+          往往不是照片本身，
+          <br>
+          而是那些写在纸上的小小记录。
+        </p>
+
+        <p>
+          TRAVELER'S COMPANY 是来自日本的旅行与生活方式品牌，以
+          <strong>TRAVELER'S notebook</strong>
+          为核心，鼓励人们通过旅行、书写与创作，记录属于自己的故事。
+        </p>
+
+        <p>
+          它并不要求一本笔记本永远保持整洁。
+        </p>
+
+        <p>
+          相反，
+          <br>
+          使用留下的痕迹，
+          <br>
+          本身就是它的一部分。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           P1
+      ========================= -->
+
+      <section class="article-section">
+
+        <h2>
+          A Notebook for the Journey
+        </h2>
+
+        <p>
+          旅行的意义，
+          <br>
+          有时候并不只是抵达某个地方。
+        </p>
+
+        <p>
+          而是在路上的时候，
+          <br>
+          慢慢发现自己。
+        </p>
+
+        <p>
+          TRAVELER'S notebook 没有试图替你决定应该记录什么。
+        </p>
+
+        <p>
+          你可以写下：
+        </p>
+
+        <p>
+          今天去了哪里。<br>
+          遇见了谁。<br>
+          看到的一间小店。<br>
+          一张车票。<br>
+          一张地图。<br>
+          一句突然想到的话。
+        </p>
+
+        <p>
+          甚至只是：
+          <br>
+          「今天的天气很好。」
+        </p>
+
+        <p>
+          它留下的不是标准答案，
+          <br>
+          而是一个可以属于自己的空间。
+        </p>
+
+        <img
+          src="images/no006-p1.jpg"
+          alt="TRAVELER'S notebook and travel objects"
+          class="article-image"
+        >
+
+      </section>
+
+
+      <!-- =========================
+           P2
+      ========================= -->
+
+      <section class="article-section">
+
+        <h2>
+          ① Made to Travel
+        </h2>
+
+        <p>
+          旅行中的东西，
+          <br>
+          通常需要满足一个很简单的条件：
+        </p>
+
+        <div class="quote">
+          <strong>你愿意一直带着它。</strong>
+        </div>
+
+        <p>
+          TRAVELER'S notebook 的设计并不复杂。
+        </p>
+
+        <p>
+          一个皮革封套，
+          <br>
+          一条橡皮筋，
+          <br>
+          以及可以自由替换的内芯。
+        </p>
+
+        <p>
+          你可以根据自己的旅程，决定里面应该放什么：
+        </p>
+
+        <p>
+          旅行记录、空白纸、日程、地图，
+          <br>
+          甚至照片和车票。
+        </p>
+
+        <p>
+          不同的内芯，可以随着旅程和生活不断更换，
+          让一本笔记本适应不同的使用方式。
+        </p>
+
+        <p>
+          它不像一本已经完成的书。
+          <br>
+          更像一本
+          <strong>正在旅途中慢慢被写出来的书。</strong>
+        </p>
+
+        <p>
+          而它的尺寸，也让它很适合随身携带。
+        </p>
+
+        <p>
+          地图、车票、收据或旅行途中偶然得到的小纸片，
+          <br>
+          都可以暂时夹在其中。
+        </p>
+
+        <p>
+          所以我觉得，TRAVELER'S notebook 最有趣的地方之一，
+          是它并不是让你：
+        </p>
+
+        <div class="quote">
+          「带着一本笔记本去旅行。」
+        </div>
+
+        <p>
+          而是让笔记本本身，
+          <br>
+          成为旅行的一部分。
+        </p>
+
+        <p>
+          TRAVELER'S COMPANY 官方也特别强调，
+          皮革封套会随着使用逐渐产生变化，
+          而这些变化会成为使用者自己的记忆。
+        </p>
+
+        <p>
+          皮革封套在泰国清迈制作，
+          <br>
+          内部 notebook 则在日本制作，
+          <br>
+          并使用为书写体验而开发的 MD Paper。
+        </p>
+
+        <p>
+          不同地方、不同材料与不同工艺，
+          <br>
+          被放进同一本 notebook 里。
+        </p>
+
+        <p>
+          它们最后共同指向的，却是同一件事：
+        </p>
+
+        <div class="quote">
+          <strong>陪你去生活。</strong>
+        </div>
+
+        <img
+          src="images/no006-p2.jpg"
+          alt="TRAVELER'S notebook leather cover and refills"
+          class="article-image"
+        >
+
+      </section>
+
+
+      <!-- =========================
+           P3
+      ========================= -->
+
+      <section class="article-section">
+
+        <h2>
+          ② A Notebook That Becomes Yours
+        </h2>
+
+        <p>
+          同一本 TRAVELER'S notebook，
+          <br>
+          到了不同人的手里，
+          <br>
+          可能会变成完全不同的样子。
+        </p>
+
+        <p>
+          有人把它当作旅行日记。
+          <br>
+          有人记录电影、阅读和日常生活。
+          <br>
+          有人贴上车票、明信片和杂志剪报。
+          <br>
+          有人画画，也有人只是写下每天想到的事情。
+        </p>
+
+        <p>
+          你甚至可以通过贴纸、吊饰、印章等方式，
+          让封面和内页慢慢变成自己的样子。
+        </p>
+
+        <div class="quote">
+          <strong>它并没有规定一本笔记本应该长什么样。</strong>
+        </div>
+
+        <p>
+          反而把决定权留给了使用者。
+        </p>
+
+        <p>
+          这也是我很喜欢它的地方。
+        </p>
+
+        <p>
+          它不是一个已经完成的设计，
+          <br>
+          而是一个
+          <strong>等待你参与完成的空间。</strong>
+        </p>
+
+        <img
+          src="images/no006-p3.jpg"
+          alt="Customized TRAVELER'S notebook"
+          class="article-image"
+        >
+
+      </section>
+
+
+      <!-- =========================
+           P4
+      ========================= -->
+
+      <section class="article-section">
+
+        <h3>
+          When a Notebook Becomes a Studio
+        </h3>
+
+        <p>
+          TRAVELER'S COMPANY 分享过一些使用者的故事：
+        </p>
+
+        <p>
+          有人把它当成随身工作室，记录草图、照片、诗句和创作过程；
+          有人把孩子的照片、旅行记忆与工作想法放在同一本 notebook 里；
+          也有人因为开始收集旅行中的纸片和票据，
+          而重新发现了记录与拼贴的乐趣。
+        </p>
+
+        <p>
+          其中一个很打动我的故事，是使用者将一次探望祖母的旅程记录在 notebook 里：
+        </p>
+
+        <p>
+          车票、旅途中拍下的照片、车站便当的包装、
+          神社的参拜印章，以及与家人的照片，
+          都被留在同一本笔记里。
+        </p>
+
+        <p>
+          它最后保存下来的，
+          已经不只是「去了哪里」。
+        </p>
+
+        <p>
+          而是那一次旅程里发生过的许多微小瞬间。
+        </p>
+
+        <p>
+          这让我觉得：
+        </p>
+
+        <div class="quote">
+          一本笔记本真正属于一个人的时候，
+          <br>
+          不是因为它被买下来，
+          <br>
+          而是因为它开始记录属于那个人的生活。
+        </div>
+
+        <img
+          src="images/no006-p4.jpg"
+          alt="TRAVELER'S notebook used as a creative journal"
+          class="article-image"
+        >
+
+      </section>
+
+
+      <!-- =========================
+           P5
+      ========================= -->
+
+      <section class="article-section">
+
+        <h2>
+          ③ The Beauty of Things That Age
+        </h2>
+
+        <p>
+          我们通常希望东西保持全新。
+        </p>
+
+        <p>
+          但 TRAVELER'S notebook 好像恰好相反。
+        </p>
+
+        <p>
+          它并不害怕被使用。
+        </p>
+
+        <p>
+          皮革会变软。
+          <br>
+          颜色会慢慢改变。
+          <br>
+          表面会出现划痕。
+          <br>
+          边缘也会留下使用过的痕迹。
+        </p>
+
+        <p>
+          但这些变化，并不会让它失去原本的美感。
+        </p>
+
+        <p>
+          反而会让它越来越像：
+        </p>
+
+        <div class="quote">
+          <strong>一件真正属于你的东西。</strong>
+        </div>
+
+        <p>
+          这也是 TRAVELER'S notebook 和普通笔记本很不一样的地方。
+        </p>
+
+        <p>
+          一本新的 notebook，最开始属于品牌。
+        </p>
+
+        <p>
+          但使用一年以后，
+          <br>
+          它可能已经属于你。
+        </p>
+
+        <p>
+          那些划痕、折痕和颜色变化，
+          <br>
+          并不是制造时就设计好的装饰。
+        </p>
+
+        <p>
+          它们来自你真正使用它的过程。
+        </p>
+
+        <p>
+          而内页保存下来的东西也是一样。
+        </p>
+
+        <p>
+          一张旧车票。<br>
+          一张咖啡店的收据。<br>
+          某个城市买来的贴纸。<br>
+          旅行途中写下的一句话。
+        </p>
+
+        <p>
+          这些东西单独看，也许都很普通。
+        </p>
+
+        <p>
+          但当它们一起留在一本 notebook 里，
+          <br>
+          它们就成为了一段只有你知道的故事。
+        </p>
+
+        <p>
+          所以，TRAVELER'S notebook 的「旧」并不是损耗。
+        </p>
+
+        <p>
+          而是一种记录时间的方式。
+        </p>
+
+        <div class="quote">
+          <strong>它会随着你一起变旧，也随着你一起成长。</strong>
+        </div>
+
+        <p>
+          也许几年以后，当你再次打开它，
+          <br>
+          你看到的已经不只是一件用了很久的物品。
+        </p>
+
+        <p>
+          而是：
+        </p>
+
+        <div class="quote">
+          <strong>曾经的自己。</strong>
+        </div>
+
+        <img
+          src="images/no006-p5.jpg"
+          alt="Aged leather TRAVELER'S notebook"
+          class="article-image"
+        >
+
+      </section>
+
+
+      <!-- =========================
+           P6
+      ========================= -->
+
+      <section class="article-section">
+
+        <h2>
+          More Than a Souvenir
+        </h2>
+
+        <p>
+          旅行结束以后，
+          <br>
+          我们通常会带回来一些纪念品。
+        </p>
+
+        <p>
+          但有时候，
+          <br>
+          最珍贵的东西并不是买回来的。
+        </p>
+
+        <p>
+          而是凌晨写下的一句话，
+          <br>
+          车站里等待列车的十分钟，
+          <br>
+          陌生城市的一杯咖啡，
+          <br>
+          迷路时随手画下的一张地图。
+        </p>
+
+        <p>
+          还有那个时候，
+          <br>
+          正在旅行的自己。
+        </p>
+
+        <p>
+          旅行本身总会结束。
+        </p>
+
+        <p>
+          但这些微小的东西，
+          <br>
+          可以让某一个瞬间继续留在未来。
+        </p>
+
+        <p>
+          TRAVELER'S notebook 做的，
+          <br>
+          也许就是给这些记忆一个可以回去看看的地方。
+        </p>
+
+        <img
+          src="images/no006-p6.jpg"
+          alt="Travel memories recorded in a notebook"
+          class="article-image"
+        >
+
+      </section>
+
+
+      <!-- =========================
+           Why Soft Archive Collects It
+      ========================= -->
+
+      <section class="article-section">
+
+        <h2>
+          Why Soft Archive Collects It
+        </h2>
+
+        <div class="quote">
+          有些东西值得收藏，不是因为它永远保持崭新，
+          而是因为它会陪着我们一起积攒回忆。
+          <br><br>
+          一本真正属于自己的笔记本，最后保存下来的，
+          也许不是旅行去了哪里，
+          而是那段旅程里，我们成为了怎样的人。
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           A Small Detail I Love
+      ========================= -->
+
+      <section class="article-section">
+
+        <h2>
+          A Small Detail I Love
+        </h2>
+
+        <div class="quote">
+
+          <strong>我很喜欢皮革慢慢留下痕迹这件事。</strong>
+
+          <br><br>
+
+          一开始，它只是一件刚买来的物品。
+
+          <br><br>
+
+          但当你一次又一次把它带出门，
+          它会慢慢留下属于你的痕迹。
+
+          <br><br>
+
+          划痕、颜色变化、折痕，
+          以及里面一张张被保存下来的纸片。
+
+          <br><br>
+
+          所以最后，你手里的已经不再只是「TRAVELER'S notebook」。
+
+          <br><br>
+
+          而是一本只有你才能真正拥有的东西。
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           What Caught My Attention
+      ========================= -->
+
+      <section class="article-section">
+
+        <h2>
+          What Caught My Attention
+        </h2>
+
+        <ul class="attention-list">
+
+          <li>
+            <strong>皮革会随着使用产生变化</strong>，
+            让「时间」本身成为设计的一部分。
+          </li>
+
+          <li>
+            官方摄影经常展示 notebook
+            <strong>正在被使用的状态</strong>，
+            而不只是单纯展示商品。
+          </li>
+
+          <li>
+            旅行、咖啡馆、地图、照片、车票与手写文字，
+            经常自然地出现在视觉中。
+          </li>
+
+          <li>
+            使用者可以自由组合 refill、贴纸、照片和其他纸质物品，
+            让每一本 notebook 都拥有不同的样子。
+          </li>
+
+          <li>
+            我特别喜欢它没有要求使用者保持整洁或完美，
+            而是允许<strong>生活留下痕迹</strong>。
+          </li>
+
+        </ul>
+
+      </section>
+
+
+      <!-- =========================
+           Signature Piece
+      ========================= -->
+
+      <section class="article-section">
+
+        <h2>
+          Signature Piece
+        </h2>
+
+        <div class="quote">
+
+          <strong>TRAVELER'S notebook</strong>
+
+          <br><br>
+
+          一个简单的皮革封套，
+          加上可以自由替换的 notebook refill。
+
+          <br><br>
+
+          它最特别的地方，并不是第一次打开时有多漂亮，
+          而是使用很久以后，
+          你会发现它已经变成了一件只有自己才能真正定义的物品。
+
+          <br><br>
+
+          <strong>The more you use it, the more it becomes yours.</strong>
+
+        </div>
+
+        <img
+          src="images/no006-p7.jpg"
+          alt="TRAVELER'S notebook signature piece"
+          class="article-image"
+        >
+
+      </section>
+
+
+      <!-- =========================
+           Theme
+      ========================= -->
+
+      <section class="article-section">
+
+        <div class="small-label">
+          Theme
+        </div>
+
+        <p>
+          Journey | 旅程
+        </p>
+
+        <div class="small-label">
+          Theme Color
+        </div>
+
+        <p>
+          Leather Brown
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           Archive Information
+      ========================= -->
+
+      <section class="archive-info">
+
+        <h2>
+          Archive Information
+        </h2>
+
+        <table class="archive-table">
+
+          <tr>
+            <td>Country</td>
+            <td>Japan</td>
+          </tr>
+
+          <tr>
+            <td>Location</td>
+            <td>Tokyo</td>
+          </tr>
+
+          <tr>
+            <td>Founded</td>
+            <td>2006 — TRAVELER'S notebook launched</td>
+          </tr>
+
+          <tr>
+            <td>Category</td>
+            <td>Travel &amp; Stationery</td>
+          </tr>
+
+          <tr>
+            <td>Materials</td>
+            <td>Leather · Paper · Brass / Metal</td>
+          </tr>
+
+        </table>
+
+        <p class="archive-note">
+          TRAVELER'S notebook 于 2006 年推出；2015 年，
+          品牌从原本的 MIDORI 转变为 TRAVELER'S COMPANY，
+          继续围绕「traveling in one's daily life」展开品牌理念。
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           Who It's For
+      ========================= -->
+
+      <section class="who-for">
+
+        <h2>
+          Who It's For
+        </h2>
+
+        <ul>
+
+          <li>
+            ✈️ <strong>喜欢旅行和探索的人</strong>
+          </li>
+
+          <li>
+            📖 <strong>喜欢记录生活的人</strong>
+          </li>
+
+          <li>
+            🎨 <strong>喜欢自由创作和拼贴的人</strong>
+          </li>
+
+          <li>
+            👜 <strong>喜欢随身携带一些东西的人</strong>
+          </li>
+
+          <li>
+            🤎 <strong>喜欢会随着时间改变的物品的人</strong>
+          </li>
+
+          <li>
+            📮 <strong>喜欢保存车票、明信片和旅行纪念物的人</strong>
+          </li>
+
+        </ul>
+
+      </section>
+
+
+      <!-- =========================
+           Soft Archive Note
+      ========================= -->
+
+      <section class="soft-note">
+
+        <h2>
+          Soft Archive Note
+        </h2>
+
+        <blockquote>
+
+          <strong>
+            有些旅程结束以后，真正留下来的不是目的地，
+            而是那个曾经出发、曾经在路上的自己。
+          </strong>
+
+          <br><br>
+
+          TRAVELER'S notebook 让我想到，
+          记录并不是为了把每一件事情都保存下来。
+
+          <br><br>
+
+          而是给未来的自己，
+          留下一扇可以回去看看的门。
+
+          <br><br>
+
+          也许很多年以后，当我们再次翻开它，
+          真正想念的并不是那座城市。
+
+          <br><br>
+
+          而是当时那个还不知道未来会发生什么，
+          却依然愿意出发的自己。
+
+        </blockquote>
+
+      </section>
+
+
+      <!-- =========================
+           Sources
+      ========================= -->
+
+      <section class="sources">
+
+        <h2>
+          Sources
+        </h2>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            Official Website
+          </div>
+
+          <a
+            href="https://www.travelers-company.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            https://www.travelers-company.com/
+          </a>
+
+        </div>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            Instagram
+          </div>
+
+          <a
+            href="https://www.instagram.com/travelers_company/"
+            target="_blank"
+            rel="noopener"
+          >
+            https://www.instagram.com/travelers_company/
+          </a>
+
+          <a
+            href="https://www.instagram.com/travelers_factory/"
+            target="_blank"
+            rel="noopener"
+          >
+            https://www.instagram.com/travelers_factory/
+          </a>
+
+        </div>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            Professional Users
+          </div>
+
+          <a
+            href="https://www.travelers-company.com/customize/professional-user/aitor-saraiba"
+            target="_blank"
+            rel="noopener"
+          >
+            Aitor Saraiba
+          </a>
+
+          <a
+            href="https://www.travelers-company.com/customize/professional-user/makoto-kawai"
+            target="_blank"
+            rel="noopener"
+          >
+            Makoto Kawai
+          </a>
+
+          <a
+            href="https://www.travelers-company.com/customize/professional-user/kensaku_hosoi"
+            target="_blank"
+            rel="noopener"
+          >
+            Kensaku Hosoi
+          </a>
+
+        </div>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            User / Independent Reviews
+          </div>
+
+          <a
+            href="https://www.abetterdesk.com/blog/2016/1/18/midori-travelers-notebook-first-impressions"
+            target="_blank"
+            rel="noopener"
+          >
+            A Better Desk — MIDORI Traveler's Notebook First Impressions
+          </a>
+
+          <a
+            href="https://brooksreview.net/2024/03/travelers-company-notebooks/"
+            target="_blank"
+            rel="noopener"
+          >
+            Brooks Review — Traveler's Company Notebooks
+          </a>
+
+          <a
+            href="https://www.gentlemanstationer.com/blog/2023/10/28/travel-chronicles-quick-thoughts-on-actually-traveling-with-a-travelers-notebook"
+            target="_blank"
+            rel="noopener"
+          >
+            The Gentleman Stationer — Traveling with a Traveler's Notebook
+          </a>
+
+        </div>
+
+
+        <p class="source-note">
+          This archive is an independent editorial project by Soft Archive.
+          Product names, trademarks and images belong to their respective owners.
+          Soft Archive is not affiliated with TRAVELER'S COMPANY.
+        </p>
+
+      </section>
+
+
+      <!-- =========================
+           Continue Exploring
+      ========================= -->
+
+      <section class="continue-exploring">
+
+        <div class="continue-label">
+          Continue Exploring
+        </div>
+
+        <h2>
+          More quiet things worth keeping.
+        </h2>
+
+        <p>
+          Return to the archive and discover another ordinary thing,
+          another small detail, another story.
+        </p>
+
+        <a
+          href="index.html"
+          class="explore-link"
+        >
+          Explore the Archive →
+        </a>
+
+      </section>
+
+    </article>
+
+  </main>
+
+
+  <!-- =========================
+       Footer
+  ========================= -->
+
+  <footer class="footer">
+
+    <div class="footer-brand">
+      Soft Archive
+    </div>
+
+    <p>
+      A collection of quiet things worth keeping.
+    </p>
+
+    <p class="copyright">
+      © 2026 Soft Archive
+    </p>
+
+  </footer>
+
+</body>
+</html>
