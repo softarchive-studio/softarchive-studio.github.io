@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>OBJECT：一家店，为什么会改变人们喜欢设计这件事？ | Soft Archive</title>
+
+  <meta
+    name="description"
+    content="Collection No.004 — OBJECT：一家店，为什么会改变人们喜欢设计这件事？ Soft Archive 关于独立设计、选物店与生活灵感的收藏。"
+  >
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f4ee;
+      color: #35322e;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    .site-nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      letter-spacing: 0.03em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-links a {
+      opacity: 0.72;
+      transition: opacity 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+
+    /* =========================
+       COVER
+    ========================= */
+
+    .cover {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 40px 95px;
+    }
+
+    .collection-number {
+      margin-bottom: 28px;
+      color: #8b847b;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .cover-image {
+      width: 82%;
+      max-width: 880px;
+      display: block;
+      margin: 0 auto 55px;
+      border-radius: 2px;
+    }
+
+    .cover-content {
+      max-width: 760px;
+    }
+
+    .cover h1 {
+      margin: 0 0 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.3;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+    }
+
+    .read-time {
+      margin-bottom: 45px;
+      color: #8b847b;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    .intro {
+      font-size: 16px;
+      line-height: 2.05;
+    }
+
+    .intro p {
+      margin: 0 0 25px;
+    }
+
+
+    /* =========================
+       ARTICLE
+    ========================= */
+
+    .article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px 40px 100px;
+    }
+
+    .article-section {
+      margin-bottom: 90px;
+    }
+
+    .article-section h2 {
+      margin: 0 0 30px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      line-height: 1.35;
+      font-weight: normal;
+      letter-spacing: -0.01em;
+    }
+
+    .article-section h3 {
+      margin: 48px 0 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      line-height: 1.4;
+      font-weight: normal;
+    }
+
+    .article-section p {
+      margin: 0 0 24px;
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    .article-section strong {
+      font-weight: 600;
+    }
+
+    .article-image {
+      width: 100%;
+      display: block;
+      margin: 38px 0 45px;
+      border-radius: 2px;
+    }
+
+
+    /* =========================
+       QUOTE
+    ========================= */
+
+    .quote {
+      margin: 38px 0;
+      padding: 8px 0 8px 28px;
+      border-left: 1px solid #b7afa4;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      line-height: 1.9;
+      color: #514c46;
+    }
+
+
+    /* =========================
+       ATTENTION LIST
+    ========================= */
+
+    .attention-list {
+      margin: 25px 0 0;
+      padding-left: 20px;
+    }
+
+    .attention-list li {
+      margin-bottom: 17px;
+      padding-left: 5px;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+
+    /* =========================
+       SIGNATURE PIECE
+    ========================= */
+
+    .signature-piece {
+      margin: 70px 0;
+      padding: 42px;
+      background: #f1ede5;
+      border: 1px solid #e5dfd5;
+    }
+
+    .signature-label {
+      margin-bottom: 18px;
+      color: #8b847b;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .signature-piece h3 {
+      margin: 0 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 25px;
+      font-weight: normal;
+    }
+
+    .signature-piece p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+
+    /* =========================
+       ARCHIVE INFORMATION
+    ========================= */
+
+    .archive-info {
+      margin-top: 75px;
+    }
+
+    .archive-info h2,
+    .who-its-for h2 {
+      margin-bottom: 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: normal;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .info-table tr {
+      border-bottom: 1px solid #ddd7cd;
+    }
+
+    .info-table td {
+      padding: 14px 0;
+      vertical-align: top;
+    }
+
+    .info-table td:first-child {
+      width: 38%;
+      color: #8b847b;
+      letter-spacing: 0.03em;
+    }
+
+
+    /* =========================
+       WHO IT'S FOR
+    ========================= */
+
+    .who-its-for {
+      margin-top: 80px;
+    }
+
+    .who-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .who-list li {
+      padding: 13px 0;
+      border-bottom: 1px solid #e2ddd4;
+      font-size: 15px;
+    }
+
+
+    /* =========================
+       SOFT ARCHIVE NOTE
+    ========================= */
+
+    .soft-note {
+      margin-top: 85px;
+      padding-top: 45px;
+      border-top: 1px solid #d9d3ca;
+    }
+
+    .soft-note-label {
+      margin-bottom: 25px;
+      color: #8b847b;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .soft-note blockquote {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.9;
+      color: #514c46;
+    }
+
+
+    /* =========================
+       SOURCES
+    ========================= */
+
+    .sources {
+      margin-top: 90px;
+      padding-top: 40px;
+      border-top: 1px solid #d9d3ca;
+    }
+
+    .sources h2 {
+      margin: 0 0 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 27px;
+      font-weight: normal;
+    }
+
+    .source-group {
+      margin-bottom: 30px;
+    }
+
+    .source-group-title {
+      margin-bottom: 10px;
+      color: #8b847b;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .source-group a {
+      display: block;
+      margin-bottom: 7px;
+      color: #6f6962;
+      font-size: 13px;
+      text-decoration: underline;
+      text-decoration-color: #c8c1b7;
+      text-underline-offset: 3px;
+      word-break: break-word;
+    }
+
+    .source-note {
+      margin-top: 40px;
+      color: #8b847b;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+
+    /* =========================
+       CONTINUE EXPLORING
+    ========================= */
+
+    .continue-exploring {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 75px 40px 90px;
+      border-top: 1px solid #d9d3ca;
+      text-align: center;
+    }
+
+    .continue-label {
+      margin-bottom: 20px;
+      color: #8b847b;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .continue-exploring h2 {
+      margin: 0 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      font-weight: normal;
+      line-height: 1.4;
+    }
+
+    .continue-exploring p {
+      max-width: 550px;
+      margin: 0 auto 30px;
+      color: #706a63;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .explore-link {
+      display: inline-block;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #8b847b;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer {
+      padding: 60px 40px 45px;
+      text-align: center;
+      border-top: 1px solid #e0dbd2;
+    }
+
+    .footer-brand {
+      margin-bottom: 10px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      color: #8b847b;
+      font-size: 12px;
+    }
+
+    .footer .copyright {
+      margin-top: 22px;
+      font-size: 11px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      .site-nav {
+        padding: 22px 22px;
+      }
+
+      .nav-links {
+        gap: 18px;
+      }
+
+      .cover {
+        padding: 35px 22px 70px;
+      }
+
+      .cover-image {
+        width: 100%;
+        margin-bottom: 42px;
+      }
+
+      .cover h1 {
+        font-size: 32px;
+        line-height: 1.35;
+      }
+
+      .article {
+        padding: 10px 22px 70px;
+      }
+
+      .article-section {
+        margin-bottom: 70px;
+      }
+
+      .article-section h2 {
+        font-size: 27px;
+      }
+
+      .article-section h3 {
+        font-size: 20px;
+      }
+
+      .article-section p {
+        font-size: 15px;
+        line-height: 1.95;
+      }
+
+      .quote {
+        padding-left: 20px;
+        font-size: 17px;
+      }
+
+      .signature-piece {
+        padding: 30px 25px;
+      }
+
+      .continue-exploring {
+        padding: 65px 22px 75px;
+      }
+
+      .footer {
+        padding: 50px 22px 40px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <nav class="site-nav">
+
+    <a href="index.html" class="logo">
+      Soft Archive
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Archive</a>
+      <a href="about.html">About</a>
+    </div>
+
+  </nav>
+
+
+  <!-- =========================
+       COVER
+  ========================= -->
+
+  <header class="cover">
+
+    <div class="collection-number">
+      Collection No.004
+    </div>
+
+    <img
+      src="images/no004-cover.jpg"
+      alt="OBJECT Seoul design select shop"
+      class="cover-image"
+    >
+
+    <div class="cover-content">
+
+      <h1>
+        OBJECT：一家店，为什么会改变人们喜欢设计这件事？
+      </h1>
+
+      <div class="read-time">
+        5 min read · Design &amp; Culture
+      </div>
+
+      <div class="intro">
+
+        <p>
+          有时候，我们并不是为了买东西而走进一间店。
+          <br>
+          而是想看看，
+          <br>
+          今天有没有什么新的发现。
+        </p>
+
+        <p>
+          一本书。
+          <br>
+          一张明信片。
+          <br>
+          一个杯子。
+          <br>
+          一个陌生品牌。
+        </p>
+
+        <p>
+          好的选物店，收藏的不只是商品，
+          <br>
+          而是一种生活方式。
+        </p>
+
+        <p>
+          OBJECT 是来自韩国首尔的独立设计选物品牌，也是韩国具有代表性的设计选物空间之一。
+        </p>
+
+        <p>
+          自 2013 年成立以来，它始终希望让更多独立创作者被看见，并透过选物、展览与内容策划，建立创作者与消费者之间的连结。
+        </p>
+
+        <p>
+          这里没有所谓的「主打商品」。
+          <br>
+          相反，它汇集了许多韩国本地设计师的作品，从文具、插画周边、陶艺、木作，到布包、饰品与生活杂货，每一次造访，都可能发现新的创作者。
+        </p>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       ARTICLE
+  ========================= -->
+
+  <main class="article">
+
+
+    <!-- P1 -->
+
+    <section class="article-section">
+
+      <img
+        src="images/no004-p1.jpg"
+        alt="OBJECT select shop interior"
+        class="article-image"
+      >
+
+      <h2>
+        A Place That Lets You Discover
+      </h2>
+
+      <p>
+        有些店，希望你尽快找到想买的东西。
+      </p>
+
+      <p>
+        OBJECT 却更像是在邀请你慢慢逛。
+      </p>
+
+      <p>
+        这里没有固定的浏览路线，也没有刻意吸引目光的陈列。
+      </p>
+
+      <p>
+        你可以停下来，看一张插画、一件陶器、一张明信片。
+      </p>
+
+      <p>
+        然后，在不知不觉之间，发现原来自己喜欢这样的设计。
+      </p>
+
+      <p>
+        我想，这也是为什么很多人来到这里，不一定会买很多东西，却总会带着一点新的灵感离开。
+      </p>
+
+
+      <h3>
+        ① A Store That Doesn't Rush You
+      </h3>
+
+      <p>
+        走进 OBJECT，最先感受到的不是商品，而是空间。
+      </p>
+
+      <p>
+        白色墙面、红砖、自然光，以及留有呼吸感的陈列方式，让人很自然地放慢脚步。
+      </p>
+
+      <p>
+        这里不像一般商店，希望你快速完成购物。
+      </p>
+
+      <p>
+        相反，它更希望你愿意停下来，一件一件慢慢浏览。
+      </p>
+
+      <p>
+        许多韩国顾客也提到，每层楼都有不同的氛围，让人会想仔细看看每一个角落，而不是匆匆离开。
+      </p>
+
+    </section>
+
+
+    <!-- P2 -->
+
+    <section class="article-section">
+
+      <img
+        src="images/no004-p2.jpg"
+        alt="OBJECT exhibition and independent creators"
+        class="article-image"
+      >
+
+      <h2>
+        ② Every Object Has a Story
+      </h2>
+
+      <p>
+        OBJECT 收藏的不只是作品。
+      </p>
+
+      <p>
+        更重要的是作品背后的创作者。
+      </p>
+
+      <p>
+        这里经常举办主题展览、品牌快闪，以及创作者合作活动，让每一件商品都有属于自己的故事。
+      </p>
+
+      <p>
+        许多第一次认识的小众品牌，也是在这里被更多人发现。
+      </p>
+
+      <p>
+        我喜欢的是，它不会告诉你什么最值得买，而是让你慢慢找到真正喜欢的东西。
+      </p>
+
+    </section>
+
+
+    <!-- P3 -->
+
+    <section class="article-section">
+
+      <img
+        src="images/no004-p3.jpg"
+        alt="OBJECT creative workshop and objects"
+        class="article-image"
+      >
+
+      <h2>
+        ③ You Leave With More Than What You Bought
+      </h2>
+
+      <p>
+        很多人离开 OBJECT 时，带走的不只是购物袋。
+      </p>
+
+      <p>
+        也有人带走一本刚认识的插画家作品、一张明信片，或是自己亲手制作的小物。
+      </p>
+
+      <p>
+        它也提供能够亲手制作饰品的体验，让每个人都能完成属于自己的纪念。
+      </p>
+
+      <p>
+        我想，这也是 OBJECT 最特别的地方。
+      </p>
+
+      <p>
+        它收藏的不只是商品。
+        <br>
+        也收藏人与设计相遇的过程。
+      </p>
+
+    </section>
+
+
+    <!-- P4 -->
+
+    <section class="article-section">
+
+      <img
+        src="images/no004-p4.jpg"
+        alt="OBJECT design store detail"
+        class="article-image"
+      >
+
+      <h2>
+        Why Soft Archive Collects It
+      </h2>
+
+      <div class="quote">
+        有些地方，并不是为了让人消费，而是让人重新发现，原来生活里，还有很多值得喜欢的小事。
+      </div>
+
+
+      <h3>
+        A Small Detail I Love
+      </h3>
+
+      <div class="quote">
+
+        <strong>
+          我很喜欢 OBJECT 不会把最热门的商品放在最显眼的位置。
+        </strong>
+
+        <br><br>
+
+        它让每位创作者都有机会被发现，也让每位来到这里的人，都能用自己的步调寻找真正喜欢的东西。
+
+      </div>
+
+
+      <h3>
+        What Caught My Attention
+      </h3>
+
+      <ul class="attention-list">
+
+        <li>
+          官方摄影经常记录真实的人，而不是只有商品。
+        </li>
+
+        <li>
+          店内大量使用白色与自然光，营造舒服而开放的空间。
+        </li>
+
+        <li>
+          每一次展览都会带来不同的创作者，让每次造访都有新的发现。
+        </li>
+
+        <li>
+          我很喜欢它没有把商品当成主角，而是把创作者放在故事的中心。
+        </li>
+
+      </ul>
+
+
+      <div class="signature-piece">
+
+        <div class="signature-label">
+          Signature Piece
+        </div>
+
+        <h3>
+          Curated Exhibitions
+        </h3>
+
+        <p>
+          比起拥有一件代表商品，OBJECT 更像以一次次展览与选物策划，成为认识韩国独立设计文化的一个窗口。
+          <br><br>
+          每一次主题展览，都是认识新创作者的一次机会。
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ARCHIVE INFORMATION
+    ========================= -->
+
+    <section class="article-section archive-info">
+
+      <h2>
+        Archive Information
+      </h2>
+
+      <table class="info-table">
+
+        <tr>
+          <td>Theme</td>
+          <td>Discover | 发现</td>
+        </tr>
+
+        <tr>
+          <td>Theme Color</td>
+          <td>Brick White</td>
+        </tr>
+
+        <tr>
+          <td>Country</td>
+          <td>Korea</td>
+        </tr>
+
+        <tr>
+          <td>Location</td>
+          <td>Seoul</td>
+        </tr>
+
+        <tr>
+          <td>Founded</td>
+          <td>2013</td>
+        </tr>
+
+        <tr>
+          <td>Category</td>
+          <td>Design Store / Select Shop</td>
+        </tr>
+
+        <tr>
+          <td>Focus</td>
+          <td>Independent Creators · Stationery · Lifestyle Goods · Exhibitions</td>
+        </tr>
+
+      </table>
+
+    </section>
+
+
+    <!-- =========================
+         WHO IT'S FOR
+    ========================= -->
+
+    <section class="article-section who-its-for">
+
+      <h2>
+        Who It’s For
+      </h2>
+
+      <ul class="who-list">
+
+        <li>
+          🌿 喜欢慢慢逛选物店的人
+        </li>
+
+        <li>
+          🎨 喜欢独立设计与创作者的人
+        </li>
+
+        <li>
+          📒 喜欢寻找生活灵感的人
+        </li>
+
+        <li>
+          🎁 喜欢收藏有故事物品的人
+        </li>
+
+      </ul>
+
+    </section>
+
+
+    <!-- =========================
+         SOFT ARCHIVE NOTE
+    ========================= -->
+
+    <section class="soft-note">
+
+      <div class="soft-note-label">
+        Soft Archive Note
+      </div>
+
+      <blockquote>
+
+        有时候，一间好的选物店，并不会告诉你应该喜欢什么，而是给你足够的时间，慢慢发现真正吸引自己的东西。
+
+        <br><br>
+
+        OBJECT 也提醒了我：真正值得收藏的，不一定是最昂贵的作品，而是那些与你产生共鸣，并愿意陪伴你生活的小小发现。
+
+      </blockquote>
+
+    </section>
+
+
+    <!-- =========================
+         SOURCES
+    ========================= -->
+
+    <section class="sources">
+
+      <h2>
+        Sources
+      </h2>
+
+
+      <div class="source-group">
+
+        <div class="source-group-title">
+          Official Website
+        </div>
+
+        <a
+          href="https://insideobject.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          OBJECT Official Website
+        </a>
+
+      </div>
+
+
+      <div class="source-group">
+
+        <div class="source-group-title">
+          Instagram
+        </div>
+
+        <a
+          href="https://www.instagram.com/insideobject/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @insideobject
+        </a>
+
+      </div>
+
+
+      <div class="source-group">
+
+        <div class="source-group-title">
+          Customer Reviews · Naver Blog
+        </div>
+
+        <a
+          href="https://blog.naver.com/bolasoul/224341647430"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Naver Blog Review 01
+        </a>
+
+        <a
+          href="https://blog.naver.com/hayeonee112/224359603711"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Naver Blog Review 02
+        </a>
+
+        <a
+          href="https://blog.naver.com/ssook_v/224329930097"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Naver Blog Review 03
+        </a>
+
+      </div>
+
+
+      <p class="source-note">
+        This archive is an independent editorial project by Soft Archive.
+        Product names, trademarks and images belong to their respective owners.
+        Soft Archive is not affiliated with OBJECT.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       CONTINUE EXPLORING
+  ========================= -->
+
+  <section class="continue-exploring">
+
+    <div class="continue-label">
+      Continue Exploring
+    </div>
+
+    <h2>
+      More quiet things worth keeping.
+    </h2>
+
+    <p>
+      Return to the archive and discover another ordinary thing,
+      another small detail, another story.
+    </p>
+
+    <a
+      href="index.html"
+      class="explore-link"
+    >
+      Explore the Archive →
+    </a>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer class="footer">
+
+    <div class="footer-brand">
+      Soft Archive
+    </div>
+
+    <p>
+      A collection of quiet things worth keeping.
+    </p>
+
+    <p class="copyright">
+      © 2026 Soft Archive
+    </p>
+
+  </footer>
+
+
+</body>
+</html>
