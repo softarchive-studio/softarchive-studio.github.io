@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MIDORI：为什么写字，仍然值得保留？ | Soft Archive</title>
+
+  <meta
+    name="description"
+    content="Collection No.005 — MIDORI：为什么写字，仍然值得保留？ Soft Archive 关于书写、纸张与日常记录的收藏。"
+  >
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f4ee;
+      color: #35322e;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    .site-nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      letter-spacing: 0.03em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-links a {
+      opacity: 0.72;
+      transition: opacity 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+
+    /* =========================
+       COVER
+    ========================= */
+
+    .cover {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 40px 95px;
+    }
+
+    .collection-number {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8b847b;
+      margin-bottom: 28px;
+    }
+
+    .cover-image {
+      width: 100%;
+      display: block;
+      margin-bottom: 60px;
+      border-radius: 2px;
+    }
+
+    .cover-content {
+      max-width: 760px;
+    }
+
+    .cover h1 {
+      margin: 0 0 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.18;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+    }
+
+    .read-time {
+      margin-bottom: 45px;
+      color: #8b847b;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    .intro {
+      font-size: 16px;
+      line-height: 2.05;
+    }
+
+    .intro p {
+      margin: 0 0 25px;
+    }
+
+
+    /* =========================
+       ARTICLE
+    ========================= */
+
+    .article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px 40px 100px;
+    }
+
+    .article-section {
+      margin-bottom: 90px;
+    }
+
+    .article-section h2 {
+      margin: 0 0 30px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      line-height: 1.35;
+      font-weight: normal;
+      letter-spacing: -0.01em;
+    }
+
+    .article-section h3 {
+      margin: 48px 0 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      line-height: 1.4;
+      font-weight: normal;
+    }
+
+    .article-section p {
+      margin: 0 0 24px;
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    .article-section strong {
+      font-weight: 600;
+    }
+
+    .article-image {
+      width: 100%;
+      display: block;
+      margin: 38px 0 45px;
+      border-radius: 2px;
+    }
+
+    .quote {
+      margin: 38px 0;
+      padding: 8px 0 8px 28px;
+      border-left: 1px solid #b7afa4;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      line-height: 1.9;
+      color: #514c46;
+    }
+
+
+    /* =========================
+       LIST
+    ========================= */
+
+    .attention-list {
+      margin: 25px 0 0;
+      padding-left: 20px;
+    }
+
+    .attention-list li {
+      margin-bottom: 17px;
+      padding-left: 5px;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+
+    /* =========================
+       SIGNATURE PIECE
+    ========================= */
+
+    .signature-piece {
+      margin: 70px 0;
+      padding: 42px;
+      background: #f1ede5;
+      border: 1px solid #e5dfd5;
+    }
+
+    .signature-label {
+      margin-bottom: 18px;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8b847b;
+    }
+
+    .signature-piece h3 {
+      margin: 0 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 25px;
+      font-weight: normal;
+    }
+
+    .signature-piece p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+
+    /* =========================
+       ARCHIVE INFORMATION
+    ========================= */
+
+    .archive-info {
+      margin-top: 75px;
+    }
+
+    .archive-info h2,
+    .who-its-for h2 {
+      margin-bottom: 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: normal;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .info-table tr {
+      border-bottom: 1px solid #ddd7cd;
+    }
+
+    .info-table td {
+      padding: 14px 0;
+      vertical-align: top;
+    }
+
+    .info-table td:first-child {
+      width: 38%;
+      color: #8b847b;
+      letter-spacing: 0.03em;
+    }
+
+
+    /* =========================
+       WHO IT'S FOR
+    ========================= */
+
+    .who-its-for {
+      margin-top: 80px;
+    }
+
+    .who-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .who-list li {
+      padding: 13px 0;
+      border-bottom: 1px solid #e2ddd4;
+      font-size: 15px;
+    }
+
+
+    /* =========================
+       SOFT ARCHIVE NOTE
+    ========================= */
+
+    .soft-note {
+      margin-top: 85px;
+      padding-top: 45px;
+      border-top: 1px solid #d9d3ca;
+    }
+
+    .soft-note-label {
+      margin-bottom: 25px;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8b847b;
+    }
+
+    .soft-note blockquote {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.9;
+      color: #514c46;
+    }
+
+
+    /* =========================
+       SOURCES
+    ========================= */
+
+    .sources {
+      margin-top: 90px;
+      padding-top: 40px;
+      border-top: 1px solid #d9d3ca;
+    }
+
+    .sources h2 {
+      margin: 0 0 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 27px;
+      font-weight: normal;
+    }
+
+    .source-group {
+      margin-bottom: 30px;
+    }
+
+    .source-group-title {
+      margin-bottom: 10px;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #8b847b;
+    }
+
+    .source-group a {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 13px;
+      color: #6f6962;
+      text-decoration: underline;
+      text-decoration-color: #c8c1b7;
+      text-underline-offset: 3px;
+      word-break: break-word;
+    }
+
+    .source-note {
+      margin-top: 40px;
+      color: #8b847b;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+
+    /* =========================
+       CONTINUE EXPLORING
+    ========================= */
+
+    .continue-exploring {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 75px 40px 90px;
+      border-top: 1px solid #d9d3ca;
+      text-align: center;
+    }
+
+    .continue-label {
+      margin-bottom: 20px;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8b847b;
+    }
+
+    .continue-exploring h2 {
+      margin: 0 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      font-weight: normal;
+      line-height: 1.4;
+    }
+
+    .continue-exploring p {
+      max-width: 550px;
+      margin: 0 auto 30px;
+      color: #706a63;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .explore-link {
+      display: inline-block;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid #8b847b;
+      padding-bottom: 4px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer {
+      padding: 60px 40px 45px;
+      text-align: center;
+      border-top: 1px solid #e0dbd2;
+    }
+
+    .footer-brand {
+      margin-bottom: 10px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      color: #8b847b;
+      font-size: 12px;
+    }
+
+    .footer .copyright {
+      margin-top: 22px;
+      font-size: 11px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      .site-nav {
+        padding: 22px 22px;
+      }
+
+      .nav-links {
+        gap: 18px;
+      }
+
+      .cover {
+        padding: 35px 22px 70px;
+      }
+
+      .cover-image {
+        margin-bottom: 42px;
+      }
+
+      .cover h1 {
+        font-size: 39px;
+      }
+
+      .article {
+        padding: 10px 22px 70px;
+      }
+
+      .article-section {
+        margin-bottom: 70px;
+      }
+
+      .article-section h2 {
+        font-size: 27px;
+      }
+
+      .article-section h3 {
+        font-size: 20px;
+      }
+
+      .article-section p {
+        font-size: 15px;
+        line-height: 1.95;
+      }
+
+      .quote {
+        padding-left: 20px;
+        font-size: 17px;
+      }
+
+      .signature-piece {
+        padding: 30px 25px;
+      }
+
+      .continue-exploring {
+        padding: 65px 22px 75px;
+      }
+
+      .footer {
+        padding: 50px 22px 40px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <nav class="site-nav">
+
+    <a href="index.html" class="logo">
+      Soft Archive
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Archive</a>
+      <a href="about.html">About</a>
+    </div>
+
+  </nav>
+
+
+  <!-- =========================
+       COVER
+  ========================= -->
+
+  <header class="cover">
+
+    <div class="collection-number">
+      Collection No.005
+    </div>
+
+    <img
+      src="images/no005-cover.jpg"
+      alt="MIDORI MD Notebook"
+      class="cover-image"
+    >
+
+    <div class="cover-content">
+
+      <h1>
+        MIDORI：为什么写字，仍然值得保留？
+      </h1>
+
+      <div class="read-time">
+        5 min read · Writing
+      </div>
+
+      <div class="intro">
+
+        <p>
+          我们每天都会写很多字。
+          <br>
+          发送讯息。
+          <br>
+          输入密码。
+          <br>
+          记录待办事项。
+        </p>
+
+        <p>
+          但真正属于自己的文字，
+          <br>
+          却越来越少。
+        </p>
+
+        <p>
+          有时候，
+          <br>
+          写下来，并不是为了记住。
+          <br>
+          而是为了慢慢整理自己的想法。
+        </p>
+
+        <p>
+          那些没有说出口的话、
+          <br>
+          还没有想明白的事情、
+          <br>
+          一闪而过的灵感，
+          <br>
+          都能因为一支笔、一张纸，而慢慢变得清晰。
+        </p>
+
+        <p>
+          MIDORI（みどり，意为「绿色」）诞生于 1950 年，是来自日本的文具品牌。
+        </p>
+
+        <p>
+          品牌最初从信纸与信封开始，后来逐渐发展出笔记本、书写工具以及生活文具，希望透过设计，让日常书写重新成为一件值得享受的事情。
+        </p>
+
+        <p>
+          在 MIDORI 看来，书写并不是为了完成任务，而是一段与自己相处的时间。
+        </p>
+
+        <p>
+          因此，他们没有替使用者决定应该怎么写。
+          <br>
+          没有日期。
+          <br>
+          没有复杂的版面。
+          <br>
+          也没有多余的装饰。
+        </p>
+
+        <p>
+          只是留下一本安静的笔记本，等待每个人用自己的方式开始。
+        </p>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       ARTICLE
+  ========================= -->
+
+  <main class="article">
+
+
+    <!-- P1 -->
+
+    <section class="article-section">
+
+      <img
+        src="images/no005-p1.jpg"
+        alt="MIDORI writing and stationery"
+        class="article-image"
+      >
+
+      <h2>
+        A Japanese Way of Writing
+      </h2>
+
+      <p>
+        日本至今仍保留浓厚的手写文化。
+      </p>
+
+      <p>
+        无论是手帐、感谢卡、便条纸，还是日常记录，许多人依然习惯透过书写整理生活。
+      </p>
+
+      <p>
+        在日本，人们认为手写不仅是一种记录方式，也是一种表达诚意、自我整理与面对自己的过程。
+      </p>
+
+      <p>
+        这种文化，也深深影响了 MIDORI 的设计。
+      </p>
+
+      <p>
+        它并没有追求复杂的功能，而是不断思考：
+      </p>
+
+      <p>
+        <strong>
+          怎样才能让写字这件事，本身变得更舒服。
+        </strong>
+      </p>
+
+
+      <h3>
+        ① Made to Be Written In
+      </h3>
+
+      <p>
+        MIDORI 的设计几乎没有任何多余的装饰。
+      </p>
+
+      <p>
+        封面简单。
+        <br>
+        颜色克制。
+        <br>
+        打开后，只留下大片留白。
+      </p>
+
+      <p>
+        第一次看到时，甚至会觉得：
+      </p>
+
+      <p>
+        「是不是太简单了？」
+      </p>
+
+      <p>
+        但真正开始书写以后，你会发现，
+        <br>
+        正因为没有任何设计打扰，
+        <br>
+        注意力才能完全回到文字本身。
+      </p>
+
+      <p>
+        许多人喜欢 MD Notebook 的原因，并不只是因为它漂亮，而是因为它不会让人产生「必须写得很完美」的压力。
+      </p>
+
+      <p>
+        它更像一张等待思考开始的白纸。
+      </p>
+
+    </section>
+
+
+    <!-- P2 -->
+
+    <section class="article-section">
+
+      <img
+        src="images/no005-p2.jpg"
+        alt="MD Notebook paper"
+        class="article-image"
+      >
+
+      <h2>
+        ② The Beauty of Blank Pages
+      </h2>
+
+      <p>
+        MD Notebook 最有名的，并不是封面。
+      </p>
+
+      <p>
+        而是它的纸。
+      </p>
+
+      <p>
+        MD PAPER 从 1960 年代开始被特别开发，后来 MD Notebook 也以这种纸张为基础，追求更舒服的书写体验。
+      </p>
+
+      <p>
+        钢笔、铅笔、中性笔，都能自然地滑过纸面。
+      </p>
+
+      <p>
+        纸张也经过特别设计，以减少晕染与渗透，并保留细微的书写触感。
+      </p>
+
+      <p>
+        很多人真正喜欢它，并不是因为纸张规格，
+        <br>
+        而是因为：
+      </p>
+
+      <p>
+        <strong>
+          写字的时候，会慢慢忘记笔记本的存在。
+        </strong>
+      </p>
+
+      <p>
+        所有注意力，
+        <br>
+        都回到了思考本身。
+      </p>
+
+    </section>
+
+
+    <!-- P3 -->
+
+    <section class="article-section">
+
+      <img
+        src="images/no005-p3.jpg"
+        alt="MD Notebook open pages"
+        class="article-image"
+      >
+
+      <h2>
+        ③ A Notebook That Grows With You
+      </h2>
+
+      <p>
+        MD Notebook 能够完全摊平 180 度。
+      </p>
+
+      <p>
+        没有写到一半需要压住页面的不便。
+        <br>
+        也没有因为装订影响思绪。
+      </p>
+
+      <p>
+        一本可以用来写旅行。
+        <br>
+        一本记录工作。
+        <br>
+        一本收藏每天想到的事情。
+      </p>
+
+      <p>
+        当一本笔记本慢慢被写满，
+        <br>
+        它就不只是一本文具。
+      </p>
+
+      <p>
+        而是一段时间留下来的痕迹。
+      </p>
+
+      <p>
+        我想，
+        <br>
+        这也是它一直受到喜爱的原因。
+      </p>
+
+    </section>
+
+
+    <!-- P4 -->
+
+    <section class="article-section">
+
+      <img
+        src="images/no005-p4.jpg"
+        alt="Writing in an MD Notebook"
+        class="article-image"
+      >
+
+      <h2>
+        Why Soft Archive Collects It
+      </h2>
+
+      <div class="quote">
+        有些笔记本，不只是为了记录事情，而是让我们在写字的过程里，慢慢整理自己的内心。
+      </div>
+
+
+      <h3>
+        A Small Detail I Love
+      </h3>
+
+      <div class="quote">
+        <strong>我很喜欢 MD Notebook 没有替使用者决定任何事情。</strong>
+        <br><br>
+        没有日期、没有格式、没有规定该怎么写。
+        <br><br>
+        它只是留下一本安静的空白本子，等待每个人写下属于自己的故事。
+      </div>
+
+
+      <h3>
+        What Caught My Attention
+      </h3>
+
+      <ul class="attention-list">
+
+        <li>
+          官方摄影几乎只有纸、笔、光，没有复杂布景。
+        </li>
+
+        <li>
+          产品总是在真实书写，而不是只是展示商品。
+        </li>
+
+        <li>
+          整体设计保留大量留白，让文字成为真正的主角。
+        </li>
+
+        <li>
+          我很喜欢它像是在等待属于它的主人，开始新的篇章。
+        </li>
+
+      </ul>
+
+
+      <div class="signature-piece">
+
+        <div class="signature-label">
+          Signature Piece
+        </div>
+
+        <h3>
+          MD Notebook A5
+        </h3>
+
+        <p>
+          一本设计安静到几乎让人忘记它存在的笔记本。
+          <br><br>
+          当最后一页也写满的时候，它已经不只是一本笔记本，而是一本属于自己的故事。
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ARCHIVE INFORMATION -->
+
+    <section class="article-section archive-info">
+
+      <h2>
+        Archive Information
+      </h2>
+
+      <table class="info-table">
+
+        <tr>
+          <td>Theme</td>
+          <td>Write | 书写</td>
+        </tr>
+
+        <tr>
+          <td>Theme Color</td>
+          <td>Mist Gray</td>
+        </tr>
+
+        <tr>
+          <td>Country</td>
+          <td>Japan</td>
+        </tr>
+
+        <tr>
+          <td>Location</td>
+          <td>Tokyo</td>
+        </tr>
+
+        <tr>
+          <td>Founded</td>
+          <td>1950</td>
+        </tr>
+
+        <tr>
+          <td>Category</td>
+          <td>Writing &amp; Stationery</td>
+        </tr>
+
+        <tr>
+          <td>Materials</td>
+          <td>MD PAPER · Paper</td>
+        </tr>
+
+      </table>
+
+    </section>
+
+
+    <!-- WHO IT'S FOR -->
+
+    <section class="article-section who-its-for">
+
+      <h2>
+        Who It’s For
+      </h2>
+
+      <ul class="who-list">
+
+        <li>
+          ✍️ 喜欢手写与记录的人
+        </li>
+
+        <li>
+          📖 喜欢整理思绪的人
+        </li>
+
+        <li>
+          ☕ 喜欢安静独处的人
+        </li>
+
+        <li>
+          🌿 想寻找一本能够陪伴很多年的笔记本的人
+        </li>
+
+      </ul>
+
+    </section>
+
+
+    <!-- SOFT ARCHIVE NOTE -->
+
+    <section class="soft-note">
+
+      <div class="soft-note-label">
+        Soft Archive Note
+      </div>
+
+      <blockquote>
+        有时候，我们写下来的，并不是答案，而是那些还没有想明白的事情。
+        <br><br>
+        MIDORI 提醒了我：一张空白的纸，不只是等待被写满，也等待着我们慢慢认识自己。
+        <br><br>
+        或许，书写真正留下来的，并不是字迹，而是那个愿意停下来，与自己对话的时刻。
+      </blockquote>
+
+    </section>
+
+
+    <!-- SOURCES -->
+
+    <section class="sources">
+
+      <h2>
+        Sources
+      </h2>
+
+
+      <div class="source-group">
+
+        <div class="source-group-title">
+          Official Website
+        </div>
+
+        <a
+          href="https://www.midori-japan.co.jp/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MIDORI Official Website
+        </a>
+
+        <a
+          href="https://md-product.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MD PAPER PRODUCTS
+        </a>
+
+      </div>
+
+
+      <div class="source-group">
+
+        <div class="source-group-title">
+          Instagram
+        </div>
+
+        <a
+          href="https://www.instagram.com/mdproduct.official/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @mdproduct.official
+        </a>
+
+      </div>
+
+
+      <div class="source-group">
+
+        <div class="source-group-title">
+          Customer Reviews
+        </div>
+
+        <a
+          href="https://jikorich.com/md-notebook01"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Jikorich — MD Notebook Review
+        </a>
+
+        <a
+          href="https://note.com/writer_yarakashi/n/n2d2b22e57aed"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          note — MD Notebook Review
+        </a>
+
+        <a
+          href="https://monosashilog.com/mdnote-reason/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Monosashilog — Why MD Notebook
+        </a>
+
+      </div>
+
+
+      <p class="source-note">
+        This archive is an independent editorial project by Soft Archive.
+        Product names, trademarks and images belong to their respective owners.
+        Soft Archive is not affiliated with MIDORI or MD PAPER PRODUCTS.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       CONTINUE EXPLORING
+  ========================= -->
+
+  <section class="continue-exploring">
+
+    <div class="continue-label">
+      Continue Exploring
+    </div>
+
+    <h2>
+      More quiet things worth keeping.
+    </h2>
+
+    <p>
+      Return to the archive and discover another ordinary thing,
+      another small detail, another story.
+    </p>
+
+    <a
+      href="index.html"
+      class="explore-link"
+    >
+      Explore the Archive →
+    </a>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer class="footer">
+
+    <div class="footer-brand">
+      Soft Archive
+    </div>
+
+    <p>
+      A collection of quiet things worth keeping.
+    </p>
+
+    <p class="copyright">
+      © 2026 Soft Archive
+    </p>
+
+  </footer>
+
+</body>
+</html>
