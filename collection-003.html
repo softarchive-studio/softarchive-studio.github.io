@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KINTO：为什么一个杯子，会改变喝一杯咖啡的感觉？ | Soft Archive</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #f7f4ee;
+      color: #35322e;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* =========================
+       Navigation
+    ========================= */
+
+    .site-nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      letter-spacing: 0.03em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+    }
+
+    /* =========================
+       Cover
+    ========================= */
+
+    .cover {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 40px 95px;
+    }
+
+    .collection-number {
+      margin-bottom: 28px;
+      color: #8b847b;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .cover-image {
+      width: 82%;
+      max-width: 880px;
+      display: block;
+      margin: 0 auto 55px;
+      border-radius: 2px;
+    }
+
+    .cover-content {
+      max-width: 760px;
+    }
+
+    .cover h1 {
+      margin: 0 0 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.3;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+    }
+
+    .read-time {
+      margin-bottom: 45px;
+      color: #8b847b;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+    }
+
+    .intro {
+      font-size: 16px;
+      line-height: 2.05;
+    }
+
+    .intro p {
+      margin: 0 0 25px;
+    }
+
+    /* =========================
+       Article
+    ========================= */
+
+    .article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 20px 40px 100px;
+    }
+
+    .article-section {
+      margin-bottom: 90px;
+    }
+
+    .article-section h2 {
+      margin: 0 0 30px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      line-height: 1.35;
+      font-weight: normal;
+      letter-spacing: -0.01em;
+    }
+
+    .article-section h3 {
+      margin: 48px 0 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      line-height: 1.4;
+      font-weight: normal;
+    }
+
+    .article-section p {
+      margin: 0 0 24px;
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    .article-image {
+      width: 100%;
+      display: block;
+      margin: 38px 0 45px;
+      border-radius: 2px;
+    }
+
+    .quote {
+      margin: 38px 0;
+      padding: 8px 0 8px 28px;
+      border-left: 1px solid #b7afa4;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      line-height: 1.9;
+      color: #514c46;
+    }
+
+    /* =========================
+       Lists
+    ========================= */
+
+    .attention-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .attention-list li {
+      margin-bottom: 18px;
+      padding-left: 5px;
+      font-size: 15px;
+      line-height: 2;
+    }
+
+    /* =========================
+       Signature Piece
+    ========================= */
+
+    .signature-piece {
+      margin: 70px 0;
+      padding: 42px;
+      background: #f1ede5;
+      border: 1px solid #e5dfd5;
+    }
+
+    .signature-piece h3 {
+      margin: 0 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+      font-weight: normal;
+    }
+
+    .signature-piece p {
+      margin: 0 0 18px;
+    }
+
+    .signature-piece p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* =========================
+       Archive Information
+    ========================= */
+
+    .archive-info {
+      margin-top: 75px;
+    }
+
+    .archive-info h2,
+    .who-its-for h2 {
+      margin-bottom: 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: normal;
+    }
+
+    .info-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .info-table tr {
+      border-bottom: 1px solid #ddd7cd;
+    }
+
+    .info-table td {
+      padding: 14px 0;
+      vertical-align: top;
+    }
+
+    .info-table td:first-child {
+      width: 38%;
+      color: #8b847b;
+      letter-spacing: 0.03em;
+    }
+
+    /* =========================
+       Who It's For
+    ========================= */
+
+    .who-its-for {
+      margin-top: 80px;
+    }
+
+    .who-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .who-list li {
+      padding: 13px 0;
+      border-bottom: 1px solid #e2ddd4;
+      font-size: 15px;
+    }
+
+    /* =========================
+       Soft Archive Note
+    ========================= */
+
+    .soft-note {
+      margin-top: 85px;
+      padding-top: 45px;
+      border-top: 1px solid #d9d3ca;
+    }
+
+    .soft-note-label {
+      margin-bottom: 25px;
+      color: #8b847b;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .soft-note blockquote {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.9;
+      color: #514c46;
+    }
+
+    .soft-note blockquote p {
+      margin: 0 0 28px;
+    }
+
+    .soft-note blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* =========================
+       Sources
+    ========================= */
+
+    .sources {
+      margin-top: 90px;
+      padding-top: 40px;
+      border-top: 1px solid #d9d3ca;
+    }
+
+    .sources h2 {
+      margin: 0 0 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 27px;
+      font-weight: normal;
+    }
+
+    .source-group {
+      margin-bottom: 30px;
+    }
+
+    .source-group-title {
+      margin-bottom: 10px;
+      color: #8b847b;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .source-group a {
+      display: block;
+      margin-bottom: 7px;
+      color: #6f6962;
+      font-size: 13px;
+      text-decoration: underline;
+      text-decoration-color: #c8c1b7;
+      text-underline-offset: 3px;
+      word-break: break-word;
+    }
+
+    .source-note {
+      margin-top: 40px;
+      color: #8b847b;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    /* =========================
+       Continue Exploring
+    ========================= */
+
+    .continue-exploring {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 75px 40px 90px;
+      border-top: 1px solid #d9d3ca;
+      text-align: center;
+    }
+
+    .continue-label {
+      margin-bottom: 20px;
+      color: #8b847b;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .continue-exploring h2 {
+      margin: 0 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      font-weight: normal;
+      line-height: 1.4;
+    }
+
+    .continue-exploring p {
+      max-width: 550px;
+      margin: 0 auto 30px;
+      color: #706a63;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .explore-link {
+      display: inline-block;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #8b847b;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+    }
+
+    /* =========================
+       Footer
+    ========================= */
+
+    .footer {
+      padding: 60px 40px 45px;
+      text-align: center;
+      border-top: 1px solid #e0dbd2;
+    }
+
+    .footer-brand {
+      margin-bottom: 10px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      color: #8b847b;
+      font-size: 12px;
+    }
+
+    .footer .copyright {
+      margin-top: 22px;
+      font-size: 11px;
+    }
+
+    /* =========================
+       Mobile
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      .site-nav {
+        padding: 22px 22px;
+      }
+
+      .nav-links {
+        gap: 18px;
+      }
+
+      .cover {
+        padding: 35px 22px 70px;
+      }
+
+      .cover-image {
+        width: 100%;
+        margin-bottom: 42px;
+      }
+
+      .cover h1 {
+        font-size: 32px;
+        line-height: 1.35;
+      }
+
+      .article {
+        padding: 10px 22px 70px;
+      }
+
+      .article-section {
+        margin-bottom: 70px;
+      }
+
+      .article-section h2 {
+        font-size: 27px;
+      }
+
+      .article-section h3 {
+        font-size: 20px;
+      }
+
+      .article-section p {
+        font-size: 15px;
+        line-height: 1.95;
+      }
+
+      .quote {
+        padding-left: 20px;
+        font-size: 17px;
+      }
+
+      .signature-piece {
+        padding: 30px 25px;
+      }
+
+      .continue-exploring {
+        padding: 65px 22px 75px;
+      }
+
+      .footer {
+        padding: 50px 22px 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       Header
+  ========================= -->
+
+  <nav class="site-nav">
+    <a href="index.html" class="logo">Soft Archive</a>
+
+    <div class="nav-links">
+      <a href="index.html">Archive</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+
+  <!-- =========================
+       Cover
+  ========================= -->
+
+  <header class="cover">
+
+    <div class="collection-number">
+      Collection No.003
+    </div>
+
+    <img
+      src="images/no003-cover.jpg"
+      alt="KINTO"
+      class="cover-image"
+    >
+
+    <div class="cover-content">
+
+      <h1>
+        KINTO：为什么一个杯子，会改变喝一杯咖啡的感觉？
+      </h1>
+
+      <div class="read-time">
+        5 min read
+      </div>
+
+      <div class="intro">
+
+        <p>
+          我们每天都会喝一杯水。
+          <br>
+          一杯咖啡。
+          <br>
+          一杯茶。
+        </p>
+
+        <p>
+          但很少有人会注意：
+        </p>
+
+        <p>
+          有时候，改变一杯饮品感受的，
+          并不是它本身，
+          而是陪伴它的器皿。
+        </p>
+
+        <p>
+          KINTO 是来自日本滋贺县的生活器物品牌，
+          自 1972 年以来持续设计餐具、咖啡器具与生活用品。
+        </p>
+
+        <p>
+          它希望透过兼具美感与实用性的设计，
+          让人们放慢脚步，
+          在日常生活中找到属于自己的节奏。
+        </p>
+
+        <p>
+          <strong>
+            比起追求特别，
+            它更在意人与器物之间每天都会发生的互动。
+          </strong>
+        </p>
+
+      </div>
+    </div>
+  </header>
+
+
+  <!-- =========================
+       Article
+  ========================= -->
+
+  <main class="article">
+
+    <!-- P1 -->
+
+    <section class="article-section">
+
+      <h2>
+        A Japanese Way of Living
+      </h2>
+
+      <p>
+        日本设计很少追求华丽。
+      </p>
+
+      <p>
+        它更在意的是，
+        一个物品是否能够长久陪伴使用者，
+        并自然地融入每天的生活。
+      </p>
+
+      <p>
+        这种设计理念，
+        与日本重视留白（Ma）和珍惜物品（Mottainai）的文化有关。
+      </p>
+
+      <p>
+        留白，不只是视觉上的简单，
+        而是让生活拥有更多呼吸的空间；
+        耐用，也不仅仅代表品质，
+        更意味着一个物品能够陪伴我们很长一段时间。
+      </p>
+
+      <p>
+        KINTO 所呈现的，
+        正是这种安静而克制的生活方式。
+      </p>
+
+      <h3>
+        ① Design That Doesn't Interrupt
+      </h3>
+
+      <p>
+        好的设计，不会打断生活，
+        而是自然地融入生活。
+      </p>
+
+      <p>
+        KINTO 给我的第一印象，
+        是温暖、自然，也带着一点安静。
+      </p>
+
+      <p>
+        它没有急着吸引你的目光，
+        而是静静地陪伴日常，
+        让人在忙碌的时候，
+        也愿意慢下来，留一点时间给自己。
+      </p>
+
+      <p>
+        它让人感受到，
+        我可以放缓脚步，
+        歇一歇，再继续前进。
+      </p>
+
+      <p>
+        柔和的配色，
+        也让视觉感受变得更加舒缓。
+      </p>
+
+      <p>
+        KINTO 的产品很少刻意强调设计感。
+      </p>
+
+      <p>
+        相反，
+        它们更像已经存在于生活很久的一部分。
+      </p>
+
+      <p>
+        无论是放在餐桌、书架，
+        还是窗边，
+        都不会显得突兀。
+      </p>
+
+      <img
+        src="images/no003-p1.jpg"
+        alt="KINTO everyday living"
+        class="article-image"
+      >
+
+    </section>
+
+
+    <!-- P2 -->
+
+    <section class="article-section">
+
+      <h2>
+        ② Designed Around Everyday Feelings
+      </h2>
+
+      <p>
+        KINTO 很重视拿起来舒服，
+        而不仅仅是好看。
+      </p>
+
+      <p>
+        它会为日常生活带来轻松和节奏感。
+        很多细节都会考虑使用者最自然的动作，
+        例如杯缘的弧度、握把的形状，
+        以及拿起时的重量。
+      </p>
+
+      <p>
+        有使用者分享，
+        KINTO 的耐热玻璃拿在手里轻盈，
+        却不会让人觉得脆弱；
+        方形握把也能够自然固定手指，
+        即使每天使用也很顺手。
+      </p>
+
+      <p>
+        也有人提到，
+        无论倒入咖啡、茶，
+        甚至只是白开水，
+        都会让人更愿意慢慢享受喝水的过程。
+      </p>
+
+      <p>
+        这些细节，
+        也许不会第一眼就注意到，
+        却会在每天使用时慢慢感受到。
+      </p>
+
+      <p>
+        我后来才发现，
+        KINTO 的官方网站很少只强调外观，
+        而是经常从拿起、握住、倒水、饮用这些自然的动作出发，
+        去描述器物与人的关系。
+      </p>
+
+      <p>
+        对它来说，
+        设计并不只是为了展示，
+        而是为了每天使用时，
+        那些几乎不会被特别注意到的舒适感。
+      </p>
+
+      <img
+        src="images/no003-p2.jpg"
+        alt="KINTO glassware"
+        class="article-image"
+      >
+
+    </section>
+
+
+    <!-- P3 -->
+
+    <section class="article-section">
+
+      <h2>
+        ③ Objects That Stay With You
+      </h2>
+
+      <p>
+        有使用者提到，
+        假日会特地拿出 KINTO 的玻璃杯泡茶或喝啤酒，
+        不只是因为它好看，
+        而是它让平凡的一杯饮料，
+        也多了一点仪式感。
+      </p>
+
+      <p>
+        很多人会一直使用同一个杯子很多年。
+      </p>
+
+      <p>
+        因为它实用，
+        也因为它慢慢成为生活的一部分。
+      </p>
+
+      <p>
+        也许某一天，
+        当你再次拿起它，
+        会想起和家人一起吃饭的晚上、
+        一个安静的下午，
+        或是完成目标后奖励自己的一杯咖啡。
+      </p>
+
+      <p>
+        随着时间过去，
+        这些细微的使用痕迹，
+        也慢慢变成属于自己的故事。
+      </p>
+
+      <img
+        src="images/no003-p3.jpg"
+        alt="KINTO cup in everyday life"
+        class="article-image"
+      >
+
+    </section>
+
+
+    <!-- P4 -->
+
+    <section class="article-section">
+
+      <h2>
+        Why Soft Archive Collects It
+      </h2>
+
+      <div class="quote">
+        有些物品的价值，
+        不在于每天都注意到它，
+        而是在很多年以后，
+        它依然愿意陪着你。
+      </div>
+
+
+      <h3>
+        A Small Detail I Love
+      </h3>
+
+      <div class="quote">
+        我很喜欢 KINTO 不断介绍人与物品接触的瞬间，
+        而不是只展示产品本身。
+        <br><br>
+        握住杯子的手、倒水的动作、
+        喝下第一口咖啡的时候，
+        都比杯子本身更重要。
+      </div>
+
+
+      <h3>
+        What Caught My Attention
+      </h3>
+
+      <ul class="attention-list">
+
+        <li>
+          官方摄影经常使用自然光与大量留白，
+          让器物本身保持安静。
+        </li>
+
+        <li>
+          产品总是出现在生活场景里，
+          而不是只作为一个被观看的物件。
+        </li>
+
+        <li>
+          木头、玻璃、陶瓷与植物经常一起出现，
+          让人感觉像把自然带进了家里。
+        </li>
+
+        <li>
+          我很喜欢它没有刻意营造“精致感”，
+          而是让设计静静陪伴每一天。
+        </li>
+
+      </ul>
+
+
+      <div class="signature-piece">
+
+        <h3>
+          Signature Piece
+        </h3>
+
+        <p>
+          <strong>CAST Coffee Cup</strong>
+        </p>
+
+        <p>
+          杯身轻薄透明，
+          拿在手里的存在感很低，
+          却让人更专注于咖啡本身。
+        </p>
+
+        <p>
+          这或许就是 KINTO 所追求的设计：
+          让器物成为体验的一部分，
+          而不是主角。
+        </p>
+
+      </div>
+
+
+      <div class="archive-info">
+
+        <h2>
+          Archive Information
+        </h2>
+
+        <table class="info-table">
+
+          <tr>
+            <td>Country</td>
+            <td>Japan</td>
+          </tr>
+
+          <tr>
+            <td>Location</td>
+            <td>Shiga</td>
+          </tr>
+
+          <tr>
+            <td>Founded</td>
+            <td>1972</td>
+          </tr>
+
+          <tr>
+            <td>Category</td>
+            <td>Home &amp; Tableware</td>
+          </tr>
+
+          <tr>
+            <td>Materials</td>
+            <td>Glass · Ceramic · Stainless Steel</td>
+          </tr>
+
+        </table>
+
+      </div>
+
+
+      <div class="who-its-for">
+
+        <h2>
+          Who It's For
+        </h2>
+
+        <ul class="who-list">
+
+          <li>
+            🌿 喜欢慢慢享受生活的人
+          </li>
+
+          <li>
+            ☕ 喜欢咖啡、茶与日常仪式感的人
+          </li>
+
+          <li>
+            🏡 喜欢安静、不过度设计的人
+          </li>
+
+          <li>
+            🎁 想寻找能够陪伴很多年的生活用品的人
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <div class="soft-note">
+
+        <div class="soft-note-label">
+          Soft Archive Note
+        </div>
+
+        <blockquote>
+
+          <p>
+            有时候，
+            真正让我们慢下来的，
+            不是一杯咖啡，
+            而是愿意静静坐下来，
+            把它慢慢喝完的那段时间。
+          </p>
+
+          <p>
+            KINTO 也提醒了我：
+            有些物品，会带着我们的记忆，
+            静静地陪在身边很多年。
+          </p>
+
+        </blockquote>
+
+      </div>
+
+
+      <!-- Sources -->
+
+      <div class="sources">
+
+        <h2>
+          Sources
+        </h2>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            Official Website
+          </div>
+
+          <a href="https://kinto.co.jp/" target="_blank" rel="noopener">
+            https://kinto.co.jp/
+          </a>
+
+        </div>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            Instagram
+          </div>
+
+          <a href="https://www.instagram.com/kintojapan/" target="_blank" rel="noopener">
+            https://www.instagram.com/kintojapan/
+          </a>
+
+        </div>
+
+
+        <div class="source-group">
+
+          <div class="source-group-title">
+            Customer Reviews
+          </div>
+
+          <a href="https://blog.naver.com/ggya0000/224354410740" target="_blank" rel="noopener">
+            https://blog.naver.com/ggya0000/224354410740
+          </a>
+
+          <a href="https://blog.naver.com/bigtree_12/224211052715" target="_blank" rel="noopener">
+            https://blog.naver.com/bigtree_12/224211052715
+          </a>
+
+          <a href="https://ruiindigo.tistory.com/88" target="_blank" rel="noopener">
+            https://ruiindigo.tistory.com/88
+          </a>
+
+        </div>
+
+
+        <p class="source-note">
+          This archive is an independent editorial project by Soft Archive.
+          Product names, trademarks and images belong to their respective owners.
+          Soft Archive is not affiliated with KINTO.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       Continue Exploring
+  ========================= -->
+
+  <section class="continue-exploring">
+
+    <div class="continue-label">
+      Continue Exploring
+    </div>
+
+    <h2>
+      More quiet things worth keeping.
+    </h2>
+
+    <p>
+      Return to the archive and discover another ordinary thing,
+      another small detail, another story.
+    </p>
+
+    <a href="index.html" class="explore-link">
+      Explore the Archive →
+    </a>
+
+  </section>
+
+
+  <!-- =========================
+       Footer
+  ========================= -->
+
+  <footer class="footer">
+
+    <div class="footer-brand">
+      Soft Archive
+    </div>
+
+    <p>
+      A collection of quiet things worth keeping.
+    </p>
+
+    <p class="copyright">
+      © 2026 Soft Archive
+    </p>
+
+  </footer>
+
+</body>
+</html>
