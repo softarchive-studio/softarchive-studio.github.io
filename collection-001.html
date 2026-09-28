@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>O-CHECK：让记录生活变得温柔的韩国文具品牌 | Soft Archive</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f4ee;
+      color: #35322e;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Noto Sans SC",
+        "Microsoft YaHei",
+        sans-serif;
+      line-height: 2;
+      font-size: 15px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* =========================
+       Navigation
+    ========================= */
+
+    .site-nav {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 34px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-size: 13px;
+      letter-spacing: 0.03em;
+    }
+
+    .nav-links a {
+      opacity: 0.72;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+    /* =========================
+       Cover
+    ========================= */
+
+    .cover {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 80px 34px 110px;
+      text-align: center;
+    }
+
+    .collection-number {
+      margin-bottom: 22px;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #77716a;
+    }
+
+    .cover h1 {
+      margin: 0 0 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.3;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+    }
+
+    .cover-meta {
+      margin-bottom: 45px;
+      font-size: 12px;
+      color: #817a72;
+      letter-spacing: 0.08em;
+    }
+
+    .cover-intro {
+      max-width: 690px;
+      margin: 0 auto 55px;
+      font-size: 15px;
+      line-height: 2.15;
+      text-align: left;
+    }
+
+    .cover-intro p {
+      margin: 0 0 24px;
+    }
+
+    .cover-image {
+      width: 82%;
+      max-width: 880px;
+      display: block;
+      margin: 0 auto 55px;
+      border-radius: 2px;
+    }
+
+    /* =========================
+       Article
+    ========================= */
+
+    .article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 30px 100px;
+    }
+
+    .article-section {
+      margin-bottom: 105px;
+    }
+
+    .article h2 {
+      margin: 0 0 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      line-height: 1.45;
+      font-weight: normal;
+      letter-spacing: -0.015em;
+    }
+
+    .article h3 {
+      margin: 48px 0 20px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      line-height: 1.5;
+      font-weight: normal;
+    }
+
+    .article p {
+      margin: 0 0 27px;
+      line-height: 2;
+    }
+
+    .article strong {
+      font-weight: 600;
+    }
+
+    .article-image {
+      width: 100%;
+      display: block;
+      margin: 45px auto 58px;
+      border-radius: 2px;
+    }
+
+    /* =========================
+       Quote
+    ========================= */
+
+    .quote {
+      margin: 42px 0;
+      padding: 8px 0 8px 28px;
+      border-left: 1px solid #b8b0a6;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 19px;
+      line-height: 1.9;
+      color: #4b4640;
+    }
+
+    /* =========================
+       Attention List
+    ========================= */
+
+    .attention-list {
+      margin: 30px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .attention-list li {
+      position: relative;
+      margin-bottom: 20px;
+      padding-left: 22px;
+      line-height: 1.9;
+    }
+
+    .attention-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: #9b9389;
+    }
+
+    /* =========================
+       Signature Piece
+    ========================= */
+
+    .signature-piece {
+      margin: 50px 0 70px;
+      padding: 40px 38px;
+      background: #f1ede5;
+    }
+
+    .soft-note-label {
+      margin-bottom: 14px;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #817a72;
+    }
+
+    .signature-piece h3 {
+      margin: 0 0 18px;
+      font-size: 24px;
+    }
+
+    .signature-piece p {
+      margin-bottom: 18px;
+    }
+
+    /* =========================
+       Archive Information
+    ========================= */
+
+    .archive-info {
+      margin-top: 48px;
+    }
+
+    .archive-info table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .archive-info td {
+      padding: 14px 0;
+      border-bottom: 1px solid #ddd7ce;
+      vertical-align: top;
+    }
+
+    .archive-info td:first-child {
+      width: 32%;
+      color: #817a72;
+    }
+
+    /* =========================
+       Who It's For
+    ========================= */
+
+    .who-its-for {
+      margin-top: 55px;
+    }
+
+    .who-its-for p {
+      margin-bottom: 12px;
+    }
+
+    /* =========================
+       Soft Archive Note
+    ========================= */
+
+    .soft-note {
+      margin-top: 80px;
+      padding: 45px 38px;
+      border-top: 1px solid #d8d1c7;
+      border-bottom: 1px solid #d8d1c7;
+    }
+
+    .soft-note-label-large {
+      margin-bottom: 24px;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #817a72;
+    }
+
+    .soft-note p {
+      margin: 0 0 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.95;
+    }
+
+    .soft-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* =========================
+       Sources
+    ========================= */
+
+    .sources {
+      margin-top: 90px;
+      padding-top: 40px;
+      border-top: 1px solid #d8d1c7;
+    }
+
+    .sources h2 {
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    .source-group {
+      margin-bottom: 34px;
+    }
+
+    .source-group-title {
+      margin-bottom: 10px;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: #817a72;
+      text-transform: uppercase;
+    }
+
+    .source-group a {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 13px;
+      line-height: 1.7;
+      word-break: break-word;
+      opacity: 0.78;
+    }
+
+    .source-group a:hover {
+      opacity: 1;
+    }
+
+    .source-note {
+      margin-top: 42px;
+      font-size: 12px;
+      line-height: 1.8;
+      color: #817a72;
+    }
+
+    /* =========================
+       Continue Exploring
+    ========================= */
+
+    .continue-exploring {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 90px 30px 110px;
+      text-align: center;
+    }
+
+    .continue-label {
+      margin-bottom: 20px;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #817a72;
+    }
+
+    .continue-exploring h2 {
+      margin: 0 0 20px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 31px;
+      line-height: 1.4;
+      font-weight: normal;
+    }
+
+    .continue-exploring p {
+      max-width: 520px;
+      margin: 0 auto 30px;
+      font-size: 14px;
+      line-height: 1.9;
+      color: #6f6962;
+    }
+
+    .explore-link {
+      display: inline-block;
+      font-size: 13px;
+      border-bottom: 1px solid #9b9389;
+      padding-bottom: 4px;
+      transition: opacity 0.2s ease;
+    }
+
+    .explore-link:hover {
+      opacity: 0.65;
+    }
+
+    /* =========================
+       Footer
+    ========================= */
+
+    .footer {
+      padding: 55px 30px 45px;
+      border-top: 1px solid #ddd7ce;
+      text-align: center;
+    }
+
+    .footer-brand {
+      margin-bottom: 8px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+      font-size: 12px;
+      color: #817a72;
+    }
+
+    .footer .copyright {
+      margin-top: 20px;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+    }
+
+    /* =========================
+       Mobile
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      .site-nav {
+        padding: 24px 22px;
+      }
+
+      .nav-links {
+        gap: 20px;
+      }
+
+      .cover {
+        padding: 65px 22px 80px;
+      }
+
+      .cover h1 {
+        font-size: 32px;
+        line-height: 1.35;
+      }
+
+      .cover-image {
+        width: 100%;
+        margin-bottom: 42px;
+      }
+
+      .cover-intro {
+        font-size: 14px;
+        line-height: 2;
+      }
+
+      .article {
+        padding: 0 22px 75px;
+      }
+
+      .article-section {
+        margin-bottom: 82px;
+      }
+
+      .article h2 {
+        font-size: 27px;
+      }
+
+      .article h3 {
+        font-size: 20px;
+      }
+
+      .quote {
+        padding-left: 20px;
+        font-size: 17px;
+      }
+
+      .signature-piece {
+        padding: 30px 25px;
+      }
+
+      .soft-note {
+        padding: 35px 25px;
+      }
+
+      .soft-note p {
+        font-size: 17px;
+      }
+
+      .continue-exploring {
+        padding: 75px 22px 85px;
+      }
+
+      .continue-exploring h2 {
+        font-size: 27px;
+      }
+
+      .archive-info table {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       Navigation
+  ========================= -->
+
+  <nav class="site-nav">
+    <a href="index.html" class="logo">Soft Archive</a>
+
+    <div class="nav-links">
+      <a href="index.html">Archive</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+
+  <!-- =========================
+       Cover
+  ========================= -->
+
+  <header class="cover">
+
+    <div class="collection-number">
+      Collection No.001
+    </div>
+
+    <h1>
+      O-CHECK：让记录生活变得温柔的韩国文具品牌
+    </h1>
+
+    <div class="cover-meta">
+      5 min read · Stationery
+    </div>
+
+    <img
+      src="images/no001-cover.jpg"
+      alt="O-CHECK stationery and everyday objects"
+      class="cover-image"
+    >
+
+    <div class="cover-intro">
+
+      <p>
+        有些文具，不只是为了帮助我们完成一天的工作。
+      </p>
+
+      <p>
+        它们会提醒我们：
+        <br>
+        生活里那些平凡的小事，同样值得被记录。
+      </p>
+
+      <p>
+        O-CHECK 是来自韩国首尔的生活文具品牌，
+        以手帐、笔记本、相册与日历等纸品为主，
+        希望让记录成为日常生活的一部分。
+      </p>
+
+      <p>
+        除了设计，O-CHECK 也重视环境保护，
+        并获得 FSC 认证，让每一本纸品都来自更负责任的森林管理。
+      </p>
+
+      <p>
+        在韩国，手帐不仅是规划时间的工具，
+        也可以是一种整理生活与情绪的方式。
+        随着「다꾸（Decorating Diary）」文化的发展，
+        越来越多人透过装饰手帐、记录日常，
+        为忙碌的生活保留一块属于自己的安静空间。
+        像 O-CHECK 这样的品牌，也正是在这样的文化背景下成长起来。
+      </p>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       Article
+  ========================= -->
+
+  <main class="article">
+
+    <!-- P1 -->
+
+    <section class="article-section">
+
+      <h2>
+        一个让人想开始记录生活的品牌
+      </h2>
+
+      <img
+        src="images/no001-p1.jpg"
+        alt="O-CHECK stationery in an everyday setting"
+        class="article-image"
+      >
+
+      <p>
+        第一次注意到 O-CHECK，是因为它的设计给人一种安静的感觉。
+      </p>
+
+      <p>
+        它没有大量使用鲜艳颜色，也没有复杂的装饰。
+      </p>
+
+      <p>
+        相反，它使用柔和的色彩、简洁的排版，
+        以及带有复古气息的设计元素，
+        创造出温暖而舒服的视觉体验。
+      </p>
+
+      <p>
+        O-CHECK 的插画和贴纸并不是为了把手帐装饰得更丰富，
+        而是让记录这件事，多了一点期待，
+        也多了一点属于自己的风格。
+      </p>
+
+      <div class="quote">
+        「今天，也值得留下一点什么。」
+      </div>
+
+    </section>
+
+
+    <!-- P2 -->
+
+    <section class="article-section">
+
+      <h2>
+        它特别在哪里？
+      </h2>
+
+      <h3>
+        ① 让记录变成一种生活仪式
+      </h3>
+
+      <img
+        src="images/no001-p2.jpg"
+        alt="O-CHECK diary and memory keeping"
+        class="article-image"
+      >
+
+      <p>
+        很多人买手帐，是为了规划时间。
+      </p>
+
+      <p>
+        但 O-CHECK 更像是在鼓励：
+        <br>
+        保存生活里的小瞬间。
+      </p>
+
+      <p>
+        可能是一张照片。
+      </p>
+
+      <p>
+        一张旅行时留下的车票。
+      </p>
+
+      <p>
+        一张朋友写给你的卡片。
+      </p>
+
+      <p>
+        一句突然想到的话。
+      </p>
+
+      <p>
+        又或者，只是一杯下午的咖啡。
+      </p>
+
+      <p>
+        当你重新翻开过去写下的每一页，
+        也会重新遇见那个时期的自己。
+        那些曾经觉得平凡的日子，
+        往往会在多年后，成为最珍贵的回忆。
+      </p>
+
+    </section>
+
+
+    <!-- P3 -->
+
+    <section class="article-section">
+
+      <h3>
+        ② 简单设计，却有长期使用的魅力
+      </h3>
+
+      <img
+        src="images/no001-p3.jpg"
+        alt="O-CHECK paper goods and stationery"
+        class="article-image"
+      >
+
+      <p>
+        从一些韩国使用者的分享中，
+        可以看到他们关注的不只是 O-CHECK 的外观，
+        也包括纸品在日常使用中的感觉。
+      </p>
+
+      <p>
+        相册适合保存照片；
+        月历轻巧、容易携带；
+        收纳用品则兼顾了简洁设计与实用性。
+      </p>
+
+      <p>
+        轻巧、方便携带的笔记本，
+        让你在喝咖啡的时候、搭地铁的时候，
+        或是等待巴士的时候，
+        只要灵感突然出现，就能立刻把它写下来。
+      </p>
+
+
+      <!-- Why Soft Archive -->
+
+      <h3>
+        Why Soft Archive Collects It
+      </h3>
+
+      <p>
+        现在很多东西追求快速、方便。
+      </p>
+
+      <p>
+        但 O-CHECK 提醒我们：
+      </p>
+
+      <div class="quote">
+        有些物品存在的意义，
+        <br>
+        并不是为了让生活更有效率。
+        <br><br>
+        而是让我们愿意慢一点，
+        <br>
+        看见那些原本容易忽略的日常。
+      </div>
+
+      <p>
+        一本手帐。
+        <br>
+        一张照片。
+        <br>
+        一段文字。
+      </p>
+
+      <p>
+        当它们被时间保存下来，
+        也慢慢成为了我们认识自己的方式。
+      </p>
+
+      <p>
+        这些微小的记录，
+        最后都会成为属于自己的记忆。
+      </p>
+
+    </section>
+
+
+    <!-- P4 -->
+
+    <section class="article-section">
+
+      <h2>
+        A Small Detail I Love
+      </h2>
+
+      <div class="quote">
+        <strong>
+          我很喜欢 O-CHECK 的设计不会替你决定该如何记录。
+        </strong>
+        <br><br>
+        它只是安静地留下一页空白，
+        等待属于你的故事慢慢出现。
+      </div>
+
+
+      <h3>
+        What Caught My Attention
+      </h3>
+
+      <ul class="attention-list">
+
+        <li>
+          官方摄影经常使用木桌、自然光与柔和的色调。
+        </li>
+
+        <li>
+          相册、贴纸和笔记本经常出现在生活感较强的场景里，
+          而不是只有单纯的商品展示。
+        </li>
+
+        <li>
+          插画简单，却保留了大量留白，
+          让人想慢慢记录生活。
+        </li>
+
+        <li>
+          整体视觉不会过度强调产品，
+          反而让人注意到记录本身。
+        </li>
+
+      </ul>
+
+
+      <!-- Signature Piece -->
+
+      <div class="signature-piece">
+
+        <div class="soft-note-label">
+          Signature Piece
+        </div>
+
+        <h3>
+          O-CHECK Photo Album
+        </h3>
+
+        <p>
+          一本为了长期保存回忆而设计的相册。
+          厚实的纸张与耐用的材质，
+          让每一次翻阅，都像重新回到那些曾经发生过的日子。
+        </p>
+
+      </div>
+
+
+      <!-- Theme -->
+
+      <h3>
+        Theme
+      </h3>
+
+      <p>
+        Record | 记录
+      </p>
+
+
+      <!-- Theme Color -->
+
+      <h3>
+        Theme Color
+      </h3>
+
+      <p>
+        Warm Beige
+      </p>
+
+
+      <!-- Archive Information -->
+
+      <div class="archive-info">
+
+        <h3>
+          Archive Information
+        </h3>
+
+        <table>
+
+          <tr>
+            <td>Country</td>
+            <td>Korea</td>
+          </tr>
+
+          <tr>
+            <td>Location</td>
+            <td>Seoul</td>
+          </tr>
+
+          <tr>
+            <td>Founded</td>
+            <td>2000</td>
+          </tr>
+
+          <tr>
+            <td>Category</td>
+            <td>Stationery</td>
+          </tr>
+
+          <tr>
+            <td>Materials</td>
+            <td>Paper Goods</td>
+          </tr>
+
+        </table>
+
+      </div>
+
+
+      <!-- Who It's For -->
+
+      <div class="who-its-for">
+
+        <h3>
+          Who It’s For
+        </h3>
+
+        <p>
+          📒 喜欢手帐与纸品的人
+        </p>
+
+        <p>
+          ☁️ 喜欢温柔、简约设计的人
+        </p>
+
+        <p>
+          📷 喜欢记录日常的人
+        </p>
+
+        <p>
+          💛 想收藏生活回忆的人
+        </p>
+
+      </div>
+
+
+      <!-- Soft Archive Note -->
+
+      <div class="soft-note">
+
+        <div class="soft-note-label-large">
+          Soft Archive Note
+        </div>
+
+        <p>
+          「值得收藏的，不一定是最特别的东西，
+          而是那些让普通日子变得更有温度的东西。
+          因为平凡的瞬间，也值得被珍藏。」
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         Sources
+    ========================= -->
+
+    <section class="sources">
+
+      <h2>
+        Sources
+      </h2>
+
+      <div class="source-group">
+
+        <div class="source-group-title">
+          Official Website
+        </div>
+
+        <a
+          href="https://o-check.net"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://o-check.net
+        </a>
+
+      </div>
+
+
+      <div class="source-group">
+
+        <div class="source-group-title">
+          Instagram
+        </div>
+
+        <a
+          href="https://www.instagram.com/ocheckdesigngraphics/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://www.instagram.com/ocheckdesigngraphics/
+        </a>
+
+      </div>
+
+
+      <div class="source-group">
+
+        <div class="source-group-title">
+          Customer Reviews · Naver Blog
+        </div>
+
+        <a
+          href="https://blog.naver.com/smg0315/223967116294"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Naver Blog · Review 01
+        </a>
+
+        <a
+          href="https://blog.naver.com/shushumarket-/224075204869"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Naver Blog · Review 02
+        </a>
+
+        <a
+          href="https://blog.naver.com/rhdtlr34/224181986283"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Naver Blog · Review 03
+        </a>
+
+        <a
+          href="https://blog.naver.com/tamadochi/224205855112"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Naver Blog · Review 04
+        </a>
+
+        <a
+          href="https://blog.naver.com/yunbyeol_/22327667723"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Naver Blog · Review 05
+        </a>
+
+      </div>
+
+
+      <p class="source-note">
+        This archive is an independent editorial project by Soft Archive.
+        Product names, trademarks and images belong to their respective owners.
+        Soft Archive is not affiliated with O-CHECK.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       Continue Exploring
+  ========================= -->
+
+  <section class="continue-exploring">
+
+    <div class="continue-label">
+      Continue Exploring
+    </div>
+
+    <h2>
+      More quiet things worth keeping.
+    </h2>
+
+    <p>
+      Return to the archive and discover another ordinary thing,
+      another small detail, another story.
+    </p>
+
+    <a
+      href="index.html"
+      class="explore-link"
+    >
+      Explore the Archive →
+    </a>
+
+  </section>
+
+
+  <!-- =========================
+       Footer
+  ========================= -->
+
+  <footer class="footer">
+
+    <div class="footer-brand">
+      Soft Archive
+    </div>
+
+    <p>
+      A collection of quiet things worth keeping.
+    </p>
+
+    <p class="copyright">
+      © 2026 Soft Archive
+    </p>
+
+  </footer>
+
+</body>
+</html>
