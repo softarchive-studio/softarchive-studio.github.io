@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Soft Archive — A collection of quiet things worth keeping.</title>
+  <title>Soft Archive — An Independent Everyday Design Archive</title>
 
   <style>
     * {
@@ -19,27 +19,14 @@
       margin: 0;
       background: #f7f4ee;
       color: #35322e;
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        "Noto Sans SC",
-        "Microsoft YaHei",
-        sans-serif;
-      font-size: 15px;
-      line-height: 2;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.8;
     }
 
     a {
       color: inherit;
       text-decoration: none;
     }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
 
     /* =========================
        Navigation
@@ -49,7 +36,8 @@
       width: 100%;
       max-width: 1180px;
       margin: 0 auto;
-      padding: 28px 34px;
+      padding: 28px 42px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -57,19 +45,19 @@
 
     .logo {
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 20px;
-      letter-spacing: 0.01em;
+      font-size: 22px;
+      letter-spacing: -0.02em;
     }
 
     .nav-links {
       display: flex;
       gap: 30px;
       font-size: 13px;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.04em;
     }
 
     .nav-links a {
-      opacity: 0.72;
+      opacity: 0.65;
       transition: opacity 0.2s ease;
     }
 
@@ -83,171 +71,216 @@
     ========================= */
 
     .hero {
-      max-width: 1040px;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 145px 34px 155px;
-      text-align: center;
+      padding: 105px 42px 120px;
     }
 
-    .hero-label {
-      margin-bottom: 25px;
-      font-size: 11px;
-      letter-spacing: 0.2em;
+    .hero-kicker {
+      margin-bottom: 22px;
+
+      font-size: 12px;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #817a72;
+
+      opacity: 0.55;
     }
 
     .hero h1 {
-      max-width: 800px;
-      margin: 0 auto 28px;
+      max-width: 760px;
+      margin: 0;
+
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(44px, 6vw, 72px);
-      line-height: 1.12;
+      font-size: clamp(48px, 7vw, 88px);
+      line-height: 1.05;
       font-weight: normal;
-      letter-spacing: -0.035em;
+      letter-spacing: -0.045em;
     }
 
-    .hero-description {
-      max-width: 580px;
-      margin: 0 auto 38px;
-      font-size: 16px;
-      line-height: 2;
-      color: #625d56;
+    .hero-subtitle {
+      max-width: 520px;
+      margin: 34px 0 0;
+
+      font-size: 17px;
+      line-height: 1.9;
+
+      opacity: 0.72;
+    }
+
+    .hero-rule {
+      width: 42px;
+      height: 1px;
+
+      margin: 34px 0 28px;
+
+      background: #35322e;
+      opacity: 0.35;
+    }
+
+    .hero-meta {
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.45;
     }
 
     .hero-link {
       display: inline-block;
+      margin-top: 36px;
+
       font-size: 13px;
-      border-bottom: 1px solid #9b9389;
-      padding-bottom: 5px;
+      letter-spacing: 0.05em;
+
+      border-bottom: 1px solid rgba(53, 50, 46, 0.35);
+      padding-bottom: 3px;
+
       transition: opacity 0.2s ease;
     }
 
     .hero-link:hover {
-      opacity: 0.6;
+      opacity: 0.55;
     }
-
-    .hero-rule {
-  width: 42px;
-  height: 1px;
-  background: #35322e;
-  margin: 30px 0 28px;
-  opacity: 0.35;
-}
 
 
     /* =========================
-       Soft Archive Note
+       Archive Note
     ========================= */
 
     .archive-note {
-      max-width: 760px;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 85px 30px 100px;
-      border-top: 1px solid #d8d1c7;
-      border-bottom: 1px solid #d8d1c7;
-      text-align: center;
+      padding: 95px 42px;
+
+      border-top: 1px solid rgba(53, 50, 46, 0.14);
+      border-bottom: 1px solid rgba(53, 50, 46, 0.14);
+
+      display: grid;
+      grid-template-columns: 0.8fr 1.5fr;
+      gap: 80px;
     }
 
     .section-label {
-      margin-bottom: 24px;
       font-size: 11px;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #817a72;
+      opacity: 0.45;
     }
 
     .archive-note h2 {
-      margin: 0 0 30px;
+      margin: 0 0 28px;
+
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 32px;
-      line-height: 1.45;
+      font-size: clamp(31px, 4vw, 48px);
+      line-height: 1.2;
       font-weight: normal;
+      letter-spacing: -0.025em;
     }
 
     .archive-note p {
-      max-width: 580px;
-      margin: 0 auto;
+      max-width: 620px;
+      margin: 0;
+
       font-size: 15px;
       line-height: 2;
-      color: #625d56;
+
+      opacity: 0.72;
     }
 
 
     /* =========================
-       Featured Collections
+       Featured
     ========================= */
 
     .featured {
-      max-width: 1120px;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 125px 34px 130px;
+      padding: 120px 42px 135px;
     }
 
-    .section-heading {
-      margin-bottom: 55px;
+    .featured-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+
+      margin-bottom: 48px;
     }
 
-    .section-heading h2 {
-      margin: 0 0 12px;
+    .featured-header h2 {
+      margin: 12px 0 0;
+
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 38px;
-      line-height: 1.35;
+      font-size: clamp(34px, 4vw, 52px);
+      line-height: 1.2;
       font-weight: normal;
+      letter-spacing: -0.025em;
     }
 
-    .section-heading p {
+    .featured-note {
+      max-width: 280px;
+
       margin: 0;
-      font-size: 14px;
-      color: #817a72;
+
+      font-size: 13px;
+      line-height: 1.8;
+      opacity: 0.55;
     }
 
     .featured-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 38px;
+      gap: 28px;
     }
 
     .featured-card {
       display: block;
     }
 
-    .featured-image-wrap {
-      width: 100%;
-  background: #f1ede5;
-  overflow: hidden;
-    }
-
     .featured-image {
       width: 100%;
-  height: auto;
-  display: block;
+      margin-bottom: 24px;
 
-    .featured-card:hover .featured-image {
-      transform: scale(1.025);
+      background: #f1ede5;
+      overflow: hidden;
     }
 
-    .collection-number {
-      margin-bottom: 9px;
-      font-size: 11px;
-      letter-spacing: 0.15em;
-      color: #817a72;
+    .featured-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+
+      transition: opacity 0.3s ease;
+    }
+
+    .featured-card:hover .featured-image img {
+      opacity: 0.82;
+    }
+
+    .featured-number {
+      margin-bottom: 8px;
+
+      font-size: 10px;
+      letter-spacing: 0.13em;
       text-transform: uppercase;
+
+      opacity: 0.45;
     }
 
     .featured-card h3 {
-      margin: 0 0 13px;
+      margin: 0;
+
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 23px;
-      line-height: 1.45;
+      font-size: 25px;
+      line-height: 1.35;
       font-weight: normal;
     }
 
     .featured-theme {
-      font-size: 11px;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-      color: #817a72;
+      margin-top: 9px;
+
+      font-size: 12px;
+      letter-spacing: 0.05em;
+
+      opacity: 0.5;
     }
 
 
@@ -256,73 +289,81 @@
     ========================= */
 
     .archive {
-      max-width: 1040px;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 40px 34px 130px;
+      padding: 0 42px 135px;
     }
 
     .archive-header {
-      margin-bottom: 50px;
-      text-align: center;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba(53, 50, 46, 0.18);
+
+      margin-bottom: 0;
     }
 
     .archive-header h2 {
-      margin: 0 0 14px;
+      margin: 12px 0 0;
+
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 40px;
-      line-height: 1.35;
+      font-size: clamp(34px, 4vw, 52px);
+      line-height: 1.2;
       font-weight: normal;
+      letter-spacing: -0.025em;
     }
 
-    .archive-header p {
-      margin: 0;
-      font-size: 14px;
-      color: #817a72;
+    .archive-count {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      opacity: 0.45;
     }
 
     .archive-list {
-      border-top: 1px solid #d8d1c7;
+      border-bottom: 1px solid rgba(53, 50, 46, 0.18);
     }
 
     .archive-item {
       display: grid;
       grid-template-columns: 90px 1fr auto;
-      gap: 35px;
+
       align-items: center;
-      padding: 30px 0;
-      border-bottom: 1px solid #d8d1c7;
+
+      gap: 28px;
+
+      padding: 25px 0;
+
+      border-bottom: 1px solid rgba(53, 50, 46, 0.1);
+
       transition: opacity 0.2s ease;
     }
 
+    .archive-item:last-child {
+      border-bottom: none;
+    }
+
     .archive-item:hover {
-      opacity: 0.65;
+      opacity: 0.55;
     }
 
-    .archive-item-number {
-      font-size: 11px;
-      letter-spacing: 0.14em;
-      color: #817a72;
-      text-transform: uppercase;
-    }
-
-    .archive-item-title {
-      margin: 0 0 5px;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 22px;
-      line-height: 1.45;
-      font-weight: normal;
-    }
-
-    .archive-item-theme {
+    .archive-no {
       font-size: 11px;
       letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #817a72;
+      opacity: 0.45;
     }
 
-    .archive-arrow {
-      font-size: 17px;
-      color: #817a72;
+    .archive-title {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      line-height: 1.4;
+    }
+
+    .archive-theme {
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      opacity: 0.45;
     }
 
 
@@ -331,33 +372,48 @@
     ========================= */
 
     .about-preview {
-      max-width: 760px;
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 95px 30px 120px;
-      text-align: center;
+      padding: 105px 42px 120px;
+
+      border-top: 1px solid rgba(53, 50, 46, 0.14);
+
+      display: grid;
+      grid-template-columns: 0.8fr 1.5fr;
+      gap: 80px;
     }
 
     .about-preview h2 {
-      margin: 0 0 27px;
+      margin: 0 0 28px;
+
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 35px;
-      line-height: 1.4;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.25;
       font-weight: normal;
+      letter-spacing: -0.025em;
     }
 
     .about-preview p {
-      max-width: 600px;
-      margin: 0 auto 30px;
+      max-width: 620px;
+
+      margin: 0;
+
       font-size: 15px;
       line-height: 2;
-      color: #625d56;
+
+      opacity: 0.7;
     }
 
     .about-link {
       display: inline-block;
+
+      margin-top: 30px;
+
       font-size: 13px;
-      border-bottom: 1px solid #9b9389;
-      padding-bottom: 4px;
+      letter-spacing: 0.05em;
+
+      border-bottom: 1px solid rgba(53, 50, 46, 0.35);
+      padding-bottom: 3px;
     }
 
 
@@ -366,27 +422,32 @@
     ========================= */
 
     .footer {
-      padding: 55px 30px 45px;
-      border-top: 1px solid #ddd7ce;
-      text-align: center;
+      max-width: 1180px;
+      margin: 0 auto;
+
+      padding: 60px 42px 50px;
+
+      border-top: 1px solid rgba(53, 50, 46, 0.14);
     }
 
     .footer-brand {
-      margin-bottom: 8px;
       font-family: Georgia, "Times New Roman", serif;
       font-size: 20px;
     }
 
     .footer p {
-      margin: 5px 0;
+      margin: 8px 0 0;
+
       font-size: 12px;
-      color: #817a72;
+      opacity: 0.5;
     }
 
     .footer .copyright {
-      margin-top: 20px;
-      font-size: 11px;
-      letter-spacing: 0.05em;
+      margin-top: 28px;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.4;
     }
 
 
@@ -394,127 +455,124 @@
        Mobile
     ========================= */
 
-    @media (max-width: 800px) {
+    @media (max-width: 760px) {
 
       .site-nav {
-        padding: 24px 22px;
+        padding: 22px 22px;
+      }
+
+      .logo {
+        font-size: 20px;
       }
 
       .nav-links {
         gap: 20px;
+        font-size: 12px;
       }
 
+
       .hero {
-        padding: 105px 22px 110px;
+        padding: 75px 22px 85px;
       }
 
       .hero h1 {
-        font-size: 46px;
+        font-size: 49px;
+        line-height: 1.05;
       }
 
+      .hero-subtitle {
+        margin-top: 28px;
+        font-size: 15px;
+        line-height: 1.9;
+      }
+
+
       .archive-note {
-        padding: 70px 22px 80px;
+        padding: 70px 22px;
+        display: block;
+      }
+
+      .archive-note .section-label {
+        margin-bottom: 35px;
       }
 
       .archive-note h2 {
-        font-size: 28px;
+        font-size: 34px;
       }
 
+
       .featured {
-        padding: 90px 22px 100px;
+        padding: 85px 22px 100px;
+      }
+
+      .featured-header {
+        display: block;
+        margin-bottom: 38px;
+      }
+
+      .featured-header h2 {
+        font-size: 36px;
+      }
+
+      .featured-note {
+        margin-top: 20px;
       }
 
       .featured-grid {
         grid-template-columns: 1fr;
-        gap: 65px;
-      }
-
-      .featured-image {
-        aspect-ratio: 4 / 3;
-      }
-
-      .section-heading h2 {
-        font-size: 32px;
-      }
-
-      .archive {
-        padding: 20px 22px 100px;
-      }
-
-      .archive-header h2 {
-        font-size: 32px;
-      }
-
-      .archive-item {
-        grid-template-columns: 58px 1fr auto;
-        gap: 18px;
-        padding: 26px 0;
-      }
-
-      .archive-item-title {
-        font-size: 19px;
-      }
-
-      .about-preview {
-        padding: 70px 22px 95px;
-      }
-
-      .about-preview h2 {
-        font-size: 30px;
-      }
-    }
-
-
-    @media (max-width: 500px) {
-
-      .logo {
-        font-size: 19px;
-      }
-
-      .nav-links {
-        font-size: 12px;
-        gap: 17px;
-      }
-
-      .hero {
-        padding: 85px 22px 95px;
-      }
-
-      .hero h1 {
-        font-size: 39px;
-      }
-
-      .hero-description {
-        font-size: 14px;
-      }
-
-      .archive-note h2 {
-        font-size: 26px;
+        gap: 55px;
       }
 
       .featured-card h3 {
-        font-size: 22px;
+        font-size: 25px;
+      }
+
+
+      .archive {
+        padding: 0 22px 100px;
+      }
+
+      .archive-header {
+        display: block;
+      }
+
+      .archive-count {
+        display: block;
+        margin-top: 18px;
       }
 
       .archive-item {
-        grid-template-columns: 1fr auto;
-        gap: 8px;
+        grid-template-columns: 55px 1fr;
+        gap: 18px;
+        padding: 22px 0;
       }
 
-      .archive-item-number {
-        grid-column: 1 / -1;
+      .archive-theme {
+        grid-column: 2;
+        margin-top: -12px;
       }
 
-      .archive-item-title {
+      .archive-title {
         font-size: 19px;
       }
 
-      .archive-item-theme {
-        font-size: 10px;
+
+      .about-preview {
+        padding: 75px 22px 90px;
+        display: block;
       }
 
-      .archive-arrow {
-        font-size: 15px;
+      .about-preview .section-label {
+        margin-bottom: 35px;
+      }
+
+      .about-preview h2 {
+        font-size: 34px;
+      }
+
+
+      .footer {
+        padding: 50px 22px 40px;
       }
     }
   </style>
@@ -548,7 +606,7 @@
 
   <header class="hero">
 
-    <div class="hero-label">
+    <div class="hero-kicker">
       An Independent Everyday Design Archive
     </div>
 
@@ -556,20 +614,19 @@
       Soft Archive
     </h1>
 
-    <p class="hero-description">
-      A quiet collection of everyday things.
-      <br>
-      Objects, rituals, and little memories worth keeping.
+    <p class="hero-subtitle">
+      Objects, rituals, and small observations
+      collected from ordinary life.
     </p>
 
     <div class="hero-rule"></div>
 
     <div class="hero-meta">
-  EST. 2026 · MALAYSIA
-</div>
+      EST. 2026 · MALAYSIA
+    </div>
 
     <a href="#archive" class="hero-link">
-      Explore the Archive →
+      Enter the Archive →
     </a>
 
   </header>
@@ -581,24 +638,30 @@
 
   <section class="archive-note">
 
-    <div class="section-label">
-      Soft Archive Note
+    <div>
+      <div class="section-label">
+        Soft Archive Note
+      </div>
     </div>
 
-    <h2>
-      Not everything worth keeping
-      has to be extraordinary.
-    </h2>
+    <div>
 
-    <p>
-      Soft Archive is a collection of quiet objects,
-      everyday rituals, and small things that make
-      ordinary days feel a little warmer.
-      <br><br>
-      Some things are useful.
-      Some are beautiful.
-      Some simply remind us to slow down.
-    </p>
+      <h2>
+        Some things become
+        meaningful slowly.
+      </h2>
+
+      <p>
+        Soft Archive is a personal collection of design,
+        stationery, home objects, places, and everyday details
+        that caught my attention.
+        <br><br>
+        Not because they are necessarily rare,
+        but because they make ordinary life
+        feel a little more considered.
+      </p>
+
+    </div>
 
   </section>
 
@@ -609,18 +672,20 @@
 
   <section class="featured">
 
-    <div class="section-heading">
+    <div class="featured-header">
 
-      <div class="section-label">
-        Featured Collections
+      <div>
+        <div class="section-label">
+          Selected Collections
+        </div>
+
+        <h2>
+          From the Archive
+        </h2>
       </div>
 
-      <h2>
-        A few places to begin.
-      </h2>
-
-      <p>
-        Three quiet things from the archive.
+      <p class="featured-note">
+        A few entries to begin with.
       </p>
 
     </div>
@@ -629,29 +694,23 @@
     <div class="featured-grid">
 
 
-      <!-- Featured 01 -->
+      <!-- No.010 -->
 
-      <a
-        href="collection-010.html"
-        class="featured-card"
-      >
+      <a href="collection-010.html" class="featured-card">
 
-        <div class="featured-image-wrap">
-
+        <div class="featured-image">
           <img
             src="images/no010-cover.jpg"
             alt="SyuRo — Collection No.010"
-            class="featured-image"
           >
-
         </div>
 
-        <div class="collection-number">
+        <div class="featured-number">
           Collection No.010
         </div>
 
         <h3>
-          SyuRo：为什么真正好的设计，不需要一直被看见？
+          SyuRo
         </h3>
 
         <div class="featured-theme">
@@ -661,29 +720,23 @@
       </a>
 
 
-      <!-- Featured 02 -->
+      <!-- No.003 -->
 
-      <a
-        href="collection-003.html"
-        class="featured-card"
-      >
+      <a href="collection-003.html" class="featured-card">
 
-        <div class="featured-image-wrap">
-
+        <div class="featured-image">
           <img
             src="images/no003-cover.jpg"
             alt="KINTO — Collection No.003"
-            class="featured-image"
           >
-
         </div>
 
-        <div class="collection-number">
+        <div class="featured-number">
           Collection No.003
         </div>
 
         <h3>
-          KINTO：为什么一个杯子，会改变喝一杯咖啡的感觉？
+          KINTO
         </h3>
 
         <div class="featured-theme">
@@ -693,29 +746,23 @@
       </a>
 
 
-      <!-- Featured 03 -->
+      <!-- No.001 -->
 
-      <a
-        href="collection-001.html"
-        class="featured-card"
-      >
+      <a href="collection-001.html" class="featured-card">
 
-        <div class="featured-image-wrap">
-
+        <div class="featured-image">
           <img
             src="images/no001-cover.jpg"
             alt="O-CHECK — Collection No.001"
-            class="featured-image"
           >
-
         </div>
 
-        <div class="collection-number">
+        <div class="featured-number">
           Collection No.001
         </div>
 
         <h3>
-          O-CHECK：让记录生活变得温柔的韩国文具品牌
+          O-CHECK
         </h3>
 
         <div class="featured-theme">
@@ -731,24 +778,28 @@
 
 
   <!-- =========================
-       The Archive
+       Archive
   ========================= -->
 
   <section class="archive" id="archive">
 
     <div class="archive-header">
 
-      <div class="section-label">
-        The Archive
+      <div>
+
+        <div class="section-label">
+          The Archive
+        </div>
+
+        <h2>
+          Collections
+        </h2>
+
       </div>
 
-      <h2>
+      <div class="archive-count">
         10 collections · growing archive
-      </h2>
-
-      <p>
-        Explore the archive from the newest collection to the first.
-      </p>
+      </div>
 
     </div>
 
@@ -758,27 +809,18 @@
 
       <!-- No.010 -->
 
-      <a
-        href="collection-010.html"
-        class="archive-item"
-      >
+      <a href="collection-010.html" class="archive-item">
 
-        <div class="archive-item-number">
+        <div class="archive-no">
           No.010
         </div>
 
-        <div>
-          <div class="archive-item-title">
-            SyuRo：为什么真正好的设计，不需要一直被看见？
-          </div>
-
-          <div class="archive-item-theme">
-            Everyday Design
-          </div>
+        <div class="archive-title">
+          SyuRo：为什么真正好的设计，不需要一直被看见？
         </div>
 
-        <div class="archive-arrow">
-          →
+        <div class="archive-theme">
+          Everyday Design
         </div>
 
       </a>
@@ -786,27 +828,18 @@
 
       <!-- No.009 -->
 
-      <a
-        href="collection-009.html"
-        class="archive-item"
-      >
+      <a href="collection-009.html" class="archive-item">
 
-        <div class="archive-item-number">
+        <div class="archive-no">
           No.009
         </div>
 
-        <div>
-          <div class="archive-item-title">
-            CLASSIKY：为什么有些东西，用起来以后才真正变得好看？
-          </div>
-
-          <div class="archive-item-theme">
-            Everyday Design
-          </div>
+        <div class="archive-title">
+          CLASSIKY
         </div>
 
-        <div class="archive-arrow">
-          →
+        <div class="archive-theme">
+          Everyday Design
         </div>
 
       </a>
@@ -814,27 +847,18 @@
 
       <!-- No.008 -->
 
-      <a
-        href="collection-008.html"
-        class="archive-item"
-      >
+      <a href="collection-008.html" class="archive-item">
 
-        <div class="archive-item-number">
+        <div class="archive-no">
           No.008
         </div>
 
-        <div>
-          <div class="archive-item-title">
-            KAKIMORI：为什么写字，也可以是一件值得慢慢做的事？
-          </div>
-
-          <div class="archive-item-theme">
-            Slow Writing
-          </div>
+        <div class="archive-title">
+          KAKIMORI：为什么写字，也可以是一件值得慢慢做的事？
         </div>
 
-        <div class="archive-arrow">
-          →
+        <div class="archive-theme">
+          Slow Writing
         </div>
 
       </a>
@@ -842,27 +866,18 @@
 
       <!-- No.007 -->
 
-      <a
-        href="collection-007.html"
-        class="archive-item"
-      >
+      <a href="collection-007.html" class="archive-item">
 
-        <div class="archive-item-number">
+        <div class="archive-no">
           No.007
         </div>
 
-        <div>
-          <div class="archive-item-title">
-            HIGHTIDE：为什么一些普通的小东西，会让生活变得更有趣？
-          </div>
-
-          <div class="archive-item-theme">
-            Play
-          </div>
+        <div class="archive-title">
+          HIGHTIDE：为什么一些普通的小东西，会让生活变得更有趣？
         </div>
 
-        <div class="archive-arrow">
-          →
+        <div class="archive-theme">
+          Play
         </div>
 
       </a>
@@ -870,27 +885,18 @@
 
       <!-- No.006 -->
 
-      <a
-        href="collection-006.html"
-        class="archive-item"
-      >
+      <a href="collection-006.html" class="archive-item">
 
-        <div class="archive-item-number">
+        <div class="archive-no">
           No.006
         </div>
 
-        <div>
-          <div class="archive-item-title">
-            TRAVELER'S COMPANY：为什么一本笔记本，会让人想去更远的地方？
-          </div>
-
-          <div class="archive-item-theme">
-            Journey
-          </div>
+        <div class="archive-title">
+          TRAVELER'S COMPANY：为什么一本笔记本，会让人想去更远的地方？
         </div>
 
-        <div class="archive-arrow">
-          →
+        <div class="archive-theme">
+          Journey
         </div>
 
       </a>
@@ -898,27 +904,18 @@
 
       <!-- No.005 -->
 
-      <a
-        href="collection-005.html"
-        class="archive-item"
-      >
+      <a href="collection-005.html" class="archive-item">
 
-        <div class="archive-item-number">
+        <div class="archive-no">
           No.005
         </div>
 
-        <div>
-          <div class="archive-item-title">
-            MIDORI：为什么写字，仍然值得保留？
-          </div>
-
-          <div class="archive-item-theme">
-            Write
-          </div>
+        <div class="archive-title">
+          MIDORI：为什么写字，仍然值得保留？
         </div>
 
-        <div class="archive-arrow">
-          →
+        <div class="archive-theme">
+          Write
         </div>
 
       </a>
@@ -926,27 +923,18 @@
 
       <!-- No.004 -->
 
-      <a
-        href="collection-004.html"
-        class="archive-item"
-      >
+      <a href="collection-004.html" class="archive-item">
 
-        <div class="archive-item-number">
+        <div class="archive-no">
           No.004
         </div>
 
-        <div>
-          <div class="archive-item-title">
-            OBJECT：一家店，为什么会改变人们喜欢设计这件事？
-          </div>
-
-          <div class="archive-item-theme">
-            Discover
-          </div>
+        <div class="archive-title">
+          OBJECT：一家店，为什么会改变人们喜欢设计这件事？
         </div>
 
-        <div class="archive-arrow">
-          →
+        <div class="archive-theme">
+          Discover
         </div>
 
       </a>
@@ -954,27 +942,18 @@
 
       <!-- No.003 -->
 
-      <a
-        href="collection-003.html"
-        class="archive-item"
-      >
+      <a href="collection-003.html" class="archive-item">
 
-        <div class="archive-item-number">
+        <div class="archive-no">
           No.003
         </div>
 
-        <div>
-          <div class="archive-item-title">
-            KINTO：为什么一个杯子，会改变喝一杯咖啡的感觉？
-          </div>
-
-          <div class="archive-item-theme">
-            Pause
-          </div>
+        <div class="archive-title">
+          KINTO：为什么一个杯子，会改变喝一杯咖啡的感觉？
         </div>
 
-        <div class="archive-arrow">
-          →
+        <div class="archive-theme">
+          Pause
         </div>
 
       </a>
@@ -982,27 +961,18 @@
 
       <!-- No.002 -->
 
-      <a
-        href="collection-002.html"
-        class="archive-item"
-      >
+      <a href="collection-002.html" class="archive-item">
 
-        <div class="archive-item-number">
+        <div class="archive-no">
           No.002
         </div>
 
-        <div>
-          <div class="archive-item-title">
-            LIVEWORK：温柔的设计，如何改变每天的生活
-          </div>
-
-          <div class="archive-item-theme">
-            Companion
-          </div>
+        <div class="archive-title">
+          LIVEWORK：温柔的设计，如何改变每天的生活
         </div>
 
-        <div class="archive-arrow">
-          →
+        <div class="archive-theme">
+          Companion
         </div>
 
       </a>
@@ -1010,27 +980,18 @@
 
       <!-- No.001 -->
 
-      <a
-        href="collection-001.html"
-        class="archive-item"
-      >
+      <a href="collection-001.html" class="archive-item">
 
-        <div class="archive-item-number">
+        <div class="archive-no">
           No.001
         </div>
 
-        <div>
-          <div class="archive-item-title">
-            O-CHECK：让记录生活变得温柔的韩国文具品牌
-          </div>
-
-          <div class="archive-item-theme">
-            Record
-          </div>
+        <div class="archive-title">
+          O-CHECK：让记录生活变得温柔的韩国文具品牌
         </div>
 
-        <div class="archive-arrow">
-          →
+        <div class="archive-theme">
+          Record
         </div>
 
       </a>
@@ -1047,26 +1008,36 @@
 
   <section class="about-preview">
 
-    <div class="section-label">
-      About Soft Archive
+    <div>
+
+      <div class="section-label">
+        About Soft Archive
+      </div>
+
     </div>
 
-    <h2>
-      A softer way of looking.
-    </h2>
 
-    <p>
-      Soft Archive is an independent archive exploring
-      everyday design, quiet rituals, thoughtful objects,
-      and the memories attached to ordinary life.
-    </p>
+    <div>
 
-    <a
-      href="about.html"
-      class="about-link"
-    >
-      About Soft Archive →
-    </a>
+      <h2>
+        Looking a little closer.
+      </h2>
+
+      <p>
+        Soft Archive is an independent archive
+        about everyday design and the details
+        that often go unnoticed.
+        <br><br>
+        It is a place for collecting ideas,
+        objects, places, and the stories
+        that make them memorable.
+      </p>
+
+      <a href="about.html" class="about-link">
+        About the Archive →
+      </a>
+
+    </div>
 
   </section>
 
@@ -1082,7 +1053,7 @@
     </div>
 
     <p>
-      A collection of quiet things worth keeping.
+      A collection of things that stayed with me.
     </p>
 
     <p class="copyright">
