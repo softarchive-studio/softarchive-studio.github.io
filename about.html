@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About — Soft Archive</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f4ee;
+      color: #35322e;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    /* =========================
+       Navigation
+    ========================= */
+
+    .site-nav {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 42px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links a {
+      opacity: 0.65;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+    }
+
+
+    /* =========================
+       Main
+    ========================= */
+
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 105px 42px 130px;
+    }
+
+
+    /* =========================
+       Intro
+    ========================= */
+
+    .about-intro {
+      max-width: 850px;
+      padding-bottom: 110px;
+    }
+
+    .eyebrow {
+      margin-bottom: 24px;
+
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+
+      opacity: 0.45;
+    }
+
+    .about-intro h1 {
+      margin: 0;
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: 1.05;
+      font-weight: normal;
+      letter-spacing: -0.045em;
+    }
+
+    .intro-text {
+      max-width: 650px;
+      margin-top: 42px;
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 24px;
+      line-height: 1.7;
+    }
+
+
+    /* =========================
+       Sections
+    ========================= */
+
+    .about-section {
+      display: grid;
+      grid-template-columns: 0.75fr 1.5fr;
+      gap: 80px;
+
+      padding: 85px 0;
+
+      border-top: 1px solid rgba(53, 50, 46, 0.14);
+    }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+
+      opacity: 0.45;
+    }
+
+    .about-content {
+      max-width: 650px;
+    }
+
+    .about-content h2 {
+      margin: 0 0 28px;
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 36px;
+      line-height: 1.3;
+      font-weight: normal;
+      letter-spacing: -0.025em;
+    }
+
+    .about-content p {
+      margin: 0 0 24px;
+
+      font-size: 15px;
+      line-height: 2;
+
+      opacity: 0.72;
+    }
+
+    .about-content p:last-child {
+      margin-bottom: 0;
+    }
+
+
+    /* =========================
+       Collection List
+    ========================= */
+
+    .collect-list {
+      margin: 35px 0 0;
+      padding: 0;
+
+      list-style: none;
+    }
+
+    .collect-list li {
+      padding: 15px 0;
+
+      border-top: 1px solid rgba(53, 50, 46, 0.1);
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+    }
+
+    .collect-list li:last-child {
+      border-bottom: 1px solid rgba(53, 50, 46, 0.1);
+    }
+
+
+    /* =========================
+       Note
+    ========================= */
+
+    .archive-note {
+      margin-top: 20px;
+      padding: 42px;
+
+      background: #f1ede5;
+    }
+
+    .archive-note p {
+      margin: 0;
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 22px;
+      line-height: 1.8;
+    }
+
+
+    /* =========================
+       Links
+    ========================= */
+
+    .about-link {
+      display: inline-block;
+
+      margin-top: 20px;
+
+      font-size: 13px;
+      letter-spacing: 0.05em;
+
+      border-bottom: 1px solid rgba(53, 50, 46, 0.35);
+      padding-bottom: 3px;
+
+      transition: opacity 0.2s ease;
+    }
+
+    .about-link:hover {
+      opacity: 0.55;
+    }
+
+
+    /* =========================
+       Footer
+    ========================= */
+
+    .footer {
+      max-width: 1180px;
+      margin: 0 auto;
+
+      padding: 60px 42px 50px;
+
+      border-top: 1px solid rgba(53, 50, 46, 0.14);
+    }
+
+    .footer-brand {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+    }
+
+    .footer p {
+      margin: 8px 0 0;
+
+      font-size: 12px;
+      opacity: 0.5;
+    }
+
+    .footer .copyright {
+      margin-top: 28px;
+
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+
+      opacity: 0.4;
+    }
+
+
+    /* =========================
+       Mobile
+    ========================= */
+
+    @media (max-width: 760px) {
+
+      .site-nav {
+        padding: 22px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .nav-links {
+        gap: 20px;
+        font-size: 12px;
+      }
+
+
+      main {
+        padding: 75px 22px 90px;
+      }
+
+
+      .about-intro {
+        padding-bottom: 75px;
+      }
+
+      .about-intro h1 {
+        font-size: 50px;
+      }
+
+      .intro-text {
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 1.75;
+      }
+
+
+      .about-section {
+        display: block;
+        padding: 65px 0;
+      }
+
+      .about-section .section-label {
+        margin-bottom: 35px;
+      }
+
+      .about-content h2 {
+        font-size: 31px;
+      }
+
+
+      .collect-list li {
+        font-size: 18px;
+      }
+
+
+      .archive-note {
+        padding: 30px;
+      }
+
+      .archive-note p {
+        font-size: 19px;
+      }
+
+
+      .footer {
+        padding: 50px 22px 40px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       Navigation
+  ========================= -->
+
+  <nav class="site-nav">
+
+    <a href="index.html" class="logo">
+      Soft Archive
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Archive</a>
+      <a href="about.html">About</a>
+    </div>
+
+  </nav>
+
+
+  <!-- =========================
+       Main
+  ========================= -->
+
+  <main>
+
+
+    <!-- Intro -->
+
+    <section class="about-intro">
+
+      <div class="eyebrow">
+        About Soft Archive
+      </div>
+
+      <h1>
+        A place for<br>
+        looking closer.
+      </h1>
+
+      <p class="intro-text">
+        Soft Archive began with a simple question:
+        why do some ordinary things stay in our memory
+        long after we have stopped using them?
+      </p>
+
+    </section>
+
+
+    <!-- Why -->
+
+    <section class="about-section">
+
+      <div>
+        <div class="section-label">
+          Why This Archive
+        </div>
+      </div>
+
+      <div class="about-content">
+
+        <h2>
+          Not everything memorable
+          has to be extraordinary.
+        </h2>
+
+        <p>
+          A notebook we carried for years.
+          A cup that somehow became our favourite.
+          A shop we still remember after visiting once.
+        </p>
+
+        <p>
+          Sometimes it is the smallest details
+          that become connected to a particular period
+          of our lives.
+        </p>
+
+        <p>
+          Soft Archive is a place to slow down
+          and look at those details again.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- What I Collect -->
+
+    <section class="about-section">
+
+      <div>
+        <div class="section-label">
+          What I Collect
+        </div>
+      </div>
+
+      <div class="about-content">
+
+        <h2>
+          Objects, places,
+          and the ideas behind them.
+        </h2>
+
+        <p>
+          The archive moves between stationery,
+          tableware, lifestyle objects,
+          independent shops, materials,
+          and everyday rituals.
+        </p>
+
+        <ul class="collect-list">
+
+          <li>
+            Stationery & Writing
+          </li>
+
+          <li>
+            Home & Tableware
+          </li>
+
+          <li>
+            Lifestyle Objects
+          </li>
+
+          <li>
+            Independent Design
+          </li>
+
+          <li>
+            Places & Small Discoveries
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- How -->
+
+    <section class="about-section">
+
+      <div>
+        <div class="section-label">
+          How I Choose
+        </div>
+      </div>
+
+      <div class="about-content">
+
+        <h2>
+          Curiosity comes first.
+        </h2>
+
+        <p>
+          Soft Archive does not try to collect
+          everything that is new or popular.
+        </p>
+
+        <p>
+          Instead, each collection begins with
+          something that makes me stop for a moment:
+          a particular material, a useful detail,
+          an unusual way of presenting an everyday object,
+          or simply a feeling that stays afterwards.
+        </p>
+
+        <p>
+          The archive is personal by nature.
+          What appears here is shaped by curiosity,
+          observation, and the things I would want
+          to remember.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- Philosophy -->
+
+    <section class="about-section">
+
+      <div>
+        <div class="section-label">
+          A Small Note
+        </div>
+      </div>
+
+      <div class="about-content">
+
+        <div class="archive-note">
+
+          <p>
+            “值得收藏的，不一定是最特别的东西，
+            而是那些让普通日子变得更有温度的东西，
+            以及你珍贵的回忆。”
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Independent Project -->
+
+    <section class="about-section">
+
+      <div>
+        <div class="section-label">
+          About This Project
+        </div>
+      </div>
+
+      <div class="about-content">
+
+        <h2>
+          An independent archive.
+        </h2>
+
+        <p>
+          Soft Archive is an independent editorial project.
+          It is not affiliated with the brands,
+          shops, designers, or creators featured in the archive
+          unless explicitly stated.
+        </p>
+
+        <p>
+          Product names, trademarks, and referenced images
+          belong to their respective owners.
+          Images and information are presented for
+          editorial and archival purposes.
+        </p>
+
+        <a href="index.html" class="about-link">
+          Return to the Archive →
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =========================
+       Footer
+  ========================= -->
+
+  <footer class="footer">
+
+    <div class="footer-brand">
+      Soft Archive
+    </div>
+
+    <p>
+      A collection of things that stayed with me.
+    </p>
+
+    <p class="copyright">
+      © 2026 Soft Archive
+    </p>
+
+  </footer>
+
+
+</body>
+</html>
